@@ -38,26 +38,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddBorder.cs" />
-    <Compile Include="AdjacentGreatestProduct.cs" />
-    <Compile Include="AllLongestStrings.cs" />
-    <Compile Include="AlmostIncreasingSequence.cs" />
-    <Compile Include="ArrayMaximalAdjacentDifference.cs" />
-    <Compile Include="AvoidObstacles.cs" />
-    <Compile Include="BoxBlur.cs" />
-    <Compile Include="CommonCharacterCount.cs" />
-    <Compile Include="IsIPv4.cs" />
-    <Compile Include="IsLucky.cs" />
-    <Compile Include="MakeArrayConsecutive.cs" />
-    <Compile Include="MatrixElementsSum.cs" />
-    <Compile Include="MineSweeper.cs" />
-    <Compile Include="PalindromeChecker.cs" />
-    <Compile Include="PalindromeRearranging.cs" />
+    <Compile Include="BFS\BFSActor.cs" />
+    <Compile Include="BFS\BFSUnlocker.cs" />
+    <Compile Include="BFS\Node.cs" />
+    <Compile Include="BFS\NumIslandsT.cs" />
+    <Compile Include="BFS\Unlocker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReverseParenthesis.cs" />
-    <Compile Include="ShapeArea.cs" />
-    <Compile Include="SortByHeight.cs" />
+    <Compile Include="Solves\AddBorder.cs" />
+    <Compile Include="Solves\AdjacentGreatestProduct.cs" />
+    <Compile Include="Solves\AllLongestStrings.cs" />
+    <Compile Include="Solves\AlmostIncreasingSequence.cs" />
+    <Compile Include="Solves\ArrayMaximalAdjacentDifference.cs" />
+    <Compile Include="Solves\AvoidObstacles.cs" />
+    <Compile Include="Solves\BoxBlur.cs" />
+    <Compile Include="Solves\CommonCharacterCount.cs" />
+    <Compile Include="Solves\IsIPv4.cs" />
+    <Compile Include="Solves\IsLucky.cs" />
+    <Compile Include="Solves\MakeArrayConsecutive.cs" />
+    <Compile Include="Solves\MatrixElementsSum.cs" />
+    <Compile Include="Solves\MineSweeper.cs" />
+    <Compile Include="Solves\PalindromeChecker.cs" />
+    <Compile Include="Solves\PalindromeRearranging.cs" />
+    <Compile Include="Solves\ReverseParenthesis.cs" />
+    <Compile Include="Solves\ShapeArea.cs" />
+    <Compile Include="Solves\SortByHeight.cs" />
+    <Compile Include="StringsRearrangement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
