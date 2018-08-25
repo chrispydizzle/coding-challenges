@@ -84,7 +84,7 @@ namespace Pdrome2.BFS
             this.level = 0;
             this.deads = new HashSet<string>(deads);
             this.target = target;
-            this.Act("0000");
+            this.Act("0000", target);
             return this.Result;
         }
     }

@@ -22,7 +22,7 @@ namespace Pdrome2.BFS
 
         protected abstract void Failure();
 
-        protected void Act(T start)
+        protected void Act(T start, T target)
         {
             Queue<T> q = new Queue<T>();
             HashSet<T> visited = new HashSet<T>();
