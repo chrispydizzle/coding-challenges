@@ -39,7 +39,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BFS\BFSActor.cs" />
+    <Compile Include="BFS\BFSActorOptimized.cs" />
+    <Compile Include="BFS\BFSUnlockerOptimized.cs" />
     <Compile Include="BFS\BFSUnlocker.cs" />
+    <Compile Include="BFS\DivideAndConquerQueue.cs" />
+    <Compile Include="BFS\FastUnlocker.cs" />
     <Compile Include="BFS\Node.cs" />
     <Compile Include="BFS\NumIslandsT.cs" />
     <Compile Include="BFS\Unlocker.cs" />
