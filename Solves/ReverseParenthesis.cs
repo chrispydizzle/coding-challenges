@@ -1,4 +1,4 @@
-﻿namespace CodingChallenges
+﻿namespace Pdrome2.Solves
 {
     using System.Text;
 

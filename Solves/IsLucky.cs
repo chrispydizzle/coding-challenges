@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace Pdrome2.Solves
 {
     using System;
 
