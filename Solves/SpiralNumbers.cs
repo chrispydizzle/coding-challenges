@@ -6,8 +6,6 @@
     {
         public int[][] spiralNumbers(int n)
         {
-            List<int> list = new List<int>();
-
             int[][] container = new int[n][];
             for (int i = 0; i < container.Length; i++)
             {

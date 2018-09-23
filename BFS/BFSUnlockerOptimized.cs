@@ -17,7 +17,6 @@ namespace Pdrome2.BFS
 
         private int level = 0;
         private HashSet<string> deads;
-        private string target;
 
         protected override void Iterate()
         {
@@ -74,7 +73,6 @@ namespace Pdrome2.BFS
         {
             this.level = 0;
             this.deads = new HashSet<string>(deads);
-            this.target = target;
             this.Act("0000", target);
             return this.Result;
         }

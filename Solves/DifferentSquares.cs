@@ -6,7 +6,6 @@
     {
         public int differentSquares(int[][] matrix)
         {
-            int counter = 0;
             int height = matrix.Length;
             int width = matrix[0].Length;
             HashSet<int[][]> matrices = new HashSet<int[][]>();

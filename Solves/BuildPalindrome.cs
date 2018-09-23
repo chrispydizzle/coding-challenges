@@ -8,8 +8,6 @@
         public string buildPalindrome(string st)
         {
             char lastChar = st[st.Length - 1];
-            int internalPalindromeIndex = st.Length - 1;
-            bool flag = false;
             StringBuilder b = new StringBuilder();
             for (int i = st.Length - 2; i >= 0; i--)
             {
@@ -21,9 +19,7 @@
                 {
                     if (this.checkPalindrome(st.Substring(i)))
                     {
-                        internalPalindromeIndex = i;
                         b = new StringBuilder();
-                        flag = true;
                     }
                 }
             }

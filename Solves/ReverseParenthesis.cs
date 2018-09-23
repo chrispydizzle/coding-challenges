@@ -7,7 +7,6 @@
         public string reverseParentheses(string s)
         {
             StringBuilder b = new StringBuilder(s);
-            bool reversing = false;
 
             // find the first close paren, and seek backwards to the associated open.
             // reverse that guy, replace it in the parent.

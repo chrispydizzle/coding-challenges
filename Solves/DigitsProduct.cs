@@ -22,10 +22,7 @@
             }
             
             if (factors.Count == 0) return -1;
-            
-            int result = 0;
-            int places = 1;
-            
+
             Queue<string> q = new Queue<string>();
             //Stack<string> q = new Stack<string>();
             foreach (int factor in factors)

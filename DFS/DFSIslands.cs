@@ -31,7 +31,11 @@
             {
                 {'1','1','1'},{'0','1','0'},{'1','1','1'}
             };            
-            DFSIslands di = new DFSIslands();            
+            DFSIslands di = new DFSIslands();
+            di.NumIslands(map);
+            di.NumIslands(map2);
+            di.NumIslands(map3);
+            Console.WriteLine(di.ToString());
         }        
         
         

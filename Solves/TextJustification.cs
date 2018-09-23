@@ -68,8 +68,7 @@
             List<int> freeSpaceLines = new List<int>();
             int lineLength = 0;
             List<string> line = new List<string>();
-            bool newLine = true;
-            int freeSpace = l;
+            int freeSpace;
             // go over each of the words and assign them to lines
             for (int i = 0; i < words.Length; i++)
             {

@@ -46,7 +46,6 @@
             foreach (string root in inputArray)
             {
                 List<string> available = new List<string>(inputArray);
-                Stack<string> q = new Stack<string>();
                 Stack<Tuple<string, List<string>>> processList = new Stack<Tuple<string, List<string>>>();
                 available.Remove(root);
                 processList.Push(new Tuple<string, List<string>>(root, available));

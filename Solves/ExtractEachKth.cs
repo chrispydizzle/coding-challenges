@@ -9,7 +9,6 @@
             // int[] output = new int[inputArray.Length - 1];
             List<int> output = new List<int>();
 
-            int offset = 0;
             int counter = 0;
             for (int i = 0; i < inputArray.Length; i++)
             {

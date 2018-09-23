@@ -4,7 +4,6 @@
     {
         public bool incorrectPasscodeAttempts(string passcode, string[] attempts)
         {
-            int maxConsecutive = 10;
             int consecutive = 0;
             foreach (string attempt in attempts)
             {

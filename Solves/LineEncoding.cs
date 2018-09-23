@@ -9,8 +9,6 @@
         public string lineEncoding(string s)
         {
             StringBuilder b = new StringBuilder();
-            char lastChar = char.MinValue;
-            int charCounter = 0;
 
             List<char> chars = s.ToCharArray().ToList();
             while (chars.Count > 0)
