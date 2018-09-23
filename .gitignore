@@ -537,3 +537,5 @@ ASALocalRun/
 
 *.csproj.bak
 *.sln.bak
+/coding-challenges.csproj.DotSettings
+coding-challenges.csproj.DotSettings
