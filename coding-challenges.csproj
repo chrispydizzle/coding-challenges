@@ -68,6 +68,7 @@
       <Compile Include="Incomplete\BuildTreeFrom.cs"/>
       <Compile Include="Incomplete\maxProfit.cs"/>
       <Compile Include="Interviews\LinkedIn.cs"/>
+      <Compile Include="LinkedList\ListNode.cs"/>
       <Compile Include="Matrix\RotateMatrix.cs"/>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -146,6 +147,15 @@
     <Compile Include="Stack\MinStack.cs" />
     <Compile Include="Stack\ReversePolishNotation.cs" />
     <Compile Include="Stack\ValidParens.cs" />
+      <Compile Include="Strings\Atoi.cs"/>
+      <Compile Include="Strings\CheckAngram.cs"/>
+      <Compile Include="Strings\DetectPalindrome.cs"/>
+      <Compile Include="Strings\DoCountAndSay.cs"/>
+      <Compile Include="Strings\DoReverseInteger.cs"/>
+      <Compile Include="Strings\DoReverseString.cs"/>
+      <Compile Include="Strings\FindFirstUniqCharacter.cs"/>
+      <Compile Include="Strings\FindLongestCommonPrefix.cs"/>
+      <Compile Include="Strings\InString.cs"/>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
