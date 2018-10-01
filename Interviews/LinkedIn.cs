@@ -52,8 +52,6 @@ public class WordDistanceFinder {
 
 // distance("the", "quick") // return 1
 
-
-
 // loop start
 // find first occurance of either word
 // seek left until other word 

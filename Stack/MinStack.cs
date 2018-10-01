@@ -1,4 +1,4 @@
-namespace Pdrome2.Stack
+namespace Pdrome2
 {
     using System.Collections;
     using System.Collections.Generic;

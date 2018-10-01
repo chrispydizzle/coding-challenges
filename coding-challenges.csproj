@@ -38,6 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+      <Compile Include="AngramGrouper.cs"/>
       <Compile Include="Arrays\ContainsDuplicates.cs"/>
       <Compile Include="Arrays\FindTargetSum.cs"/>
       <Compile Include="Arrays\RotateArray.cs"/>
@@ -62,16 +63,20 @@
       <Compile Include="BinaryTrees\PreorderTraverse.cs"/>
       <Compile Include="BinaryTrees\RootLeafPath.cs"/>
       <Compile Include="BinaryTrees\TreeNode.cs"/>
+      <Compile Include="DeleteLinkedListNode.cs"/>
     <Compile Include="DFS\DFSIslands.cs" />
     <Compile Include="DFS\Template.cs" />
       <Compile Include="Graphs\UndirectedGraphNode.cs"/>
       <Compile Include="Incomplete\BuildTreeFrom.cs"/>
       <Compile Include="Incomplete\maxProfit.cs"/>
+      <Compile Include="Interviews\Google.cs"/>
       <Compile Include="Interviews\LinkedIn.cs"/>
+      <Compile Include="LinkedList\LinkedListPrinter.cs"/>
       <Compile Include="LinkedList\ListNode.cs"/>
       <Compile Include="Matrix\RotateMatrix.cs"/>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+      <Compile Include="RemoveNFromEnd.cs"/>
     <Compile Include="Solves\AbsoluteValueSumMinimization.cs" />
     <Compile Include="Solves\AddBorder.cs" />
     <Compile Include="Solves\AdjacentGreatestProduct.cs" />
