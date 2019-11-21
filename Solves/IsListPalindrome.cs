@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     internal class IsListPalindrome
     {
@@ -29,7 +29,6 @@
                 previousPointer.next = null;
                 return this.Verify(head.next, previousPointer, previousPointer);
             }
-
 
             return false;
             // return this.Verify(head);

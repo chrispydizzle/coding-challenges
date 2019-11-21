@@ -1,14 +1,14 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     internal class AreSimilar
     {
         public bool areSimilar(int[] a, int[] b)
         {
             bool areSimilar = true;
-            int[][] differentNumberSet = new[]
+            int[][] differentNumberSet =
             {
-                new int[] {0, 0},
-                new int[] {0, 0}
+                new[] {0, 0},
+                new[] {0, 0}
             };
 
             int differentNumbers = 0;

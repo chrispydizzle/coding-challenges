@@ -1,7 +1,5 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
-    using System.Collections.Generic;
-
     internal class SpiralNumbers
     {
         public int[][] spiralNumbers(int n)

@@ -7,10 +7,25 @@
     <ProjectGuid>{EA0BE21B-EB17-42A1-825A-9170207D8375}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pdrome2</RootNamespace>
-    <AssemblyName>Pdrome2</AssemblyName>
+    <RootNamespace>CodeChallenges</RootNamespace>
+    <AssemblyName>CodeChallenges</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -38,10 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-      <Compile Include="AngramGrouper.cs"/>
-      <Compile Include="Arrays\ContainsDuplicates.cs"/>
-      <Compile Include="Arrays\FindTargetSum.cs"/>
-      <Compile Include="Arrays\RotateArray.cs"/>
+    <Compile Include="AngramGrouper.cs" />
+    <Compile Include="Arrays\ContainsDuplicates.cs" />
+    <Compile Include="Arrays\FbSpiralGen.cs" />
+    <Compile Include="Arrays\FindTargetSum.cs" />
+    <Compile Include="Arrays\ProductOfArrayExceptSelf.cs" />
+    <Compile Include="Arrays\RotateArray.cs" />
     <Compile Include="BFS\BFSActor.cs" />
     <Compile Include="BFS\BFSActorOptimized.cs" />
     <Compile Include="BFS\BFSActorQueue.cs" />
@@ -55,28 +72,28 @@
     <Compile Include="BFS\PerfectSquares.cs" />
     <Compile Include="BFS\PerfectSquaresLC.cs" />
     <Compile Include="BFS\Unlocker.cs" />
-      <Compile Include="BinaryTrees\InorderTraverse.cs"/>
-      <Compile Include="BinaryTrees\IsSymmetricTree.cs"/>
-      <Compile Include="BinaryTrees\LevelOrderTraverse.cs"/>
-      <Compile Include="BinaryTrees\MaxDepthFind.cs"/>
-      <Compile Include="BinaryTrees\PostOrderTraverse.cs"/>
-      <Compile Include="BinaryTrees\PreorderTraverse.cs"/>
-      <Compile Include="BinaryTrees\RootLeafPath.cs"/>
-      <Compile Include="BinaryTrees\TreeNode.cs"/>
-      <Compile Include="DeleteLinkedListNode.cs"/>
+    <Compile Include="BinaryTrees\InorderTraverse.cs" />
+    <Compile Include="BinaryTrees\IsSymmetricTree.cs" />
+    <Compile Include="BinaryTrees\LevelOrderTraverse.cs" />
+    <Compile Include="BinaryTrees\MaxDepthFind.cs" />
+    <Compile Include="BinaryTrees\PostOrderTraverse.cs" />
+    <Compile Include="BinaryTrees\PreorderTraverse.cs" />
+    <Compile Include="BinaryTrees\RootLeafPath.cs" />
+    <Compile Include="BinaryTrees\TreeNode.cs" />
+    <Compile Include="DeleteLinkedListNode.cs" />
     <Compile Include="DFS\DFSIslands.cs" />
     <Compile Include="DFS\Template.cs" />
-      <Compile Include="Graphs\UndirectedGraphNode.cs"/>
-      <Compile Include="Incomplete\BuildTreeFrom.cs"/>
-      <Compile Include="Incomplete\maxProfit.cs"/>
-      <Compile Include="Interviews\Google.cs"/>
-      <Compile Include="Interviews\LinkedIn.cs"/>
-      <Compile Include="LinkedList\LinkedListPrinter.cs"/>
-      <Compile Include="LinkedList\ListNode.cs"/>
-      <Compile Include="Matrix\RotateMatrix.cs"/>
+    <Compile Include="Graphs\UndirectedGraphNode.cs" />
+    <Compile Include="Incomplete\BuildTreeFrom.cs" />
+    <Compile Include="Incomplete\maxProfit.cs" />
+    <Compile Include="Interviews\Google.cs" />
+    <Compile Include="Interviews\LinkedIn.cs" />
+    <Compile Include="LinkedList\LinkedListPrinter.cs" />
+    <Compile Include="LinkedList\ListNode.cs" />
+    <Compile Include="Matrix\RotateMatrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-      <Compile Include="RemoveNFromEnd.cs"/>
+    <Compile Include="RemoveNFromEnd.cs" />
     <Compile Include="Solves\AbsoluteValueSumMinimization.cs" />
     <Compile Include="Solves\AddBorder.cs" />
     <Compile Include="Solves\AdjacentGreatestProduct.cs" />
@@ -152,16 +169,40 @@
     <Compile Include="Stack\MinStack.cs" />
     <Compile Include="Stack\ReversePolishNotation.cs" />
     <Compile Include="Stack\ValidParens.cs" />
-      <Compile Include="Strings\Atoi.cs"/>
-      <Compile Include="Strings\CheckAngram.cs"/>
-      <Compile Include="Strings\DetectPalindrome.cs"/>
-      <Compile Include="Strings\DoCountAndSay.cs"/>
-      <Compile Include="Strings\DoReverseInteger.cs"/>
-      <Compile Include="Strings\DoReverseString.cs"/>
-      <Compile Include="Strings\FindFirstUniqCharacter.cs"/>
-      <Compile Include="Strings\FindLongestCommonPrefix.cs"/>
-      <Compile Include="Strings\InString.cs"/>
+    <Compile Include="Strings\Atoi.cs" />
+    <Compile Include="Strings\CheckAngram.cs" />
+    <Compile Include="Strings\DetectPalindrome.cs" />
+    <Compile Include="Strings\DoCountAndSay.cs" />
+    <Compile Include="Strings\DoReverseInteger.cs" />
+    <Compile Include="Strings\DoReverseString.cs" />
+    <Compile Include="Strings\FbLookAndSay1.cs" />
+    <Compile Include="Strings\FindFirstUniqCharacter.cs" />
+    <Compile Include="Strings\FindLongestCommonPrefix.cs" />
+    <Compile Include="Strings\InString.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="MSSQL\SecondHighestSalary.sql" />
+    <Content Include="MSSQL\TempDb.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL\TempDb_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>TempDb.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.

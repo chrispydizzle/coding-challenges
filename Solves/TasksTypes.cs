@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     internal class TasksTypes
     {
@@ -27,6 +27,5 @@
 
             return new[] {today, upcoming, later};
         }
-
     }
 }

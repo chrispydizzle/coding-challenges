@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System;
     using System.Collections.Generic;

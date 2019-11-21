@@ -1,8 +1,9 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges
 {
     using LinkedList;
 
-    public class DeleteLinkedListNode{
+    public class DeleteLinkedListNode
+    {
         public void DeleteNode(ListNode node)
         {
             this.ReplaceNode(node, node.next);
@@ -17,7 +18,7 @@
                 node.next = null;
                 return;
             }
-            
+
             this.ReplaceNode(nodeNext, nodeNext.next);
         }
     }

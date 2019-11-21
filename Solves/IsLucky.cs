@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System;
 
@@ -12,18 +12,18 @@
             string fHalf = s.Substring(0, mid);
             string sHalf = s.Substring(mid);
 
-            Func<string, int> addNums = (st) =>
-            {
-                int result = 0;
-                foreach (char c in st)
-                {
-                    int i = int.Parse(c.ToString());
-                    result += i;
-                }
+            Func<string, int> addNums = st =>
+                                        {
+                                            int result = 0;
+                                            foreach (char c in st)
+                                            {
+                                                int i = int.Parse(c.ToString());
+                                                result += i;
+                                            }
 
-                return result;
-            };
-            
+                                            return result;
+                                        };
+
             return addNums(fHalf) == addNums(sHalf);
         }
     }

@@ -1,11 +1,12 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     using System.Text;
 
     internal class FindEmailDomain
     {
-        public string findEmailDomain(string address) {
-            StringBuilder b= new StringBuilder();
+        public string findEmailDomain(string address)
+        {
+            StringBuilder b = new StringBuilder();
             bool trig = false;
             foreach (char c in address)
             {
@@ -13,7 +14,7 @@
                 {
                     b.Append(c);
                 }
-                
+
                 if (c == '@')
                 {
                     b = new StringBuilder();
@@ -23,6 +24,5 @@
 
             return b.ToString();
         }
- 
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     internal class GrowingPlant
     {
@@ -12,7 +12,6 @@
                 if (desiredHeight <= 0) break;
 
                 desiredHeight += downSpeed;
-
             } while (desiredHeight > 0);
 
             return days;

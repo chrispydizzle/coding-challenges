@@ -1,4 +1,4 @@
-namespace Pdrome2.BFS
+namespace CodeChallenges.BFS
 {
     using System.Collections.Generic;
 

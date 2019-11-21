@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System.Text;
 
@@ -6,7 +6,7 @@
     {
         public string alphabeticShift(string inputString)
         {
-            StringBuilder b= new StringBuilder();
+            StringBuilder b = new StringBuilder();
             for (int index = 0; index < inputString.Length; index++)
             {
                 char c = inputString[index];

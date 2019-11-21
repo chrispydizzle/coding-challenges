@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -9,9 +9,9 @@
         public int digitsProduct(int product)
         {
             if (product == 1) return 1;
-            
+
             if (product == 0) return 10;
-            
+
             List<int> factors = new List<int>();
             for (int i = 2; i <= 9; i++)
             {
@@ -20,7 +20,7 @@
                     factors.Add(i);
                 }
             }
-            
+
             if (factors.Count == 0) return -1;
 
             Queue<string> q = new Queue<string>();
@@ -30,7 +30,7 @@
                 q.Enqueue(factor.ToString());
                 //q.Push(factor.ToString());
             }
-            
+
             while (q.Any())
             {
                 string dequeue = q.Dequeue();
@@ -44,24 +44,24 @@
                     numbers.Add(i);
                     stProd *= i;
                 }
-                
+
                 numbers.Sort();
-                
+
                 StringBuilder b = new StringBuilder();
 
                 for (int i = 0; i < numbers.Count; i++)
                 {
                     b.Append(numbers[i]);
                 }
-                
+
                 if (stProd == product) return int.Parse(b.ToString());
 
-                if (stProd > product) continue; 
-                
+                if (stProd > product) continue;
+
                 foreach (int factor in factors)
                 {
-                   // q.Push($"{dequeue}{factor}");
-                   q.Enqueue($"{dequeue}{factor}");
+                    // q.Push($"{dequeue}{factor}");
+                    q.Enqueue($"{dequeue}{factor}");
                 }
             }
 

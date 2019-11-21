@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System.Linq;
 
@@ -27,7 +27,6 @@
                 {
                     leaptAll = true;
                 }
-                
             } while (leaptAll == false);
 
             return jumpsize;

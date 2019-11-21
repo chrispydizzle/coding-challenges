@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System.Collections.Generic;
 
@@ -10,8 +10,8 @@
             for (int i = 0; i < matrix.Length; i++)
             {
                 bool[] row = matrix[i];
-                List<int> rowCount =  new List<int>();
-                
+                List<int> rowCount = new List<int>();
+
                 for (int j = 0; j < row.Length; j++)
                 {
                     int boolSum = 0;
@@ -35,7 +35,7 @@
                             if (matrix[i + 1][j - 1])
                             {
                                 boolSum += 1;
-                            }                            
+                            }
                         }
                     }
 
@@ -52,10 +52,10 @@
                         if (matrix[i + 1][j])
                         {
                             boolSum += 1;
-                        }                            
+                        }
                     }
-                    
-                    if (j < matrix[i].Length-1)
+
+                    if (j < matrix[i].Length - 1)
                     {
                         if (i > 0)
                         {
@@ -75,13 +75,13 @@
                             if (matrix[i + 1][j + 1])
                             {
                                 boolSum += 1;
-                            }                            
+                            }
                         }
                     }
-                    
+
                     rowCount.Add(boolSum);
                 }
-                
+
                 rows.Add(rowCount.ToArray());
             }
 

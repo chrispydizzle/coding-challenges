@@ -1,4 +1,4 @@
-namespace Pdrome2.BFS
+namespace CodeChallenges.BFS
 {
     using System;
     using System.Collections.Generic;
@@ -19,10 +19,10 @@ namespace Pdrome2.BFS
                         c++;
 
                         Queue<Tuple<int, int>> locations = new Queue<Tuple<int, int>>();
-                        locations.Enqueue(new Tuple<int, int>(x,y));
+                        locations.Enqueue(new Tuple<int, int>(x, y));
                         while (locations.Count > 0)
                         {
-                            Tuple<int,int> dequeue = locations.Dequeue();
+                            Tuple<int, int> dequeue = locations.Dequeue();
                             int tx = dequeue.Item1;
                             int ty = dequeue.Item2;
 
@@ -30,19 +30,18 @@ namespace Pdrome2.BFS
                             {
                                 continue;
                             }
-                            
-                            char target = grid[tx,ty];
+
+                            char target = grid[tx, ty];
 
                             if (target == '1')
                             {
                                 grid[dequeue.Item1, dequeue.Item2] = '#';
-                                locations.Enqueue(new Tuple<int,int>(tx - 1, ty));
-                                locations.Enqueue(new Tuple<int,int>(tx, ty - 1));
-                                locations.Enqueue(new Tuple<int,int>(tx + 1, ty));
-                                locations.Enqueue(new Tuple<int,int>(tx, ty + 1));
+                                locations.Enqueue(new Tuple<int, int>(tx - 1, ty));
+                                locations.Enqueue(new Tuple<int, int>(tx, ty - 1));
+                                locations.Enqueue(new Tuple<int, int>(tx + 1, ty));
+                                locations.Enqueue(new Tuple<int, int>(tx, ty + 1));
                             }
                         }
-                        
                     }
                 }
             }

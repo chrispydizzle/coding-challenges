@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Arrays
 {
     using System;
     using System.Collections.Generic;
@@ -21,7 +21,7 @@
             {
                 Tuple<int, List<int>> tuple = processList.Pop();
                 int root = tuple.Item1;
-                
+
                 List<int> nextLevel = new List<int>(tuple.Item2);
                 int s = nextLevel.First();
                 nextLevel.Remove(s);

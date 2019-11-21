@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System.Collections.Generic;
 
@@ -20,31 +20,30 @@
                     int currentItem = sequenceList[index];
                     int nextItem = int.MinValue;
                     int nextNextItem = int.MinValue;
-                    
-                    
+
                     if (index != 0)
                     {
                         previousItem = sequenceList[index - 1];
                     }
-                    
-                    if (index != sequenceList.Count -1)
+
+                    if (index != sequenceList.Count - 1)
                     {
                         nextItem = sequenceList[index + 1];
                     }
-                    
-                    if (index != sequenceList.Count -2)
+
+                    if (index != sequenceList.Count - 2)
                     {
                         nextNextItem = sequenceList[index + 2];
                     }
 
-                    if ( currentItem < nextItem)
+                    if (currentItem < nextItem)
                     {
                         continue;
                     }
 
                     int targetIndex = index;
-                    
-                    if ((index != 0 && index != sequenceList.Count - 1 && nextItem >= previousItem)
+
+                    if (index != 0 && index != sequenceList.Count - 1 && nextItem >= previousItem
                         && !(nextNextItem >= int.MinValue && nextNextItem <= currentItem))
                     {
                         targetIndex = targetIndex + 1;
@@ -54,12 +53,11 @@
                     {
                         targetIndex = targetIndex + 1;
                     }
-                    
+
                     isOrdered = false;
                     sequenceList.RemoveAt(targetIndex);
                     popsteps++;
                 }
-                
             } while (!isOrdered);
 
             return popsteps <= 1;

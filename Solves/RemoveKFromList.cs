@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     internal class RemoveKFromList
     {
@@ -24,6 +24,5 @@
 
             return nextValue;
         }
-
     }
 }

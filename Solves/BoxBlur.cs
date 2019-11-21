@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System;
     using System.Collections.Generic;
@@ -27,10 +27,10 @@
 
                     decimal boxAvg = boxSum / 9;
 
-                    int floorBoxAvg = (int)Math.Floor(boxAvg);
+                    int floorBoxAvg = (int) Math.Floor(boxAvg);
                     row.Add(floorBoxAvg);
                 }
-                
+
                 rows.Add(row.ToArray());
             }
 

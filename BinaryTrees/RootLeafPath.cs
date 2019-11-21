@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.BinaryTrees
 {
     internal class RootLeafPath
     {

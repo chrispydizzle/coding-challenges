@@ -1,7 +1,6 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Incomplete
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
 
     public class maxProfit

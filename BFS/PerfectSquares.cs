@@ -1,7 +1,6 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.BFS
 {
     using System.Collections.Generic;
-    using BFS;
 
     internal class PerfectSquares : BFSActorQueue<int>
     {

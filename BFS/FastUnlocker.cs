@@ -1,7 +1,6 @@
-namespace Pdrome2.BFS
+namespace CodeChallenges.BFS
 {
     using System.Collections.Generic;
-    using System.Linq;
     using System.Text;
 
     internal class FastUnlocker
@@ -11,10 +10,10 @@ namespace Pdrome2.BFS
             HashSet<string> heads = new HashSet<string>();
             HashSet<string> tails = new HashSet<string>();
             HashSet<string> deads = new HashSet<string>(deadends);
-            
+
             heads.Add("0000");
             tails.Add(target);
-            
+
             int level = 0;
             while (heads.Count != 0 && tails.Count != 0)
             {
@@ -22,7 +21,7 @@ namespace Pdrome2.BFS
                 foreach (string s in heads)
                 {
                     if (deads.Contains(s)) continue;
-                    
+
                     if (tails.Contains(s)) return level;
 
                     deads.Add(s);

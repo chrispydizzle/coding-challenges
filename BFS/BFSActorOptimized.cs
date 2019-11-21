@@ -1,4 +1,4 @@
-namespace Pdrome2.BFS
+namespace CodeChallenges.BFS
 {
     using System.Collections.Generic;
 
@@ -26,7 +26,7 @@ namespace Pdrome2.BFS
         {
             HashSet<T> heads = new HashSet<T>();
             HashSet<T> tails = new HashSet<T>();
-            HashSet<T> temp; 
+            HashSet<T> temp;
             heads.Add(start);
             tails.Add(target);
 
@@ -38,7 +38,7 @@ namespace Pdrome2.BFS
                     heads = tails;
                     tails = temp;
                 }
-                
+
                 temp = new HashSet<T>();
 
                 foreach (T token in heads)
@@ -53,10 +53,10 @@ namespace Pdrome2.BFS
                     {
                         continue;
                     }
-                    
-                    this.AddSiblings(token, temp);   
+
+                    this.AddSiblings(token, temp);
                 }
-                
+
                 this.Iterate();
 
                 heads = temp;

@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.BinaryTrees
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -22,11 +22,11 @@
                     traversed.Add(treeNode.val);
                     continue;
                 }
-                
+
                 s.Push(treeNode);
                 if (treeNode.right != null)
                 {
-                    s.Push(treeNode.right);    
+                    s.Push(treeNode.right);
                 }
 
                 if (treeNode.left != null)

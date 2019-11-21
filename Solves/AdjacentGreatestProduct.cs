@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     public class AdjacentGreatestProduct
     {
@@ -10,8 +10,8 @@
             {
                 return inputArray[0] * inputArray[1];
             }
-            
-            for (int i = 1; i < inputArray.Length -1; i++)
+
+            for (int i = 1; i < inputArray.Length - 1; i++)
             {
                 currentTop = this.CurrentTop(inputArray[i] * inputArray[i - 1], currentTop);
                 currentTop = this.CurrentTop(inputArray[i] * inputArray[i + 1], currentTop);

@@ -1,8 +1,9 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     internal class IsBeautifulString
     {
-        public bool isBeautifulString(string inputString) {
+        public bool isBeautifulString(string inputString)
+        {
             int[] chars = new int[26];
             foreach (char c in inputString)
             {

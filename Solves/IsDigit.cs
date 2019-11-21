@@ -1,10 +1,10 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     internal class IsDigit
     {
         public bool isDigit(char symbol)
         {
-            return (symbol >= '0' && symbol <= '9');
+            return symbol >= '0' && symbol <= '9';
         }
     }
 }

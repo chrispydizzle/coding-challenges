@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     internal class DigitDegree
     {
@@ -12,7 +12,7 @@
                 int sum = 0;
                 foreach (char c in currentResult)
                 {
-                    sum+= int.Parse(c.ToString());
+                    sum += int.Parse(c.ToString());
                 }
 
                 currentResult = sum.ToString();

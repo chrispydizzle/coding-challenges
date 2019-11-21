@@ -1,5 +1,7 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Incomplete
 {
+    using BinaryTrees;
+
     internal class BuildTreeFrom
     {
         public TreeNode BuildTree(int[] inorder, int[] postorder)

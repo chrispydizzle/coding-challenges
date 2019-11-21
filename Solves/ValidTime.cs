@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     internal class ValidTime
     {
@@ -18,6 +18,5 @@
 
             return false;
         }
-
     }
 }

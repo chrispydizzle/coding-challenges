@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     using System.Linq;
 
@@ -14,9 +14,9 @@
                 if (votes.Count(c => c == votesMax) == 1)
                 {
                     return 1;
-                } 
+                }
             }
-            
+
             foreach (int vote in votes)
             {
                 if (vote + k > votesMax)

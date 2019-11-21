@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     internal class ArrayReplace
     {
@@ -14,6 +14,5 @@
 
             return inputArray;
         }
-
     }
 }

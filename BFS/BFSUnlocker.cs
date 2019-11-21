@@ -1,10 +1,15 @@
-namespace Pdrome2.BFS
+namespace CodeChallenges.BFS
 {
     using System.Collections.Generic;
     using System.Text;
 
     public class BFSUnlocker : BFSActor<string>
     {
+        private HashSet<string> deads;
+
+        private int level;
+        private string target;
+
         public BFSUnlocker()
         {
         }
@@ -14,11 +19,9 @@ namespace Pdrome2.BFS
         {
             this.deads = new HashSet<string>(deads);
         }
-        
-        private int level = 0;
-        private HashSet<string> deads;
-        private string target;
-        
+
+        public int Result { get; private set; }
+
         protected override void Iterate()
         {
             this.level++;
@@ -44,7 +47,7 @@ namespace Pdrome2.BFS
 
                 string prefix = currentPosition.Substring(0, i);
                 int targetDigitUp = digit == '9' ? 0 : digit - '0' + 1;
-                int targetDigitDown = (digit == '0' ? 9 : digit - '0' - 1);
+                int targetDigitDown = digit == '0' ? 9 : digit - '0' - 1;
                 string suffix = currentPosition.Substring(i + 1);
 
                 string[] tests = {$"{prefix}{targetDigitUp}{suffix}", $"{prefix}{targetDigitDown}{suffix}"};
@@ -74,10 +77,6 @@ namespace Pdrome2.BFS
 
             return false;
         }
-
-        public int Result { get; private set; }
-
-
 
         public int OpenLock(string[] deads, string target)
         {

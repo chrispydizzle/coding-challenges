@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     internal class DeleteDigit
     {
@@ -6,7 +6,7 @@
         {
             int max = int.MinValue;
             string strResult = n.ToString();
-            
+
             for (int index = 0; index < strResult.Length; index++)
             {
                 string newStringLeft = strResult.Substring(0, index);

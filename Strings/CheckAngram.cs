@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Strings
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -9,17 +9,17 @@
         {
             if (s == t) return true;
             if (string.IsNullOrEmpty(s) || string.IsNullOrEmpty(t)
-                                        || s.Length != t.Length) return false;
+                || s.Length != t.Length) return false;
             // build a dictionary with all of the characters in the first string 
 
             Dictionary<char, int> groupedS = s.GroupBy(c => c) // put each character into a "bucket"
-                // then convert to dictionary where key = character, value = count
-                .ToDictionary(grp => grp.Key, grp => grp.Count());
+                                              // then convert to dictionary where key = character, value = count
+                                              .ToDictionary(grp => grp.Key, grp => grp.Count());
 
             // build a dictionary with all of the characters in the second string 
             Dictionary<char, int> groupedT = t.GroupBy(c => c) // put each character into a "bucket"
-                // then convert to dictionary where key = character, value = count
-                .ToDictionary(grp => grp.Key, grp => grp.Count());
+                                              // then convert to dictionary where key = character, value = count
+                                              .ToDictionary(grp => grp.Key, grp => grp.Count());
             foreach (KeyValuePair<char, int> g in groupedS)
             {
                 if (groupedT.ContainsKey(g.Key)

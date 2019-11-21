@@ -1,21 +1,18 @@
-namespace Pdrome2.BFS
+namespace CodeChallenges.BFS
 {
     using System;
     using System.Collections.Generic;
 
     public class DivideAndConquerQueue<T>
     {
-        private Queue<T> fq = new Queue<T>();
-        private Queue<T> rq = new Queue<T>();
-        private HashSet<T> fh = new HashSet<T>();
-        private HashSet<T> rh = new HashSet<T>();
-        
-        public HashSet<T> ActiveHashSet { get; private set; }
-        public HashSet<T> InactiveHashSet { get; private set; }
-        
-        public Queue<T> ActiveQueue { get; private set; }
-        public Queue<T> InactiveQueue { get; private set; }
-        
+        private readonly HashSet<T> fh = new HashSet<T>();
+        private readonly Queue<T> fq = new Queue<T>();
+        private readonly HashSet<T> rh = new HashSet<T>();
+        private readonly Queue<T> rq = new Queue<T>();
+        private readonly Action swapAction;
+
+        private readonly Queue<T> tempQueue = new Queue<T>();
+
         public DivideAndConquerQueue(T start, T target, Action iterate)
         {
             this.fq.Enqueue(start);
@@ -26,6 +23,12 @@ namespace Pdrome2.BFS
             this.InactiveQueue = this.rq;
             this.swapAction = iterate;
         }
+
+        public HashSet<T> ActiveHashSet { get; private set; }
+        public HashSet<T> InactiveHashSet { get; private set; }
+
+        public Queue<T> ActiveQueue { get; private set; }
+        public Queue<T> InactiveQueue { get; private set; }
 
         public int Count
         {
@@ -50,17 +53,13 @@ namespace Pdrome2.BFS
             this.swapAction();
             this.InactiveQueue = this.ActiveQueue;
             this.ActiveQueue = this.tempQueue;
-            
-            HashSet<T> activeHashset= this.ActiveHashSet;
+
+            HashSet<T> activeHashset = this.ActiveHashSet;
             HashSet<T> inactiveHashset = this.InactiveHashSet;
 
             this.InactiveHashSet = activeHashset;
             this.ActiveHashSet = inactiveHashset;
-            
         }
-
-        Queue<T> tempQueue = new Queue<T>();
-        private Action swapAction;
 
         public void Enqueue(T test)
         {

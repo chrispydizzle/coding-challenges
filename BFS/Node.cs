@@ -1,4 +1,4 @@
-namespace Pdrome2.BFS
+namespace CodeChallenges.BFS
 {
     using System.Collections.Generic;
 
@@ -14,6 +14,5 @@ namespace Pdrome2.BFS
 
     public class TypedNode<T> : Node
     {
-        
     }
 }

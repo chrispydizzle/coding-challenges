@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.BFS
 {
     using System;
     using System.Collections.Generic;
@@ -28,7 +28,7 @@
                         int square = j * j;
                         int nextNode = dequeue - square;
                         if (nextNode == 0) return this.steps;
-                        
+
                         nodes.Enqueue(nextNode);
                     }
                 }

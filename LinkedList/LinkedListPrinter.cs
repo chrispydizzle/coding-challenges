@@ -1,7 +1,6 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.LinkedList
 {
     using System;
-    using LinkedList;
 
     internal class LinkedListPrinter
     {

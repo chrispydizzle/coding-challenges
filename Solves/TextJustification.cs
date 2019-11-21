@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System;
     using System.Collections.Generic;
@@ -26,7 +26,6 @@
             {
                 Console.WriteLine($"\"{s}\"");
             }
-
 
             result = a.textJustification(new[]
             {
@@ -57,7 +56,6 @@
             {
                 Console.WriteLine($"\"{s}\"");
             }
-
 
             Console.ReadLine();
         }
@@ -123,7 +121,7 @@
                         b.Append($" {lineWords[j]}");
                     }
 
-                    if (lineWords.Count == 1 || (i == lines.Count - 1 && j == lineWords.Count - 1))
+                    if (lineWords.Count == 1 || i == lines.Count - 1 && j == lineWords.Count - 1)
                     {
                         if (freeSpaceLines[i] > 0)
                         {
@@ -134,11 +132,10 @@
                     {
                         b.Append(' ', freeSpaceLines[i] / (lineWords.Count - 1));
                         if (extras > 0)
-                        {                            
+                        {
                             b.Append(' ');
                             extras--;
                         }
-
                     }
 
                     // append spaces

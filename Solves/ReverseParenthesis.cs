@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System.Text;
 
@@ -15,7 +15,7 @@
             while (close >= 0)
             {
                 int open = s.LastIndexOf('(', close);
-                string swappy = s.Substring(open, (close - open + 1));
+                string swappy = s.Substring(open, close - open + 1);
                 string reversy = this.DoReverse(swappy.Substring(1, swappy.Length - 2));
                 b.Replace(swappy, reversy);
                 s = b.ToString();
@@ -25,7 +25,7 @@
             return b.ToString();
         }
 
-        string DoReverse(string target)
+        private string DoReverse(string target)
         {
             StringBuilder b = new StringBuilder();
             foreach (char c in target)

@@ -1,36 +1,38 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Matrix
 {
     /// <summary>
-    /// this implementation does the rotations in place, which was more challenging than I expected.
+    ///     this implementation does the rotations in place, which was more challenging than I expected.
     /// </summary>
     internal class RotateMatrix
     {
         // TODO: Better, maybe with some recursion? 
-        public void Rotate(int[,] matrix) {
+        public void Rotate(int[,] matrix)
+        {
             int startPosition = 0;
             int length = matrix.GetLength(0);
             int maxDepth = length / 2;
-            while(startPosition < maxDepth)
+            while (startPosition < maxDepth)
             {
                 int lengthToGo = matrix.GetLength(0) - 1 - startPosition * 2;
-                for(int i = 0; i < lengthToGo; i++)
+                for (int i = 0; i < lengthToGo; i++)
                 {
                     int rotate = length - startPosition - 1; // distance we are moving our target
-                
+
                     int minYMaxX = matrix[startPosition + i, rotate]; // top right item
                     matrix[startPosition + i, rotate] = matrix[startPosition, startPosition + i]; // move our far left top to the far right top
 
                     int maxYMaxX = matrix[rotate, rotate - i]; // store our bottom right item
-                    matrix[rotate, rotate - i] = minYMaxX;  // move the top right item to the bottom right
+                    matrix[rotate, rotate - i] = minYMaxX; // move the top right item to the bottom right
 
                     int maxYMinX = matrix[rotate - i, startPosition]; // store the bottom left item
                     matrix[rotate - i, startPosition] = maxYMaxX; // move the bottom right item to bottom left
 
                     matrix[startPosition, startPosition + i] = maxYMinX; // move bottom left item to top left
                 }
-            
+
                 startPosition++;
             }
+
             // [[15,13,2,5],
             // [14,8,6,1],
             // [12,4,3,9],

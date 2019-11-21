@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     using System;
     using System.Linq;
@@ -8,7 +8,7 @@
         public bool isMAC48Address(string inputString)
         {
             // 48-57, 65-70
-            char[] macChars = new char[] {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'A', 'B', 'C', 'D', 'E', 'F'};
+            char[] macChars = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'A', 'B', 'C', 'D', 'E', 'F'};
             string[] sets = inputString.Split(new[] {"-"}, StringSplitOptions.None);
             if (sets.Length != 6) return false;
 

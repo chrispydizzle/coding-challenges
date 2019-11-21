@@ -1,11 +1,11 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System.Collections.Generic;
     using System.Linq;
 
     public class SortByHeight
     {
-        public static int[] people = new int[] {-1, 150, 190, 170, -1, -1, 160, 180};
+        public static int[] people = {-1, 150, 190, 170, -1, -1, 160, 180};
 
         public int[] sortByHeight(int[] a)
         {

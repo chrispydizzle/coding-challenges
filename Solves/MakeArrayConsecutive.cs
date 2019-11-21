@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System.Linq;
 
@@ -11,7 +11,7 @@
 
             int length = statues.Length;
 
-            return (max - min) - length + 1;
+            return max - min - length + 1;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Stack
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -7,7 +7,7 @@
     {
         public int EvalRPN(string[] tokens)
         {
-            string[] operators = new[] {"+", "-", "/", "*"};
+            string[] operators = {"+", "-", "/", "*"};
             Stack<string> pnStack = new Stack<string>();
             foreach (string token in tokens)
             {
@@ -20,7 +20,7 @@
                     int right = int.Parse(pnStack.Pop());
                     int left = int.Parse(pnStack.Pop());
                     int stackVal = 0;
-                    
+
                     switch (token)
                     {
                         case "+":
@@ -36,6 +36,7 @@
                             stackVal = left / right;
                             break;
                     }
+
                     pnStack.Push(stackVal.ToString());
                 }
             }

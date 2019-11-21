@@ -1,12 +1,11 @@
-namespace Pdrome2
+namespace CodeChallenges.Stack
 {
-    using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
 
     public class MinStack
     {
-        private List<int> al;
+        private readonly List<int> al;
 
         /** initialize your data structure here. */
         public MinStack()

@@ -1,18 +1,19 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     public class MatrixElementsSum
     {
-        public static int[][] matrix1 = new int[][]{
+        public static int[][] matrix1 =
+        {
             new[] {0, 1, 1, 2},
             new[] {0, 5, 0, 0},
             new[] {2, 0, 3, 3}
         };
-        
+
         public int matrixElementsSum(int[][] matrix)
         {
             bool[] scaryj = new bool[matrix[0].Length];
             int runningtotal = 0;
-            
+
             for (int i = 0; i < matrix.Length; i++)
             {
                 for (int j = 0; j < matrix[i].Length; j++)
@@ -21,8 +22,8 @@
                     {
                         scaryj[j] = true;
                     }
-                    
-                    if (scaryj[j] == true)
+
+                    if (scaryj[j])
                     {
                         continue;
                     }

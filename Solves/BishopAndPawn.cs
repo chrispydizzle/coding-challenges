@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     internal class BishopAndPawn
     {
@@ -8,10 +8,10 @@
             int bRow = int.Parse(bishop[1].ToString());
             for (int i = 1; i < 9; i++)
             {
-                string left = ((char)(bColumn-1*i)).ToString();
-                string right = ((char)(bColumn+1*i)).ToString();
-                string up = (bRow+1*i).ToString();
-                string down = (bRow-1*i).ToString();
+                string left = ((char) (bColumn - 1 * i)).ToString();
+                string right = ((char) (bColumn + 1 * i)).ToString();
+                string up = (bRow + 1 * i).ToString();
+                string down = (bRow - 1 * i).ToString();
 
                 if (pawn == $"{left}{up}") return true;
                 if (pawn == $"{right}{up}") return true;

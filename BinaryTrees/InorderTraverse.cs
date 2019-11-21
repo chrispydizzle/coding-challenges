@@ -1,9 +1,9 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.BinaryTrees
 {
     using System.Collections.Generic;
 
     public class InorderTraverser
-    {   
+    {
         public IList<int> InorderTraversal(TreeNode root)
         {
             List<int> traverser = new List<int>();
@@ -18,6 +18,7 @@
             {
                 this.InorderTraverse(root.left, traverser);
             }
+
             traverser.Add(root.val);
 
             if (root.right != null)

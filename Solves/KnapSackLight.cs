@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     internal class KnapSackLight
     {
@@ -8,12 +8,12 @@
             {
                 return 0;
             }
-            
+
             if (weight1 + weight2 <= maxW)
             {
                 return value1 + value2;
             }
-            
+
             if (weight1 > maxW)
             {
                 return value2;

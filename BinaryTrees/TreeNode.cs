@@ -1,10 +1,10 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.BinaryTrees
 {
     public class TreeNode
     {
-        public int val;
         public TreeNode left;
         public TreeNode right;
+        public int val;
 
         public TreeNode(int x)
         {
@@ -12,12 +12,12 @@
         }
 
         /// <summary>
-        /// returns a tree that looks like :
-        ///         1
-        ///          \
-        ///           2
-        ///          /
-        ///         3
+        ///     returns a tree that looks like :
+        ///     1
+        ///     \
+        ///     2
+        ///     /
+        ///     3
         /// </summary>
         /// <returns>tree node</returns>
         public static TreeNode BuildSimpleTree()

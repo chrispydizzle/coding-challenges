@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System;
     using System.Text;
@@ -14,8 +14,9 @@
             {
                 b.AppendLine($"*{s}*");
             }
+
             b.AppendLine(new string('*', width));
-            return b.ToString().Split(new []{"\n"}, StringSplitOptions.RemoveEmptyEntries);
+            return b.ToString().Split(new[] {"\n"}, StringSplitOptions.RemoveEmptyEntries);
         }
     }
 }

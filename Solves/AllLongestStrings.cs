@@ -1,11 +1,11 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System.Collections.Generic;
 
     public class AllLongestStrings
     {
         public static string[] test1 = {"aba", "aa", "ad", "vcd", "aba"};
-        
+
         public string[] allLongestStrings(string[] inputArray)
         {
             int longestRunning = 0;

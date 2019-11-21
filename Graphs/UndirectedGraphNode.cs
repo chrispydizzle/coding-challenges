@@ -1,15 +1,23 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Graphs
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
 
     /// <summary>
-    /// Clones a graph  from a root node.
-    /// TODO: Looks like I could have probably used recursion here to make this infinitely easier to read
+    ///     Clones a graph  from a root node.
+    ///     TODO: Looks like I could have probably used recursion here to make this infinitely easier to read
     /// </summary>
     public class UndirectedGraphNode
     {
+        public UndirectedGraphNode(int x)
+        {
+            this.label = x;
+            this.neighbors = new List<UndirectedGraphNode>();
+        }
+
+        public int label { get; set; }
+        public IList<UndirectedGraphNode> neighbors { get; set; }
+
         public void Main(string[] args)
         {
             UndirectedGraphNode zero = new UndirectedGraphNode(0);
@@ -22,17 +30,8 @@
 
             two.neighbors.Add(two);
 
-            UndirectedGraphNode clone = UndirectedGraphNode.CloneGraph(zero);
+            UndirectedGraphNode clone = CloneGraph(zero);
             Console.WriteLine(clone);
-        }
-
-        public int label { get; set; }
-        public IList<UndirectedGraphNode> neighbors { get; set; }
-
-        public UndirectedGraphNode(int x)
-        {
-            this.label = x;
-            this.neighbors = new List<UndirectedGraphNode>();
         }
 
         public static UndirectedGraphNode CloneGraph(UndirectedGraphNode node)

@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     using System.Collections.Generic;
 
@@ -59,6 +59,5 @@
 
             return true;
         }
-
     }
 }

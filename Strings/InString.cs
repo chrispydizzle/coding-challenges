@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Strings
 {
     public class InString
     {
@@ -27,7 +27,7 @@
                         }
                     }
 
-                    if (foundNeedle == true) return i;
+                    if (foundNeedle) return i;
                 }
             }
 

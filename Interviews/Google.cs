@@ -1,4 +1,4 @@
-namespace Pdrome2.Interviews
+namespace CodeChallenges.Interviews
 {
     using System;
     using System.Collections.Generic;
@@ -6,25 +6,25 @@ namespace Pdrome2.Interviews
 
     public class Google
     {
-//        Please use this Google doc to code during your interview. To free your hands for coding, we recommend that you use a headset or a phone with speaker option.
-//            Works!
+        //        Please use this Google doc to code during your interview. To free your hands for coding, we recommend that you use a headset or a phone with speaker option.
+        //            Works!
 
-//        Template expansion
-//        Write a function expanding templates in a simple template languages (variables in curly braces). For instance
+        //        Template expansion
+        //        Write a function expanding templates in a simple template languages (variables in curly braces). For instance
 
-//       template = "Dear {name},
-//        We have recently found out that we owe you {sum}. Could you please give us your bank account number in {country} so that the funds can be disbursed.
-//
-//            Truly yours,
+        //       template = "Dear {name},
+        //        We have recently found out that we owe you {sum}. Could you please give us your bank account number in {country} so that the funds can be disbursed.
+        //
+        //            Truly yours,
 
-//       {signature}"
-//
-//    dictionary:
-//   name → Jeremy
-//    sum → $1000000
-//    signature → The Prince
+        //       {signature}"
+        //
+        //    dictionary:
+        //   name → Jeremy
+        //    sum → $1000000
+        //    signature → The Prince
 
-// throw exception on missing keys
+        // throw exception on missing keys
         public string TemplateExpand(Dictionary<string, string> dictionary, string template)
         {
             if (template == null) return null;
@@ -59,14 +59,15 @@ namespace Pdrome2.Interviews
                 {
                     throw new InvalidOperationException("TODO");
                 }
+
                 // if in dict replace
                 sb.Append(dictionary[key]);
                 openBrace = template.IndexOf('{', closeBrace);
-                }
-
-                sb.Append(template.Substring(closeBrace + 1));
-
-                return sb.ToString();
             }
+
+            sb.Append(template.Substring(closeBrace + 1));
+
+            return sb.ToString();
         }
     }
+}

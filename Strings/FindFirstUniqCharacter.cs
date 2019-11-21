@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Strings
 {
     using System.Collections.Generic;
 
@@ -17,7 +17,7 @@
                 }
 
                 string subStringCheck = s.Substring(i + 1);
-                
+
                 if (!subStringCheck.Contains(s[i].ToString())) return i;
 
                 duped.Add(s[i]);

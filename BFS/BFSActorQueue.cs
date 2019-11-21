@@ -1,4 +1,4 @@
-namespace Pdrome2.BFS
+namespace CodeChallenges.BFS
 {
     using System.Collections.Generic;
 
@@ -32,7 +32,7 @@ namespace Pdrome2.BFS
             {
                 this.Iterate();
                 int currentSize = nodes.Count;
-                
+
                 HashSet<T> tempSet = new HashSet<T>();
                 for (int i = 0; i < currentSize; i++)
                 {
@@ -42,10 +42,10 @@ namespace Pdrome2.BFS
                         this.Done();
                         return;
                     }
-                    
+
                     this.AddSiblings(dequeue, tempSet);
                 }
-                
+
                 nodes = new Queue<T>(tempSet);
             }
         }

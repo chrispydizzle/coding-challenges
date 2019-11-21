@@ -1,10 +1,12 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Stack
 {
     using System.Collections.Generic;
     using System.Linq;
 
     public class ValidParens
     {
+        private readonly List<char> parenStack = new List<char>();
+
         public bool IsValid(string s)
         {
             char oP = '(';
@@ -14,8 +16,8 @@
             char oB = '[';
             char cB = ']';
 
-            char[] spChars = new[] {oP, cP, oC, cC, oB, cB};
-            char[] opChars = new[] {oP, oB, oC};
+            char[] spChars = {oP, cP, oC, cC, oB, cB};
+            char[] opChars = {oP, oB, oC};
             foreach (char c in s)
             {
                 if (!spChars.Contains(c)) continue;
@@ -26,7 +28,7 @@
                 }
                 else
                 {
-                    if(this.parenStack.Count == 0) return false;
+                    if (this.parenStack.Count == 0) return false;
                     char lastOpen = this.parenStack[this.parenStack.Count - 1];
                     if (lastOpen == oP && c != cP) return false;
                     if (lastOpen == oC && c != cC) return false;
@@ -37,10 +39,8 @@
             }
 
             if (this.parenStack.Any()) return false;
-            
+
             return true;
         }
-
-        private List<char> parenStack = new List<char>();
     }
 }

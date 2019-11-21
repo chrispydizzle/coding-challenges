@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System;
     using System.Collections.Generic;
@@ -8,7 +8,7 @@
         public void Main(string[] args)
         {
             StringsRearrangement s = new StringsRearrangement();
-            Console.WriteLine(s.stringsRearrangement(new string[]
+            Console.WriteLine(s.stringsRearrangement(new[]
             {
                 "abc",
                 "bef",
@@ -17,12 +17,12 @@
                 "bbc",
                 "bdc"
             }));
-            Console.WriteLine(s.stringsRearrangement(new string[] {"aba", "bbb", "bab"}));
-            Console.WriteLine(s.stringsRearrangement(new string[] {"ab", "bb", "aa"}));
-            Console.WriteLine(s.stringsRearrangement(new string[] {"abc", "abx", "axx", "abc"}));
+            Console.WriteLine(s.stringsRearrangement(new[] {"aba", "bbb", "bab"}));
+            Console.WriteLine(s.stringsRearrangement(new[] {"ab", "bb", "aa"}));
+            Console.WriteLine(s.stringsRearrangement(new[] {"abc", "abx", "axx", "abc"}));
         }
 
-        bool Match(string root, string test)
+        private bool Match(string root, string test)
         {
             int diffChars = 0;
             for (int index = 0; index < test.Length; index++)
@@ -39,7 +39,6 @@
 
             return false;
         }
-
 
         internal bool stringsRearrangement(string[] inputArray)
         {

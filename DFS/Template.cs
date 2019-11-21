@@ -1,4 +1,4 @@
-namespace Pdrome2.DFS
+namespace CodeChallenges.DFS
 {
     using System.Collections.Generic;
     using BFS;
@@ -15,7 +15,7 @@ namespace Pdrome2.DFS
                 if (!visited.Contains(next))
                 {
                     visited.Add(next);
-                    return DFS(next, target, visited);
+                    return this.DFS(next, target, visited);
                 }
             }
 

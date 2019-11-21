@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     using System.Collections.Generic;
 
@@ -18,7 +18,7 @@
                     int bottom = r + 2;
                     if (bottom <= matrix.Length && rightSide <= matrix[r].Length)
                     {
-                        int[][] cMatrix = new[]
+                        int[][] cMatrix =
                         {
                             new[] {matrix[r][c], matrix[r][c + 1]},
                             new[] {matrix[r + 1][c], matrix[r + 1][c + 1]}
@@ -55,7 +55,6 @@
             }
 
             return matrices.Count;
-            
         }
     }
 }

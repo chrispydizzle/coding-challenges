@@ -1,4 +1,4 @@
-﻿namespace Pdrome2.Solves
+﻿namespace CodeChallenges.Solves
 {
     using System;
 
@@ -15,7 +15,7 @@
                 {
                     int target = item + 1;
                     moves += Math.Abs(nextItem - target);
-                    inputArray[index           + 1] = target;
+                    inputArray[index + 1] = target;
                 }
             }
 

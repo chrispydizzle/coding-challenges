@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Solves
 {
     using System;
     using System.Text;
@@ -14,7 +14,7 @@
                 char c = st[i];
 
                 b.Append(c);
-                
+
                 if (c == lastChar)
                 {
                     if (this.checkPalindrome(st.Substring(i)))
@@ -27,12 +27,12 @@
             b.Insert(0, st);
             return b.ToString();
         }
-        
+
         public bool checkPalindrome(string inputString)
         {
             int sourceLength = inputString.Length;
 
-            int midpoint = (int) Math.Floor((double) sourceLength / 2d);
+            int midpoint = (int) Math.Floor(sourceLength / 2d);
 
             string frontPart = inputString.Substring(0, midpoint);
 
@@ -42,10 +42,10 @@
             }
 
             string backPart = inputString.Substring(midpoint);
-            
+
             //Console.WriteLine(frontPart);
             //Console.WriteLine(backPart);
-            
+
             for (int i = 0; i < frontPart.Length; i++)
             {
                 if (frontPart[i] != backPart[frontPart.Length - i - 1])
@@ -55,7 +55,6 @@
             }
 
             return true;
-        }        
-
+        }
     }
 }

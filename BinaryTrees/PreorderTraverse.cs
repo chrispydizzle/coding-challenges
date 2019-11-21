@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.BinaryTrees
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -37,8 +37,8 @@
                     treeNode = treeNode.left;
                 }
             }
-            
-            return traversed;            
+
+            return traversed;
         }
     }
 }

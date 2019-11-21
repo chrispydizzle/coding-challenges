@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges
 {
     using LinkedList;
 
@@ -8,7 +8,7 @@
         {
             // create an artifical start node to handle single item linked list.
             ListNode start = new ListNode(0);
-            
+
             ListNode preNode = start, postNode = start;
             preNode.next = head;
 

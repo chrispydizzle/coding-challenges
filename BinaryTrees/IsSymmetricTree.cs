@@ -1,4 +1,4 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.BinaryTrees
 {
     internal class IsSymmetricTree
     {
@@ -13,7 +13,7 @@
 
             if (rootLeft == null || rootRight == null) return false;
 
-            return (rootLeft.val == rootRight.val && this.IsSymmetric(rootLeft.left, rootRight.right) && this.IsSymmetric(rootLeft.right, rootRight.left));
+            return rootLeft.val == rootRight.val && this.IsSymmetric(rootLeft.left, rootRight.right) && this.IsSymmetric(rootLeft.right, rootRight.left);
         }
     }
 }

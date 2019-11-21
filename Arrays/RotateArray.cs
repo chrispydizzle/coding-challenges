@@ -1,9 +1,9 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Arrays
 {
     using System.Collections.Generic;
 
     /// <summary>
-    /// Rotates a single dimension array's values by a specified amount
+    ///     Rotates a single dimension array's values by a specified amount
     /// </summary>
     public class RotateArray
     {
@@ -25,4 +25,3 @@
         }
     }
 }
-

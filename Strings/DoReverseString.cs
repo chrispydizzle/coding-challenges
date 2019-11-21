@@ -1,14 +1,15 @@
-﻿namespace Pdrome2
+﻿namespace CodeChallenges.Strings
 {
-    using System.Linq;
-
     internal class DoReverseString
     {
-        public string ReverseString(string s) {
+        public string ReverseString(string s)
+        {
             // go through each char in the string, to the halfway point. 
-            if(s.Length == 0) return string.Empty;
+            if (s.Length == 0) return string.Empty;
             char[] cArr = new char[s.Length];
-            for(int i = 0; i <= s.Length /2 ; i++){ // len / 2 will ensure I don't have to worry about odd numbers
+            for (int i = 0; i <= s.Length / 2; i++)
+            {
+                // len / 2 will ensure I don't have to worry about odd numbers
                 // get the char I'm at, 
                 char l = s[i];
                 // and the get char on the opposite end (len - i)
@@ -18,7 +19,7 @@
                 cArr[i] = r;
                 cArr[rPos] = l;
             }
-        
+
             return new string(cArr);
         }
     }

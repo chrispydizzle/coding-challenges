@@ -1,4 +1,4 @@
-namespace Pdrome2.BFS
+namespace CodeChallenges.BFS
 {
     using System.Collections.Generic;
     using System.Text;
@@ -41,10 +41,10 @@ namespace Pdrome2.BFS
 
                         string prefix = currentPosition.Substring(0, i);
                         int targetDigitUp = digit == '9' ? 0 : digit - '0' + 1;
-                        int targetDigitDown = (digit == '0' ? 9 : digit - '0' - 1);
+                        int targetDigitDown = digit == '0' ? 9 : digit - '0' - 1;
                         string suffix = currentPosition.Substring(i + 1);
 
-                        string[] tests = new[] {$"{prefix}{targetDigitUp}{suffix}", $"{prefix}{targetDigitDown}{suffix}"};
+                        string[] tests = {$"{prefix}{targetDigitUp}{suffix}", $"{prefix}{targetDigitDown}{suffix}"};
 
                         foreach (string test in tests)
                         {
@@ -63,7 +63,5 @@ namespace Pdrome2.BFS
 
             return -1;
         }
-
-        
     }
 }
