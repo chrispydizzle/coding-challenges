@@ -1,9 +1,72 @@
 ﻿namespace CodeChallenges.Strings
 {
+    using System.Collections.Generic;
     using System.Text;
 
     public class Atoi
     {
+        public int MyAtoiImproved(string str)
+        {
+            int startPos = 0;
+
+            HashSet<char> modifiers = new HashSet<char>();
+            modifiers.Add('-');
+            modifiers.Add('+');
+
+            // roll through the string, bypassing whitespace
+            for (int i = 0; i < str.Length; i++)
+            {
+                char currentChar = str[i];
+                // continue forward on space char.
+                if (currentChar == ' ') continue;
+                // reject if next char is not valid
+                if (char.IsDigit(currentChar) || modifiers.Contains(currentChar))
+                {
+                    // set startPos and break
+                    startPos = i;
+                    break;
+                }
+
+                // return zero for an invalid input
+                return 0;
+            }
+
+            StringBuilder builder = new StringBuilder();
+            for (int i = startPos; i < str.Length; i++)
+            {
+                char currChar = str[i];
+
+                // specialCase start pos to handle + or -
+                if (i == startPos && (currChar == '-' || currChar == '+'))
+                {
+                    if (currChar == '-') builder.Append('-');
+                    continue;
+                }
+
+                // make sure next char is valid- if not, break out.
+                if (!char.IsDigit(currChar))
+                {
+                    break;
+                }
+
+                // otherwise, append to builder
+                builder.Append(currChar);
+            }
+
+            string result = builder.ToString();
+
+            if (int.TryParse(result, out int returnValue)) return returnValue;
+
+            if (result == "+" || result == "-" || result == string.Empty)
+            {
+                return 0;
+            }
+
+            returnValue = result[0] == '-' ? int.MinValue : int.MaxValue;
+
+            return returnValue;
+        }
+
         public int MyAtoi(string str)
         {
             if (string.IsNullOrEmpty(str)) return 0;
@@ -13,7 +76,6 @@
 
             int max = int.MaxValue;
             string maxValString = max.ToString();
-            // char[] validNums = new {'0','1','2','3','4','5','6','7','8','9' };
 
             if (string.IsNullOrEmpty(noLeadingSpace)) return 0;
 
@@ -70,7 +132,7 @@
                 }
             }
 
-            string resultString = string.Empty;
+            string resultString;
             // if string length is less than maxvalstring, parse and set
             if (sb.Length < maxValString.Length)
             {

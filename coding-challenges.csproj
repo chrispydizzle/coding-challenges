@@ -59,6 +59,7 @@
     <Compile Include="Arrays\FindTargetSum.cs" />
     <Compile Include="Arrays\ProductOfArrayExceptSelf.cs" />
     <Compile Include="Arrays\RotateArray.cs" />
+    <Compile Include="Arrays\ThreeSum.cs" />
     <Compile Include="BFS\BFSActor.cs" />
     <Compile Include="BFS\BFSActorOptimized.cs" />
     <Compile Include="BFS\BFSActorQueue.cs" />
@@ -179,6 +180,8 @@
     <Compile Include="Strings\FindFirstUniqCharacter.cs" />
     <Compile Include="Strings\FindLongestCommonPrefix.cs" />
     <Compile Include="Strings\InString.cs" />
+    <Compile Include="Strings\LongestSubstring.cs" />
+    <Compile Include="Strings\RomanToInteger.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MSSQL\SecondHighestSalary.sql" />
