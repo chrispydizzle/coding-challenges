@@ -181,6 +181,7 @@
     <Compile Include="Strings\FindLongestCommonPrefix.cs" />
     <Compile Include="Strings\InString.cs" />
     <Compile Include="Strings\LongestSubstring.cs" />
+    <Compile Include="Arrays\RemoveDupes.cs" />
     <Compile Include="Strings\RomanToInteger.cs" />
   </ItemGroup>
   <ItemGroup>

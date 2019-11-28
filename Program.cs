@@ -9,9 +9,12 @@
     {
         public static void Main(string[] args)
         {
-            ThreeSum ts = new ThreeSum();
-            IList<IList<int>> threeSum = ts.GetThreeSum(new[] {-1, 0, 1, 2, -1, -4});
-            W(threeSum);
+            RemoveDupes sa = new RemoveDupes();
+            int[] array = new[] {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+            int[] array2 = new[] { 1, 1, 2 };
+            int removeDuplicates = sa.RemoveDuplicates(array2);
+
+            W(removeDuplicates);
             Console.ReadLine();
         }
 

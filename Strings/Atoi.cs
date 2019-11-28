@@ -117,7 +117,7 @@
             // loop through each character
             foreach (char next in noLeadingSpace)
             {
-                if (char.IsDigit(next)) // and the next character is a number
+                if (char.IsDigit(next)) // and the nex1t character is a number
                 {
                     sb.Append(next); // add it to the string
                 }
