@@ -1,20 +1,17 @@
 ﻿namespace CodeChallenges
 {
     using System;
-    using System.Collections.Generic;
-    using Arrays;
     using Strings;
 
     internal class Program
     {
         public static void Main(string[] args)
         {
-            RemoveDupes sa = new RemoveDupes();
-            int[] array = new[] {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-            int[] array2 = new[] { 1, 1, 2 };
-            int removeDuplicates = sa.RemoveDuplicates(array2);
+            MinStringWindow s = new MinStringWindow();
 
-            W(removeDuplicates);
+            string result = s.MinWindow("ask_not_what_your_country_can_do_for_you_ask_what_you_can_do_for_your_country", "ask_country");
+
+            W(result);
             Console.ReadLine();
         }
 

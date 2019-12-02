@@ -170,6 +170,7 @@
     <Compile Include="Stack\MinStack.cs" />
     <Compile Include="Stack\ReversePolishNotation.cs" />
     <Compile Include="Stack\ValidParens.cs" />
+    <Compile Include="Strings\AddBinaryStrings.cs" />
     <Compile Include="Strings\Atoi.cs" />
     <Compile Include="Strings\CheckAngram.cs" />
     <Compile Include="Strings\DetectPalindrome.cs" />
@@ -179,9 +180,12 @@
     <Compile Include="Strings\FbLookAndSay1.cs" />
     <Compile Include="Strings\FindFirstUniqCharacter.cs" />
     <Compile Include="Strings\FindLongestCommonPrefix.cs" />
+    <Compile Include="Strings\GroupAngram.cs" />
     <Compile Include="Strings\InString.cs" />
     <Compile Include="Strings\LongestSubstring.cs" />
     <Compile Include="Arrays\RemoveDupes.cs" />
+    <Compile Include="Strings\MinStringWindow.cs" />
+    <Compile Include="Strings\MultiplyStrings.cs" />
     <Compile Include="Strings\RomanToInteger.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -7,7 +7,6 @@
             if (string.IsNullOrEmpty(needle) || haystack == needle) return 0;
             if (string.IsNullOrEmpty(haystack)) return -1;
 
-            int iReset = 0;
             char seek = needle[0];
             for (int i = 0; i < haystack.Length - (needle.Length - 1); i++)
             {
