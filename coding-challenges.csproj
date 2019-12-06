@@ -57,6 +57,7 @@
     <Compile Include="Arrays\ContainsDuplicates.cs" />
     <Compile Include="Arrays\FbSpiralGen.cs" />
     <Compile Include="Arrays\FindTargetSum.cs" />
+    <Compile Include="Arrays\MergeSortedArray.cs" />
     <Compile Include="Arrays\ProductOfArrayExceptSelf.cs" />
     <Compile Include="Arrays\RotateArray.cs" />
     <Compile Include="Arrays\ThreeSum.cs" />
