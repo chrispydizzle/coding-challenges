@@ -61,6 +61,7 @@
     <Compile Include="Arrays\MoveZero.cs" />
     <Compile Include="Arrays\ProductOfArrayExceptSelf.cs" />
     <Compile Include="Arrays\RotateArray.cs" />
+    <Compile Include="Arrays\SubarraySumEqualsK.cs" />
     <Compile Include="Arrays\ThreeSum.cs" />
     <Compile Include="BFS\BFSActor.cs" />
     <Compile Include="BFS\BFSActorOptimized.cs" />
