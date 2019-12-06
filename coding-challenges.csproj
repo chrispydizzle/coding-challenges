@@ -183,6 +183,7 @@
     <Compile Include="Strings\FindLongestCommonPrefix.cs" />
     <Compile Include="Strings\GroupAngram.cs" />
     <Compile Include="Strings\InString.cs" />
+    <Compile Include="Strings\IntegerToEnglish.cs" />
     <Compile Include="Strings\LongestSubstring.cs" />
     <Compile Include="Arrays\RemoveDupes.cs" />
     <Compile Include="Strings\MinStringWindow.cs">

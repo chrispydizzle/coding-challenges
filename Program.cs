@@ -8,10 +8,12 @@
     {
         public static void Main(string[] args)
         {
-            var s = new OneEditDistance();
-            
-            W(s.IsOneEditDistance("ba", "a"));
-            
+            var s = new IntegerToEnglish();
+            var result = s.NumberToWords(1001);
+            result = s.NumberToWords(10000);
+            result = s.NumberToWords(100000);
+            // W(s.IsOneEditDistance("ba", "a"));
+
 
             Console.ReadLine();
         }
