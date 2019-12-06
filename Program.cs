@@ -8,14 +8,9 @@
     {
         public static void Main(string[] args)
         {
-            MergeSortedArray s = new MergeSortedArray();
+            var s = new ValidPalindrome();
 
-            int[] result = new[] {1, 2, 3, 0, 0, 0};
-            s.Merge(result, 3, new []{2,5,6}, 3);
-
-            result = 
-
-            W(result);
+            W(s.IsPalindrome("\"Sue,\" Tom smiles, \"Selim smote us.\""));
             
 
             Console.ReadLine();
