@@ -187,6 +187,7 @@
     <Compile Include="Strings\IntegerToEnglish.cs" />
     <Compile Include="Strings\LongestSubstring.cs" />
     <Compile Include="Arrays\RemoveDupes.cs" />
+    <Compile Include="Strings\LongestSubstringKDistinct.cs" />
     <Compile Include="Strings\MinStringWindow.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
     </Compile>
