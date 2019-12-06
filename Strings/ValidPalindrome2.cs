@@ -1,7 +1,7 @@
 ﻿namespace CodeChallenges.Strings
 {
     public class ValidPalindrome2
-    {
+    { 
         public bool ValidPalindrome(string s)
         {
             if (s == string.Empty) return true;
