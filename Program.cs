@@ -8,9 +8,9 @@
     {
         public static void Main(string[] args)
         {
-            var s = new ValidPalindrome();
-
-            W(s.IsPalindrome("\"Sue,\" Tom smiles, \"Selim smote us.\""));
+            var s = new OneEditDistance();
+            
+            W(s.IsOneEditDistance("ba", "a"));
             
 
             Console.ReadLine();
