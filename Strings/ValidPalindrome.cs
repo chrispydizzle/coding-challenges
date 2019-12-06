@@ -32,12 +32,9 @@
                 {
                     return false;
                 }
-                else
-                {
-                    leftPointer++;
-                    rightPointer--;
-                }
 
+                leftPointer++;
+                rightPointer--;
             }
 
             return proceed;

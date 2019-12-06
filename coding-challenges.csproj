@@ -197,6 +197,7 @@
     <Compile Include="Strings\RomanToInteger.cs" />
     <Compile Include="Strings\ValidateIPAddress.cs" />
     <Compile Include="Strings\ValidPalindrome.cs" />
+    <Compile Include="Strings\ValidPalindrome2.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MSSQL\SecondHighestSalary.sql" />
