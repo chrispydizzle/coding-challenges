@@ -194,6 +194,7 @@
     <Compile Include="Strings\MultiplyStrings.cs" />
     <Compile Include="Strings\OneEditDistance.cs" />
     <Compile Include="Strings\RomanToInteger.cs" />
+    <Compile Include="Strings\ValidateIPAddress.cs" />
     <Compile Include="Strings\ValidPalindrome.cs" />
   </ItemGroup>
   <ItemGroup>
