@@ -93,9 +93,12 @@
     <Compile Include="Interviews\Google.cs" />
     <Compile Include="Interviews\LinkedIn.cs" />
     <Compile Include="LinkedList\AddLinkedListNumbers.cs" />
+    <Compile Include="LinkedList\BackwardsReorderList.cs" />
+    <Compile Include="LinkedList\CopyListRandomPointer.cs" />
     <Compile Include="LinkedList\LinkedListPrinter.cs" />
     <Compile Include="LinkedList\ListNode.cs" />
     <Compile Include="LinkedList\MergeTwoSortedLists.cs" />
+    <Compile Include="LinkedList\Node.cs" />
     <Compile Include="Matrix\RotateMatrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

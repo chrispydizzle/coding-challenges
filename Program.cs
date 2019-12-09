@@ -9,25 +9,14 @@
     {
         public static void Main(string[] args)
         {
-            var s = new MergeTwoSortedLists();
+            var s = new BackwardsReorderList();
 
-            var root1 = new ListNode(1);
-            var child1Root1 = new ListNode(2);
-            var child2Root1 = new ListNode(4);
+            ListNode listNode = ListNode.Make(1, 2, 3, 4, 5);
+            // listNode = ListNode.Make(1, 2, 3, 4);
 
-            root1.next = child1Root1;
-            child1Root1.next = child2Root1;
+            s.ReorderList(listNode);
 
-            var root2 = new ListNode(1);
-            var child1Root2 = new ListNode(3);
-            var child2Root2 = new ListNode(4);
-
-            root2.next = child1Root2;
-            child1Root2.next = child2Root2;
-
-            var result = s.MergeTwoLists(root1, root2);
-            
-
+            //string repChards = new string('a', )
             Console.ReadLine();
         }
 
