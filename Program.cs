@@ -10,14 +10,14 @@
     {
         public static void Main(string[] args)
         {
-            var s = new ValidateBinarySearchTree();
+            var s = new FlattenBSTToLinkedList();
 
-            TreeNode listNode = TreeNode.BuildTree(5, 1, 4, null, null, 3, 6);
-            
+            TreeNode listNode = TreeNode.BuildTree(1, 2, 5, 3, 4, null, 6);
+            listNode = TreeNode.BuildTree(1, null, 2, 3);
+            listNode = TreeNode.BuildTree(4, 1, null, null, 3, 2);
 
-            W(s.IsValidBST(listNode));
+            s.Flatten(listNode);
 
-            W(s.IsValidBST(TreeNode.BuildTree(2, 1, 3)));
             
             Console.ReadLine();
         }

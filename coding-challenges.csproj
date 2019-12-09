@@ -76,6 +76,7 @@
     <Compile Include="BFS\PerfectSquares.cs" />
     <Compile Include="BFS\PerfectSquaresLC.cs" />
     <Compile Include="BFS\Unlocker.cs" />
+    <Compile Include="BinaryTrees\FlattenBSTToLinkedList.cs" />
     <Compile Include="BinaryTrees\InorderTraverse.cs" />
     <Compile Include="BinaryTrees\IsSymmetricTree.cs" />
     <Compile Include="BinaryTrees\LevelOrderTraverse.cs" />

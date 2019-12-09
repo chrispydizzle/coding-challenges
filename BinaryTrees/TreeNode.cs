@@ -55,7 +55,9 @@
                 }
                 
                 pointer++;
-                
+
+                if (pointer >= args.Length) break;
+
                 if (args[pointer].HasValue)
                 {
                     node.right = new TreeNode(args[pointer].Value);
