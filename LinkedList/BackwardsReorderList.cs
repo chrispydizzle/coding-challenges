@@ -8,7 +8,6 @@ namespace CodeChallenges.LinkedList
         {
             if (head == null) return;
             // go through the ll and find the end.
-            bool pass = true;
             ListNode currentNode = head;
             ListNode newParent = null;
             Stack<ListNode> nodes = new Stack<ListNode>();

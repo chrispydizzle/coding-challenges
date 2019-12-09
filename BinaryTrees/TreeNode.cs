@@ -2,7 +2,9 @@
 {
     using System.Collections;
     using System.Collections.Generic;
+    using System.Diagnostics;
 
+    [DebuggerDisplay("val: {val} left: {left?.val} right: {right?.val}")]
     public class TreeNode
     {
         public TreeNode left;
@@ -14,15 +16,6 @@
             this.val = x;
         }
 
-        /// <summary>
-        ///     returns a tree that looks like :
-        ///     1
-        ///     \
-        ///     2
-        ///     /
-        ///     3
-        /// </summary>
-        /// <returns>tree node</returns>
         public static TreeNode BuildSimpleTree()
         {
             TreeNode one = new TreeNode(1);
@@ -72,6 +65,11 @@
             }
 
             return root;
+        }
+
+        public override string ToString()
+        {
+            return $"val: {this.val} left: {this.left?.val} right: {this.right?.val}";
         }
     }
 }
