@@ -57,6 +57,7 @@
     <Compile Include="Arrays\ContainsDuplicates.cs" />
     <Compile Include="Arrays\FbSpiralGen.cs" />
     <Compile Include="Arrays\FindTargetSum.cs" />
+    <Compile Include="Arrays\IslandPerimeter.cs" />
     <Compile Include="Arrays\MergeSortedArray.cs" />
     <Compile Include="Arrays\MoveZero.cs" />
     <Compile Include="Arrays\ProductOfArrayExceptSelf.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="DeleteLinkedListNode.cs" />
     <Compile Include="DFS\DFSIslands.cs" />
     <Compile Include="DFS\Template.cs" />
+    <Compile Include="Graphs\UndirectedCloneGraph.cs" />
     <Compile Include="Graphs\UndirectedGraphNode.cs" />
     <Compile Include="Incomplete\BuildTreeFrom.cs" />
     <Compile Include="Incomplete\maxProfit.cs" />
@@ -182,6 +184,7 @@
     <Compile Include="Stack\ReversePolishNotation.cs" />
     <Compile Include="Stack\ValidParens.cs" />
     <Compile Include="Strings\AddBinaryStrings.cs" />
+    <Compile Include="Strings\AddStringsAsNumbers.cs" />
     <Compile Include="Strings\Atoi.cs" />
     <Compile Include="Strings\CheckAngram.cs" />
     <Compile Include="Strings\DetectPalindrome.cs" />
@@ -194,6 +197,7 @@
     <Compile Include="Strings\GroupAngram.cs" />
     <Compile Include="Strings\InString.cs" />
     <Compile Include="Strings\IntegerToEnglish.cs" />
+    <Compile Include="Strings\IsStringANumber.cs" />
     <Compile Include="Strings\LongestSubstring.cs" />
     <Compile Include="Arrays\RemoveDupes.cs" />
     <Compile Include="Strings\LongestSubstringKDistinct.cs" />

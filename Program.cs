@@ -1,13 +1,17 @@
 ﻿namespace CodeChallenges
 {
     using System;
-    using BinaryTrees;
+    using Arrays;
+    using Strings;
 
     internal class Program
     {
         public static void Main(string[] args)
         {
-            BinaryTreeMaxPathSum s = new BinaryTreeMaxPathSum();
+            var s = new AddStringsAsNumbers();
+            
+            W(s.AddStrings("1", "9"));
+            /*BinaryTreeMaxPathSum s = new BinaryTreeMaxPathSum();
 
             TreeNode listNode = TreeNode.BuildTree(1, 2, 5, 3, 4, null, 6);
             listNode = TreeNode.BuildTree(1, null, 2, 3);
@@ -19,8 +23,8 @@
             listNode = TreeNode.BuildTree(1, 2, 3);
             W(s.MaxPathSum(listNode));
 
-            Console.ReadLine();
-        }
+            Console.ReadLine();*/
+         }
 
         private static void W(object o)
         {

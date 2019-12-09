@@ -5,8 +5,9 @@
 
     public class BinaryTreeMaxPathSum
     {
-        public int MaxPathSum(TreeNode root)
-        {
+        //  public int MaxPathSum(TreeNode root)
+//        {
+/* Incomplete  
             int result = root.val;
             Stack<TreeNode> parentNodes = new Stack<TreeNode>();
             Queue<TreeNode> nodeQueue = new Queue<TreeNode>();
@@ -59,20 +60,22 @@
 
                 }
 
-                parent.val = bestBranch;
+                parent.val = bestBranch;/^%%
 
                 if (bestBranch > result)
                 {
                     result = bestBranch;
                 }
 
-                if (total > result)
-                {
-                    result = total;
-                }
+                if (total > result)y         e/
+                }^^&&
             }
 
-            return result;
+            return result; 
         }
+    }
+}c].g[.delegate y]\
+
+    */
     }
 }
