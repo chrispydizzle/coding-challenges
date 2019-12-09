@@ -2,6 +2,7 @@
 {
     using System;
     using Arrays;
+    using BinaryTrees;
     using LinkedList;
     using Strings;
 
@@ -9,14 +10,15 @@
     {
         public static void Main(string[] args)
         {
-            var s = new BackwardsReorderList();
+            var s = new ValidateBinarySearchTree();
 
-            ListNode listNode = ListNode.Make(1, 2, 3, 4, 5);
-            // listNode = ListNode.Make(1, 2, 3, 4);
+            TreeNode listNode = TreeNode.BuildTree(5, 1, 4, null, null, 3, 6);
+            
 
-            s.ReorderList(listNode);
+            W(s.IsValidBST(listNode));
 
-            //string repChards = new string('a', )
+            W(s.IsValidBST(TreeNode.BuildTree(2, 1, 3)));
+            
             Console.ReadLine();
         }
 
