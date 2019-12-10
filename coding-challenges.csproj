@@ -91,6 +91,7 @@
     <Compile Include="DeleteLinkedListNode.cs" />
     <Compile Include="DFS\DFSIslands.cs" />
     <Compile Include="DFS\Template.cs" />
+    <Compile Include="Graphs\BTreeRightSideView.cs" />
     <Compile Include="Graphs\UndirectedCloneGraph.cs" />
     <Compile Include="Graphs\UndirectedGraphNode.cs" />
     <Compile Include="Incomplete\BuildTreeFrom.cs" />
