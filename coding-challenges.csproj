@@ -60,6 +60,7 @@
     <Compile Include="Arrays\IslandPerimeter.cs" />
     <Compile Include="Arrays\MergeSortedArray.cs" />
     <Compile Include="Arrays\MoveZero.cs" />
+    <Compile Include="Arrays\NumberOfIslands.cs" />
     <Compile Include="Arrays\ProductOfArrayExceptSelf.cs" />
     <Compile Include="Arrays\RotateArray.cs" />
     <Compile Include="Arrays\SubarraySumEqualsK.cs" />
