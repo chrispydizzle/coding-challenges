@@ -1,4 +1,6 @@
-﻿namespace CodeChallenges
+﻿using CodeChallenges.BinaryTrees;
+
+namespace CodeChallenges
 {
     using System;
     using Arrays;
@@ -8,23 +10,25 @@
     {
         public static void Main(string[] args)
         {
-            var s = new AddStringsAsNumbers();
-            
-            W(s.AddStrings("1", "9"));
-            /*BinaryTreeMaxPathSum s = new BinaryTreeMaxPathSum();
+            BinaryTreeMaxPathSum s = new BinaryTreeMaxPathSum();
 
-            TreeNode listNode = TreeNode.BuildTree(1, 2, 5, 3, 4, null, 6);
-            listNode = TreeNode.BuildTree(1, null, 2, 3);
-            listNode = TreeNode.BuildTree(4, 1, null, null, 3, 2);
-            listNode = TreeNode.BuildTree(-10, 9, 20, null, null, 15, 7);
-            listNode = TreeNode.BuildTree(1, -2, -3, 1, 3, -2, null, -1);
+            TreeNode listNode = TreeNode.BuildTree(-10, 9, 20, null, null, 15, 7);
             W(s.MaxPathSum(listNode));
 
             listNode = TreeNode.BuildTree(1, 2, 3);
             W(s.MaxPathSum(listNode));
 
-            Console.ReadLine();*/
-         }
+            listNode = TreeNode.BuildTree(-2, 6, null, 0, -6);
+            W(s.MaxPathSum(listNode));
+
+            listNode = TreeNode.BuildTree(-3);
+            W(s.MaxPathSum(listNode));
+            
+            listNode = TreeNode.BuildTree(-2, 1);
+            W(s.MaxPathSum(listNode));
+
+            Console.ReadLine();
+        }
 
         private static void W(object o)
         {

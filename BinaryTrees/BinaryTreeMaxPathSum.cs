@@ -1,81 +1,52 @@
-﻿namespace CodeChallenges.BinaryTrees
+﻿using System;
+
+namespace CodeChallenges.BinaryTrees
 {
     using System.Collections.Generic;
     using System.Linq;
 
     public class BinaryTreeMaxPathSum
     {
-        //  public int MaxPathSum(TreeNode root)
-//        {
-/* Incomplete  
-            int result = root.val;
-            Stack<TreeNode> parentNodes = new Stack<TreeNode>();
-            Queue<TreeNode> nodeQueue = new Queue<TreeNode>();
+        private int maxValue = int.MinValue;
 
-            nodeQueue.Enqueue(root);
-            while (nodeQueue.Any())
-            {
-                TreeNode current = nodeQueue.Dequeue();
-                if (current.left != null)
-                {
-                    nodeQueue.Enqueue(current.left);
-                }
+        public int MaxPathSum(TreeNode root)
+        {
+            this.maxValue = root.val;
+            int finalTest = GetBestSum(root);
 
-                if (current.right != null)
-                {
-                    nodeQueue.Enqueue(current.right);
-                }
-
-                if (current.right != null || current.left != null)
-                {
-                    parentNodes.Push(current);
-                }
-            }
-
-            while (parentNodes.Any())
-            {
-                TreeNode parent = parentNodes.Pop();
-
-                int bestBranch = parent.val;
-                int total = parent.val;
-
-                if (parent.left != null)
-                {
-                    int leftBranch = parent.val + parent.left.val;
-
-                    if (leftBranch > bestBranch) bestBranch = leftBranch;
-
-                    total += parent.left.val;
-
-                    if (parent.left.val > bestBranch) bestBranch = parent.left.val;
-                }
-
-                if (parent.right != null)
-                {
-                    int rightBranch = parent.val + parent.right.val;
-                    if (rightBranch > bestBranch) bestBranch = rightBranch;
-                    total += parent.right.val;
-
-                    if (parent.right.val > bestBranch) bestBranch = parent.right.val;
-
-                }
-
-                parent.val = bestBranch;/^%%
-
-                if (bestBranch > result)
-                {
-                    result = bestBranch;
-                }
-
-                if (total > result)y         e/
-                }^^&&
-            }
-
-            return result; 
+            return Math.Max(maxValue, finalTest);
         }
-    }
-}c].g[.delegate y]\
 
-    */
+        private int GetBestSum(TreeNode node)
+        {
+            if (node == null) return int.MinValue;
+
+            int currentValue = node.val;
+            int leftValue = GetBestSum(node.left);
+            int rightValue = GetBestSum(node.right);
+
+            // check to see if an individual node can trump max value.
+            maxValue = Math.Max(leftValue, maxValue);
+            maxValue = Math.Max(rightValue, maxValue);
+
+            if (rightValue == int.MinValue)
+            {
+                rightValue = 0;
+            }
+            
+            if (leftValue == int.MinValue)
+            {
+                leftValue = 0;
+            }
+
+            int lToR = leftValue + rightValue + currentValue;
+
+            maxValue = Math.Max(lToR, maxValue);
+
+            if (Math.Max(leftValue, rightValue) == int.MinValue) return node.val;
+
+
+            return Math.Max(node.val + Math.Max(leftValue, rightValue), node.val);
+        }
     }
 }

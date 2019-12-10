@@ -539,3 +539,4 @@ ASALocalRun/
 *.sln.bak
 /coding-challenges.csproj.DotSettings
 coding-challenges.csproj.DotSettings
+/codealike.json

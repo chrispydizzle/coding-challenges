@@ -1,4 +1,9 @@
-﻿namespace CodeChallenges.BinaryTrees
+﻿using System;
+using System.Dynamic;
+using System.Linq;
+using System.Text;
+
+namespace CodeChallenges.BinaryTrees
 {
     using System.Collections;
     using System.Collections.Generic;
@@ -14,6 +19,42 @@
         public TreeNode(int x)
         {
             this.val = x;
+        }
+
+        public string DrawTree()
+        {
+            StringBuilder builder = new StringBuilder();
+
+            DrawNextNode(this, builder);
+
+            return builder.ToString();
+        }
+
+        private void DrawNextNode(TreeNode root, StringBuilder builder)
+        {
+            var q = new Queue<TreeNode>();
+            builder.AppendLine(root.val.ToString());
+
+            q.Enqueue(root.left);
+            q.Enqueue(root.right);
+
+            var tempQ = new Queue<TreeNode>();
+            while (q.Any())
+            {
+                var nextItem = q.Dequeue();
+                builder.Append(nextItem == null ? "[X]  " : $"{nextItem}   ");
+
+                if (nextItem != null)
+                {
+                    tempQ.Enqueue(nextItem.left);
+                    tempQ.Enqueue(nextItem.right);
+                }
+
+                if (!q.Any() && tempQ.Any())
+                {
+                    Console.WriteLine();
+                }
+            }
         }
 
         public static TreeNode BuildSimpleTree()
@@ -46,7 +87,7 @@
                 {
                     node.left = null;
                 }
-                
+
                 pointer++;
 
                 if (pointer >= args.Length) break;
