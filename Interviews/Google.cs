@@ -1,9 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
 namespace CodeChallenges.Interviews
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     public class Google
     {
         //        Please use this Google doc to code during your interview. To free your hands for coding, we recommend that you use a headset or a phone with speaker option.

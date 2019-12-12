@@ -1,6 +1,8 @@
-﻿using CodeChallenges.BinaryTrees;
+﻿using System.Collections.Generic;
+using CodeChallenges.BinaryTrees;
 using CodeChallenges.DFS;
 using CodeChallenges.Graphs;
+using CodeChallenges.Interviews;
 
 namespace CodeChallenges
 {
@@ -12,25 +14,12 @@ namespace CodeChallenges
     {
         public static void Main(string[] args)
         {
-            var s = new NumberOfIslands();
+            var s = new Facebook();
 
-            W(s.NumIslands(new[]
-            {
-                new[] {'1', '1', '1', '1', '0'},
-                new[] {'1', '1', '0', '1', '0'},
-                new[] {'1', '1', '0', '0', '0'},
-                new[] {'0', '0', '0', '0', '0'},
-            }));
-
-            var m = new[]
-            {
-                new[] {'1', '1', '0', '0', '0'},
-                new[] {'1', '1', '0', '0', '0'},
-                new[] {'0', '0', '1', '0', '0'},
-                new[] {'0', '0', '0', '1', '1'}
-            };
-
-            int result = s.NumIslands(m);
+            int[][] result = s.KClosest(new[] { new[]{1, 3}, new[]{-2, 2}}, 1);
+            result = s.KClosest(new[] { new[] {3,3},new[] {5,-1},new[] {-2,4}}, 2);
+            result = s.KClosest(new[] {new[] {68,97},new[] {34,-84},new[] {60,100},new[] {2,31},new[] {-27,-38},new[] {-73,-74},new[] {-55,-39},new[] {62,91},new[] {62,92},new[] {-57,-67}}, 5);
+            
             W(result);
             Console.ReadLine();
         }
