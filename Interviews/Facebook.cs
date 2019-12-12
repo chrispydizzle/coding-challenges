@@ -12,7 +12,7 @@ namespace CodeChallenges.Interviews
         public int[][] KClosest(int[][] points, int K)
         {
             List<int[]> sets = new List<int[]>();
-            List<int> distances = new List<int>();
+            HashSet<int> distances = new HashSet<int>();
 
             var calculations = new ConcurrentDictionary<int, List<int[]>>();
 
@@ -33,6 +33,9 @@ namespace CodeChallenges.Interviews
                             return existingList;
                         });
                     farthestDistance = Math.Max(farthestDistance, distance);
+                }
+                else if (sets.Count == K)
+                {
                 }
                 else if (distance < farthestDistance)
                 {
@@ -56,83 +59,51 @@ namespace CodeChallenges.Interviews
             return result;
         }
 
-        /*
-         * 
-// q2:
-
-// Given a string with alpha-numeric characters and parentheses, return a string with balanced parentheses by removing the fewest characters possible. You cannot add anything to the string.
-
-// Examples:
-// balance("()") -> "()"
-// balance("a(b)c)") -> "a(b)c"
-// balance(")(") -> ""
-// balance("(((((") -> ""
-// balance("(()()(") -> "()()"
-// balance(")(())(") -> "(())"
-// balance(")())(()()(") -> "()()()"
-
-        public string Balance(string input)
+        public string MinRemoveToMakeValid(string input)
         {
             int opened = 0;
             StringBuilder b = new StringBuilder();
+
+            Stack<int> openers = new Stack<int>();
+            HashSet<int> itemsToSkip = new HashSet<int>();
 
             for (int i = 0; i < input.Length; i++)
             {
                 char currentChar = input[i];
                 if (currentChar == '(')
                 {
-                    opened++;
-
+                    openers.Push(i);
                 }
 
                 if (currentChar == ')')
                 {
-                    if (opened == 0)
+                    if (openers.Any())
                     {
-                        continue;
+                        openers.Pop();
                     }
                     else
                     {
-                        opened--;
+                        {
+                            itemsToSkip.Add(i);
+                        }
                     }
                 }
-
-                b.Append(currentChar);
             }
 
-            if (opened == 0) return b.ToString(); // // balance("()(()()(") -> "()()()"
-
-            opened = 0;
-
-            string tempString = b.ToString();
-            b.Clear()
-
-            for (int i = tempString.Length - 1; i > 0; i--)
+            while (openers.Any())
             {
-                char currentChar = tempString[i];
-                if (currentChar == ')') opened++;
-                if (currentChar == '(')
-                {
-                    if (opened == 0)
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        opened--;
-                    }
-                }
+                itemsToSkip.Add(openers.Pop());
+            }
 
-                b.Insert(0, tempString[i]);
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (!itemsToSkip.Contains(i))
+                {
+                    b.Append(input[i]);
+                }
             }
 
             return b.ToString();
-            ;
-
-
         }
-    }
-}
-         */
     }
 }
