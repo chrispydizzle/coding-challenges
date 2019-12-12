@@ -53,7 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AngramGrouper.cs" />
     <Compile Include="Arrays\ContainsDuplicates.cs" />
     <Compile Include="Arrays\FbSpiralGen.cs" />
     <Compile Include="Arrays\FindTargetSum.cs" />
@@ -89,9 +88,10 @@
     <Compile Include="BinaryTrees\RootLeafPath.cs" />
     <Compile Include="BinaryTrees\TreeNode.cs" />
     <Compile Include="BinaryTrees\ValidateBinarySearchTree.cs" />
-    <Compile Include="DeleteLinkedListNode.cs" />
     <Compile Include="DFS\DFSIslands.cs" />
     <Compile Include="DFS\Template.cs" />
+    <Compile Include="DynamicProgramming\BestTimeToBuySellStock.cs" />
+    <Compile Include="DynamicProgramming\StairClimber.cs" />
     <Compile Include="Graphs\BTreeRightSideView.cs" />
     <Compile Include="Graphs\UndirectedCloneGraph.cs" />
     <Compile Include="Graphs\UndirectedGraphNode.cs" />
@@ -103,14 +103,15 @@
     <Compile Include="LinkedList\AddLinkedListNumbers.cs" />
     <Compile Include="LinkedList\BackwardsReorderList.cs" />
     <Compile Include="LinkedList\CopyListRandomPointer.cs" />
+    <Compile Include="LinkedList\DeleteLinkedListNode.cs" />
     <Compile Include="LinkedList\LinkedListPrinter.cs" />
     <Compile Include="LinkedList\ListNode.cs" />
     <Compile Include="LinkedList\MergeTwoSortedLists.cs" />
     <Compile Include="LinkedList\Node.cs" />
+    <Compile Include="LinkedList\RemoveNFromEnd.cs" />
     <Compile Include="Matrix\RotateMatrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RemoveNFromEnd.cs" />
     <Compile Include="Solves\AbsoluteValueSumMinimization.cs" />
     <Compile Include="Solves\AddBorder.cs" />
     <Compile Include="Solves\AdjacentGreatestProduct.cs" />
@@ -188,6 +189,7 @@
     <Compile Include="Stack\ValidParens.cs" />
     <Compile Include="Strings\AddBinaryStrings.cs" />
     <Compile Include="Strings\AddStringsAsNumbers.cs" />
+    <Compile Include="Strings\AngramGrouper.cs" />
     <Compile Include="Strings\Atoi.cs" />
     <Compile Include="Strings\CheckAngram.cs" />
     <Compile Include="Strings\DetectPalindrome.cs" />
@@ -236,7 +238,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.
