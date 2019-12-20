@@ -1,16 +1,17 @@
 ﻿namespace CodeChallenges
 {
     using System;
-    using Sorts;
+    using DynamicProgramming;
     using Strings;
 
-    internal class Program
+    internal static class Program
     {
         public static void Main(string[] args)
         {
-            var s = new MergeSort();
-            W(s.SortArray(new int[] {5, 2, 3, 1}));
-            W(s.SortArray(new int[] {5, 1, 1, 2, 0, 0}));
+            var s = new EditDistance();
+            W(s.MinDistance("horse", "ros"));
+            W(s.MinDistance("intention", "execution"));
+
             Console.ReadLine();
         }
 

@@ -92,6 +92,7 @@
     <Compile Include="DFS\DFSIslands.cs" />
     <Compile Include="DFS\Template.cs" />
     <Compile Include="DynamicProgramming\BestTimeToBuySellStock.cs" />
+    <Compile Include="DynamicProgramming\EditDistance.cs" />
     <Compile Include="DynamicProgramming\MaximumSubArray.cs" />
     <Compile Include="DynamicProgramming\StairClimber.cs" />
     <Compile Include="Graphs\BTreeRightSideView.cs" />
@@ -214,6 +215,8 @@
     </Compile>
     <Compile Include="Strings\MultiplyStrings.cs" />
     <Compile Include="Strings\OneEditDistance.cs" />
+    <Compile Include="Strings\RemoveVowelsFromString.cs" />
+    <Compile Include="Strings\ReverseVowelsInString.cs" />
     <Compile Include="Strings\RomanToInteger.cs" />
     <Compile Include="Strings\ValidateIPAddress.cs" />
     <Compile Include="Strings\ValidPalindrome.cs" />
