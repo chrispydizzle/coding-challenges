@@ -204,21 +204,23 @@
     <Compile Include="Strings\GroupAngram.cs" />
     <Compile Include="Strings\InString.cs" />
     <Compile Include="Strings\IntegerToEnglish.cs" />
-    <Compile Include="Strings\IsStringANumber.cs" />
-    <Compile Include="Strings\LongestPalindromeSubstring.cs" />
-    <Compile Include="Strings\LongestSubstring.cs" />
-    <Compile Include="Arrays\RemoveDupes.cs" />
-    <Compile Include="Strings\LongestSubstringKDistinct.cs" />
+    <Compile Include="Strings\IsStringANumber.cs"/>
+    <Compile Include="Strings\LongestPalindromeSubstring.cs"/>
+    <Compile Include="Strings\LongestSubstring.cs"/>
+    <Compile Include="Arrays\RemoveDupes.cs"/>
+    <Compile Include="Strings\LongestSubstringKDistinct.cs"/>
     <Compile Include="Strings\MinStringWindow.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
     </Compile>
-    <Compile Include="Strings\MultiplyStrings.cs" />
-    <Compile Include="Strings\OneEditDistance.cs" />
-    <Compile Include="Strings\RomanToInteger.cs" />
-    <Compile Include="Strings\ValidateIPAddress.cs" />
-    <Compile Include="Strings\ValidPalindrome.cs" />
-    <Compile Include="Strings\ValidPalindrome2.cs" />
-    <Compile Include="Strings\ValidParenthesis.cs" />
+    <Compile Include="Strings\MultiplyStrings.cs"/>
+    <Compile Include="Strings\OneEditDistance.cs"/>
+    <Compile Include="Strings\RemoveVowelsFromString.cs"/>
+    <Compile Include="Strings\ReverseVowelsInString.cs"/>
+    <Compile Include="Strings\RomanToInteger.cs"/>
+    <Compile Include="Strings\ValidateIPAddress.cs"/>
+    <Compile Include="Strings\ValidPalindrome.cs"/>
+    <Compile Include="Strings\ValidPalindrome2.cs"/>
+    <Compile Include="Strings\ValidParenthesis.cs"/>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MSSQL\SecondHighestSalary.sql" />
