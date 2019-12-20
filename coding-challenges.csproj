@@ -97,6 +97,7 @@
     <Compile Include="Graphs\UndirectedGraphNode.cs" />
     <Compile Include="Incomplete\BuildTreeFrom.cs" />
     <Compile Include="Incomplete\maxProfit.cs" />
+    <Compile Include="Interviews\Acorns.cs" />
     <Compile Include="Interviews\Facebook.cs" />
     <Compile Include="Interviews\Google.cs" />
     <Compile Include="Interviews\LinkedIn.cs" />
@@ -203,6 +204,7 @@
     <Compile Include="Strings\InString.cs" />
     <Compile Include="Strings\IntegerToEnglish.cs" />
     <Compile Include="Strings\IsStringANumber.cs" />
+    <Compile Include="Strings\LongestPalindromeSubstring.cs" />
     <Compile Include="Strings\LongestSubstring.cs" />
     <Compile Include="Arrays\RemoveDupes.cs" />
     <Compile Include="Strings\LongestSubstringKDistinct.cs" />

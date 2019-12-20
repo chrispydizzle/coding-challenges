@@ -14,14 +14,14 @@ namespace CodeChallenges
     {
         public static void Main(string[] args)
         {
-            var s = new Facebook();
+            var s = new LongestPalindromeSubstring();
 
-            W(s.MinRemoveToMakeValid("())()((("));
-            W(s.MinRemoveToMakeValid("lee(t(c)o)de)"));
+            W(s.LongestPalindrome("babad"));
+            W(s.LongestPalindrome("cbbd"));
             
-            W(s.MinRemoveToMakeValid("a)b(c)d)"));
-            W(s.MinRemoveToMakeValid("))(("));
-            W(s.MinRemoveToMakeValid("(a(b(c)d)"));
+            var newS = new Acorns();
+            W(newS.GetPreorderByRecursion(TreeNode.BuildTree(12, 9, 1, 7, 5, 2, null)));
+            W(newS.GetPreorder(TreeNode.BuildTree(12, 9, 1, 7, 5, 2, null)));
             Console.ReadLine();
         }
 
