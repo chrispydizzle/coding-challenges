@@ -97,8 +97,6 @@
     <Compile Include="Graphs\BTreeRightSideView.cs" />
     <Compile Include="Graphs\UndirectedCloneGraph.cs" />
     <Compile Include="Graphs\UndirectedGraphNode.cs" />
-    <Compile Include="Incomplete\BuildTreeFrom.cs" />
-    <Compile Include="Incomplete\maxProfit.cs" />
     <Compile Include="Interviews\Acorns.cs" />
     <Compile Include="Interviews\Facebook.cs" />
     <Compile Include="Interviews\Google.cs" />
