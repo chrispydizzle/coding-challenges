@@ -8,6 +8,7 @@ namespace CodeChallenges
 {
     using System;
     using Arrays;
+    using DynamicProgramming;
     using Strings;
 
     internal class Program
@@ -18,10 +19,9 @@ namespace CodeChallenges
 
             W(s.LongestPalindrome("babad"));
             W(s.LongestPalindrome("cbbd"));
-            
-            var newS = new Acorns();
-            W(newS.GetPreorderByRecursion(TreeNode.BuildTree(12, 9, 1, 7, 5, 2, null)));
-            W(newS.GetPreorder(TreeNode.BuildTree(12, 9, 1, 7, 5, 2, null)));
+
+            var newS = new MaximumSubArray();
+            W(newS.MaxSubArray(new[] {-2, 1, -3, 4, -1, 2, 1, -5, 4, 10, -20, 7}));
             Console.ReadLine();
         }
 
