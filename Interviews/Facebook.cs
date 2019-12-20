@@ -61,7 +61,6 @@ namespace CodeChallenges.Interviews
 
         public string MinRemoveToMakeValid(string input)
         {
-            int opened = 0;
             StringBuilder b = new StringBuilder();
 
             Stack<int> openers = new Stack<int>();

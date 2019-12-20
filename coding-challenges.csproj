@@ -184,6 +184,7 @@
     <Compile Include="Solves\TextJustification.cs" />
     <Compile Include="Solves\ValidTime.cs" />
     <Compile Include="Solves\VariableName.cs" />
+    <Compile Include="Sorts\MergeSort.cs" />
     <Compile Include="Stack\DailyTemp.cs" />
     <Compile Include="Stack\MinStack.cs" />
     <Compile Include="Stack\ReversePolishNotation.cs" />
