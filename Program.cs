@@ -1,15 +1,16 @@
 ﻿namespace CodeChallenges
 {
     using System;
-    using Strings;
+    using DynamicProgramming;
 
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            ReverseVowelsInString s = new ReverseVowelsInString();
-            W(s.ReverseVowels("hello"));
-            W(s.ReverseVowels("leetcode"));
+            SearchInRotatedSortedArray s = new SearchInRotatedSortedArray();
+            W(s.Search(new[] {4, 5, 6, 7, 0, 1, 2}, 0));
+            W(s.Search(new[] {4, 5, 6, 7, 0, 1, 2}, 3));
+            W(s.Search(new[] {1, 3}, 3));
 
             Console.ReadLine();
         }
