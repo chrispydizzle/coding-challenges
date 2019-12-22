@@ -1,14 +1,15 @@
 ﻿namespace CodeChallenges
 {
     using System;
-    using Design;
+    using Arrays;
 
     public static class Program
     {
         public static void Main(string[] args)
         {
-            TwoSum3 s = new TwoSum3();
-
+            ContainerWithMostWater s = new ContainerWithMostWater();
+            W(s.MaxArea(new[] {1, 8, 6, 2, 5, 4, 8, 3, 7}));
+            W(s.MaxArea(new[] {1, 2, 4, 3}));
 
             Console.ReadLine();
         }

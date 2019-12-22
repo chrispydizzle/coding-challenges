@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\ContainerWithMostWater.cs"/>
     <Compile Include="Arrays\ContainsDuplicates.cs" />
     <Compile Include="Arrays\FbSpiralGen.cs" />
     <Compile Include="Arrays\FindTargetSum.cs" />
@@ -176,16 +177,16 @@
     <Compile Include="Solves\RoadSignsTruncd.cs" />
     <Compile Include="Solves\RotateImage.cs" />
     <Compile Include="Solves\ShapeArea.cs" />
-    <Compile Include="Solves\SortByHeight.cs" />
-    <Compile Include="Solves\SpiralNumbers.cs" />
-    <Compile Include="Solves\StringsRearrangement.cs" />
-    <Compile Include="Solves\Sudoku.cs" />
-    <Compile Include="Solves\Sudoku2.cs" />
-    <Compile Include="Solves\SumUpNumbers.cs" />
-    <Compile Include="Solves\TasksTypes.cs" />
-    <Compile Include="Solves\TextJustification.cs" />
-    <Compile Include="Solves\ValidTime.cs" />
-    <Compile Include="Solves\VariableName.cs" />
+    <Compile Include="Solves\SortByHeight.cs"/>
+    <Compile Include="Solves\SpiralNumbers.cs"/>
+    <Compile Include="Solves\StringsRearrangement.cs"/>
+    <Compile Include="Solves\Sudoku.cs"/>
+    <Compile Include="Solves\Sudoku2.cs"/>
+    <Compile Include="Solves\SumUpNumbers.cs"/>
+    <Compile Include="Solves\TasksTypes.cs"/>
+    <Compile Include="Solves\TextJustification.cs"/>
+    <Compile Include="Solves\ValidTime.cs"/>
+    <Compile Include="Solves\VariableName.cs"/>
     <Compile Include="Sorts\MergeSort.cs"/>
     <Compile Include="Stack\DailyTemp.cs"/>
     <Compile Include="Stack\MinStack.cs"/>
