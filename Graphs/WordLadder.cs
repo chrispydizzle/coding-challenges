@@ -85,13 +85,7 @@ namespace CodeChallenges.Graphs
         }
     }
 
-/*
-        private OldOne()
-        {
-            
-            
-            foreach (string word in wordList)
-
+/*S
 
                 for (int i = 0; i < currentWord.Length; i++)
                 {
