@@ -1,7 +1,26 @@
 namespace CodeChallenges.Strings
 {
     using System.Collections.Generic;
+    using System.IO;
     using System.Text;
+
+    public class WildListFix
+    {
+        private readonly string path;
+
+        public WildListFix(string path)
+        {
+            this.path = path;
+        }
+
+        public void Process(string pathOut)
+        {
+            string[] readAllText = File.ReadAllLines(path);
+            foreach (string s in readAllText)
+            {
+            }
+        }
+    }
 
     public class RemoveVowelsFromString
     {

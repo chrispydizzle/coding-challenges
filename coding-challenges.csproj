@@ -26,7 +26,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <Nullable>disable</Nullable>
+    <Nullable>enable</Nullable>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,18 +35,19 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
+    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -58,12 +60,15 @@
     <Compile Include="Arrays\ContainsDuplicates.cs"/>
     <Compile Include="Arrays\FbSpiralGen.cs"/>
     <Compile Include="Arrays\FindTargetSum.cs"/>
+    <Compile Include="Arrays\FindTheCeleb.cs"/>
     <Compile Include="Arrays\IslandPerimeter.cs"/>
     <Compile Include="Arrays\MergeSortedArray.cs"/>
     <Compile Include="Arrays\MoveZero.cs"/>
     <Compile Include="Arrays\NumberOfIslands.cs"/>
     <Compile Include="Arrays\ProductOfArrayExceptSelf.cs"/>
+    <Compile Include="Arrays\ReversePolish.cs"/>
     <Compile Include="Arrays\RotateArray.cs"/>
+    <Compile Include="Arrays\ShortestStringArrayDifference.cs"/>
     <Compile Include="Arrays\SlidingWindowMaximum.cs"/>
     <Compile Include="Arrays\SubarraySumEqualsK.cs"/>
     <Compile Include="Arrays\ThreeSum.cs"/>
@@ -92,6 +97,7 @@
     <Compile Include="BinaryTrees\RootLeafPath.cs"/>
     <Compile Include="BinaryTrees\TreeNode.cs"/>
     <Compile Include="BinaryTrees\ValidateBinarySearchTree.cs"/>
+    <Compile Include="Design\AllOfOneDataStruct.cs"/>
     <Compile Include="Design\InserDeleteGetRandom.cs"/>
     <Compile Include="Design\TwoSum3.cs"/>
     <Compile Include="DFS\DFSIslands.cs"/>
@@ -141,9 +147,9 @@
     <Compile Include="Solves\BoxBlur.cs"/>
     <Compile Include="Solves\BuildPalindrome.cs"/>
     <Compile Include="Solves\ChessBoardCellColor.cs"/>
-    <Compile Include="Solves\ChessKnight.cs" />
-    <Compile Include="Solves\CircleOfNumbers.cs" />
-    <Compile Include="Solves\CommonCharacterCount.cs" />
+    <Compile Include="Solves\ChessKnight.cs"/>
+    <Compile Include="Solves\CircleOfNumbers.cs"/>
+    <Compile Include="Solves\CommonCharacterCount.cs"/>
     <Compile Include="Solves\DeleteDigit.cs"/>
     <Compile Include="Solves\DepositProfit.cs"/>
     <Compile Include="Solves\DifferentSquares.cs"/>
@@ -222,6 +228,7 @@
     <Compile Include="Strings\MinStringWindow.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
     </Compile>
+    <Compile Include="Strings\MinWIndow.cs"/>
     <Compile Include="Strings\MultiplyStrings.cs"/>
     <Compile Include="Strings\OneEditDistance.cs"/>
     <Compile Include="Strings\RemoveVowelsFromString.cs"/>
