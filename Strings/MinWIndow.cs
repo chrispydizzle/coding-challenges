@@ -1,5 +1,6 @@
 namespace CodeChallenges.Strings
 {
+    using System;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -13,11 +14,19 @@ namespace CodeChallenges.Strings
             int rightPointer = -1;
 
 
-            List<char> requiredChars = t.ToCharArray().ToList();
-            List<char> immutableSet = new List<char>(requiredChars);
-            List<char> foundChars = new List<char>();
+            Dictionary<char, int> requiredChars = new Dictionary<char, int>();
+            Dictionary<char, int> foundChars = new Dictionary<char, int>();
+            IEnumerable<KeyValuePair<char, int>> keyValuePairs = t.GroupBy(c => c).Select(g => new KeyValuePair<char, int>(g.Key, g.Count()));
+            foreach (KeyValuePair<char, int> keyValuePair in keyValuePairs)
+            {
+                requiredChars.Add(keyValuePair.Key, keyValuePair.Value);
+                foundChars.Add(keyValuePair.Key, 0);
+            }
 
-            string result = s;
+            Dictionary<char, int> immutableSet = new Dictionary<char, int>(requiredChars);
+
+            string result = s + s;
+            bool foundFlag = false;
             while (leftPointer <= rightPointer)
             {
                 leftPointer++;
@@ -26,33 +35,37 @@ namespace CodeChallenges.Strings
                 {
                     char prevChar = s[leftPointer - 1];
 
-                    if (immutableSet.Contains(prevChar))
+                    if (immutableSet.ContainsKey(prevChar))
                     {
-                        foundChars.Remove(prevChar);
-                        int foundCount = foundChars.Count(c => c == prevChar);
-                        int requiredCount = immutableSet.Count(c => c == prevChar);
-                        if (foundCount < requiredCount) requiredChars.Add(prevChar);
+                        foundChars[prevChar]--;
+                        int foundCount = foundChars[prevChar];
+                        int requiredCount = immutableSet[prevChar];
+                        if (foundCount < requiredCount) requiredChars[prevChar]++;
                     }
                 }
 
                 // while I don't have all the letters, go right until we hit the end of string.;
-                while (requiredChars.Any() && rightPointer < s.Length - 1)
+                int remainingRequiredChars = requiredChars.Sum(c => c.Value);
+
+
+                while (remainingRequiredChars > 0 && rightPointer < s.Length - 1)
                 {
                     rightPointer++;
                     char rightChar = s[rightPointer];
-                    if (immutableSet.Contains(rightChar))
+                    if (immutableSet.ContainsKey(rightChar))
                     {
-                        foundChars.Add(rightChar);
-                        requiredChars.Remove(rightChar);
+                        foundChars[rightChar]++;
+                        requiredChars[rightChar] = Math.Max(0, requiredChars[rightChar] - 1);
                     }
 
-                    if (requiredChars.Count == 0) break;
+                    remainingRequiredChars = requiredChars.Sum(c => c.Value);
+                    if (remainingRequiredChars == 0) break;
                 }
 
-                if (!requiredChars.Any())
+                if (remainingRequiredChars == 0)
                 {
-                    string potential = s.Substring(leftPointer, rightPointer - leftPointer + 1);
-                    result = result.Length < potential.Length ? result : potential;
+                    int length = rightPointer - leftPointer + 1;
+                    if (length < result.Length) result = s.Substring(leftPointer, length);
                 }
             }
 
