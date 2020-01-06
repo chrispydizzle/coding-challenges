@@ -1,9 +1,6 @@
-﻿using System;
-
-namespace CodeChallenges.BinaryTrees
+﻿namespace CodeChallenges.BinaryTrees
 {
-    using System.Collections.Generic;
-    using System.Linq;
+    using System;
 
     public class BinaryTreeMaxPathSum
     {
@@ -11,7 +8,7 @@ namespace CodeChallenges.BinaryTrees
 
         public int MaxPathSum(TreeNode root)
         {
-            this.maxValue = root.val;
+            maxValue = root.val;
             int finalTest = GetBestSum(root);
 
             return Math.Max(maxValue, finalTest);
@@ -29,15 +26,9 @@ namespace CodeChallenges.BinaryTrees
             maxValue = Math.Max(leftValue, maxValue);
             maxValue = Math.Max(rightValue, maxValue);
 
-            if (rightValue == int.MinValue)
-            {
-                rightValue = 0;
-            }
-            
-            if (leftValue == int.MinValue)
-            {
-                leftValue = 0;
-            }
+            if (rightValue == int.MinValue) rightValue = 0;
+
+            if (leftValue == int.MinValue) leftValue = 0;
 
             int lToR = leftValue + rightValue + currentValue;
 

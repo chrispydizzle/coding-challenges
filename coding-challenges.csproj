@@ -87,6 +87,7 @@
     <Compile Include="BFS\PerfectSquaresLC.cs"/>
     <Compile Include="BFS\Unlocker.cs"/>
     <Compile Include="BinaryTrees\BinaryTreeMaxPathSum.cs"/>
+    <Compile Include="BinaryTrees\BTreeLeaves.cs"/>
     <Compile Include="BinaryTrees\FlattenBSTToLinkedList.cs"/>
     <Compile Include="BinaryTrees\InorderTraverse.cs"/>
     <Compile Include="BinaryTrees\IsSymmetricTree.cs"/>
@@ -99,6 +100,7 @@
     <Compile Include="BinaryTrees\ValidateBinarySearchTree.cs"/>
     <Compile Include="Design\AllOfOneDataStruct.cs"/>
     <Compile Include="Design\InserDeleteGetRandom.cs"/>
+    <Compile Include="Design\WordDistance.cs"/>
     <Compile Include="Design\TwoSum3.cs"/>
     <Compile Include="DFS\DFSIslands.cs"/>
     <Compile Include="DFS\Template.cs"/>
