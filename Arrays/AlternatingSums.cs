@@ -11,19 +11,14 @@
             for (int i = 0; i < a.Length; i++)
             {
                 if (flip)
-                {
                     weightTwo += a[i];
-                }
                 else
-                {
                     weightOne += a[i];
-                }
 
                 flip = !flip;
             }
 
             return new[] {weightOne, weightTwo};
         }
-
     }
 }

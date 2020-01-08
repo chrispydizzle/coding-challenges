@@ -56,6 +56,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\AlternatingSums.cs"/>
+    <Compile Include="Arrays\AreEquallyStrong.cs"/>
+    <Compile Include="Arrays\AreSimilar.cs"/>
+    <Compile Include="Arrays\ArrayChange.cs"/>
     <Compile Include="Arrays\ContainerWithMostWater.cs"/>
     <Compile Include="Arrays\ContainsDuplicates.cs"/>
     <Compile Include="Arrays\FbSpiralGen.cs"/>
@@ -65,6 +69,7 @@
     <Compile Include="Arrays\MergeSortedArray.cs"/>
     <Compile Include="Arrays\MoveZero.cs"/>
     <Compile Include="Arrays\NumberOfIslands.cs"/>
+    <Compile Include="Arrays\PlaceFlowers.cs"/>
     <Compile Include="Arrays\ProductOfArrayExceptSelf.cs"/>
     <Compile Include="Arrays\ReversePolish.cs"/>
     <Compile Include="Arrays\RotateArray.cs"/>

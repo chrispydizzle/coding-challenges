@@ -15,7 +15,7 @@
                 {
                     int target = item + 1;
                     moves += Math.Abs(nextItem - target);
-                    inputArray[index           + 1] = target;
+                    inputArray[index + 1] = target;
                 }
             }
 
