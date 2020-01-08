@@ -26,7 +26,7 @@ namespace CodeChallenges.Strings
             Dictionary<char, int> immutableSet = new Dictionary<char, int>(requiredChars);
 
             string result = s + s;
-            bool foundFlag = false;
+            // bool foundFlag = false;
             while (leftPointer <= rightPointer)
             {
                 leftPointer++;

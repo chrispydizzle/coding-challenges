@@ -20,8 +20,6 @@ namespace CodeChallenges.Design
         public int Shortest(string word1, string word2)
         {
             // sliding window? yes
-            int leftCounter = 0;
-            int rightCounter = 1;
 
             SortedSet<int> w1List = wordPlace[word1];
             SortedSet<int> w2List = wordPlace[word2];
