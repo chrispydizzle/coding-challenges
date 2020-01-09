@@ -101,12 +101,14 @@
     <Compile Include="BinaryTrees\PostOrderTraverse.cs"/>
     <Compile Include="BinaryTrees\PreorderTraverse.cs"/>
     <Compile Include="BinaryTrees\RootLeafPath.cs"/>
+    <Compile Include="BinaryTrees\SerializeAndDeserializeBtree.cs"/>
     <Compile Include="BinaryTrees\TreeNode.cs"/>
     <Compile Include="BinaryTrees\ValidateBinarySearchTree.cs"/>
     <Compile Include="Design\AllOfOneDataStruct.cs"/>
     <Compile Include="Design\INestedInteger.cs"/>
     <Compile Include="Design\InserDeleteGetRandom.cs"/>
     <Compile Include="Design\NestedInteger.cs"/>
+    <Compile Include="Design\NestedIterator.cs"/>
     <Compile Include="Design\NestedListWeightSum2.cs"/>
     <Compile Include="Design\WordDistance.cs"/>
     <Compile Include="Design\TwoSum3.cs"/>

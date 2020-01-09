@@ -1,7 +1,7 @@
 ﻿namespace CodeChallenges.Strings
 {
     public class ValidPalindrome2
-    { 
+    {
         public bool ValidPalindrome(string s)
         {
             if (s == string.Empty) return true;
@@ -26,22 +26,13 @@
 
                 if (left != right)
                 {
-                    if (didLeftDelete && didRightDelete)
-                    {
-                        return false;
-                    }
+                    if (didLeftDelete && didRightDelete) return false;
 
                     if (!resetting)
                     {
-                        if (didLeftDelete)
-                        {
-                            s = s.Insert(leftPointerOnDelete, deletedChar.ToString());
-                        }
+                        if (didLeftDelete) s = s.Insert(leftPointerOnDelete, deletedChar.ToString());
 
-                        if (didRightDelete)
-                        {
-                            s = s.Insert(rightPointerOnDelete, deletedChar.ToString());
-                        }
+                        if (didRightDelete) s = s.Insert(rightPointerOnDelete, deletedChar.ToString());
 
                         if (didLeftDelete || didRightDelete)
                         {
@@ -56,10 +47,7 @@
 
                     char spareRight = char.MinValue;
 
-                    if (rightPointer > 0 && rightPointer < s.Length)
-                    {
-                        spareRight = s[rightPointer - 1];
-                    }
+                    if (rightPointer > 0 && rightPointer < s.Length) spareRight = s[rightPointer - 1];
 
                     if (left == spareRight && !didRightDelete)
                     {
