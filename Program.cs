@@ -2,21 +2,20 @@ namespace CodeChallenges
 {
     using System;
     using System.Collections;
-    using Interviews;
 
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            /*
-             * ["TicTacToe","move","move","move"]
-[[2],[],[1,1,2],[1,0,1]]
-             */
-            Acorns.TicTacToe t = new Acorns.TicTacToe(2);
-            W(t.Move(0, 0, 2));
-            W(t.Move(0, 1, 1));
-            W(t.Move(1, 1, 2));
-
+            MyHashMap s = new MyHashMap();
+            s.Put(1, 1);
+            s.Put(2, 2);
+            W(s.Get(1));
+            W(s.Get(3));
+            s.Put(2, 1);
+            W(s.Get(2));
+            s.Remove(2);
+            W(s.Get(2));
             Console.Read();
         }
 

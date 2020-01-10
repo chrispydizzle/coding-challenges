@@ -108,6 +108,7 @@
       <Compile Include="Design\AllOfOneDataStruct.cs"/>
       <Compile Include="Design\INestedInteger.cs"/>
       <Compile Include="Design\InserDeleteGetRandom.cs"/>
+      <Compile Include="Design\MyHashMap.cs"/>
       <Compile Include="Design\NestedInteger.cs"/>
       <Compile Include="Design\NestedIterator.cs"/>
       <Compile Include="Design\NestedListWeightSum2.cs"/>
