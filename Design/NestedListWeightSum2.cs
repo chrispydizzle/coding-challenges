@@ -30,7 +30,6 @@ namespace CodeChallenges.Design
 
             Queue<IList<NestedInteger>> s = new Queue<IList<NestedInteger>>();
 
-            int multiplier = 0;
             s.Enqueue(getList);
             HashSet<Tuple<int, int>> set = new HashSet<Tuple<int, int>>();
 

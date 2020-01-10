@@ -1,5 +1,6 @@
 namespace CodeChallenges.Interviews
 {
+    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
@@ -82,11 +83,24 @@ namespace CodeChallenges.Interviews
 
         public class TicTacToe
         {
-            /**
-             * Initialize your data structure here.
-             */
+            private readonly int[][] b;
+            private readonly Dictionary<int, HashSet<int>> colElig = new Dictionary<int, HashSet<int>>();
+            private readonly int n;
+            private readonly Dictionary<int, HashSet<int>> rowElig = new Dictionary<int, HashSet<int>>();
+            private int moves;
+
             public TicTacToe(int n)
             {
+                this.n = n;
+
+                // build our gameboard.
+                b = new int[n][];
+                for (int index = 0; index < b.Length; index++)
+                {
+                    b[index] = new int[n];
+                    rowElig.Add(n, new HashSet<int>());
+                    colElig.Add(n, new HashSet<int>());
+                }
             }
 
             /**
@@ -101,6 +115,62 @@ namespace CodeChallenges.Interviews
              */
             public int Move(int row, int col, int player)
             {
+                // no validation required
+                b[row][col] = player;
+
+                rowElig[row].Add(player);
+                colElig[col].Add(player);
+
+                moves++;
+
+                // draw
+                foreach (int[] brow in b)
+                {
+                    for (int i = 0; i < n - 1; i++) Console.Write($"{brow[i]}|");
+
+                    Console.WriteLine($"{brow[n - 1]}");
+                }
+
+                // have we made enough moves to validate?
+                if (moves < n) return 0;
+
+                int t = 0;
+
+                // is the row eligible for a win?
+                if (rowElig[row].Contains(player) && rowElig[row].Count == 1)
+                    // check row
+                    for (int i = 0; i < n; i++)
+                        if (b[row][i] == player)
+                            t++;
+
+                if (t == n) return player;
+
+                // check col
+                t = 0;
+                if (colElig[col].Contains(player) && colElig[col].Count == 1)
+                    for (int i = 0; i < n; i++)
+                        if (b[i][col] == player)
+                            t++;
+
+                if (t == n) return player;
+
+                // check diag ltr ( player can only win two ways diagonal)
+                t = 0;
+                for (int i = 0; i < n; i++)
+                    if (b[i][i] == player)
+                        t++;
+
+                if (t == n) return player;
+
+                // check diag rtl ( player can only win two ways diagonal)
+                t = 0;
+                for (int i = 0; i < n; i++)
+                    if (b[i][n - i - 1] == player)
+                        t++;
+
+
+                if (t == n) return player;
+
                 return 0;
             }
         }
