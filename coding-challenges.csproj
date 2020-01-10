@@ -67,6 +67,7 @@
       <Compile Include="Arrays\FindTargetSum.cs"/>
       <Compile Include="Arrays\FindTheCeleb.cs"/>
       <Compile Include="Arrays\IslandPerimeter.cs"/>
+      <Compile Include="Arrays\MergeIntervals.cs"/>
       <Compile Include="Arrays\MergeSortedArray.cs"/>
       <Compile Include="Arrays\MoveZero.cs"/>
       <Compile Include="Arrays\NumberOfIslands.cs"/>
