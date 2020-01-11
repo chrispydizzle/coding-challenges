@@ -67,6 +67,7 @@
       <Compile Include="Arrays\FindTargetSum.cs"/>
       <Compile Include="Arrays\FindTheCeleb.cs"/>
       <Compile Include="Arrays\IslandPerimeter.cs"/>
+      <Compile Include="Arrays\MaxMaxSubarray.cs"/>
       <Compile Include="Arrays\MergeIntervals.cs"/>
       <Compile Include="Arrays\MergeSortedArray.cs"/>
       <Compile Include="Arrays\MoveZero.cs"/>
@@ -99,6 +100,7 @@
       <Compile Include="BinaryTrees\InorderTraverse.cs"/>
       <Compile Include="BinaryTrees\IsSymmetricTree.cs"/>
       <Compile Include="BinaryTrees\LevelOrderTraverse.cs"/>
+      <Compile Include="BinaryTrees\LowestCommonAncestorBST.cs"/>
       <Compile Include="BinaryTrees\MaxDepthFind.cs"/>
       <Compile Include="BinaryTrees\PostOrderTraverse.cs"/>
       <Compile Include="BinaryTrees\PreorderTraverse.cs"/>

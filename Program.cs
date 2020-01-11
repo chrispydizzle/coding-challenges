@@ -3,6 +3,7 @@ namespace CodeChallenges
     using System;
     using System.Collections;
     using Arrays;
+    using BinaryTrees;
 
     internal static class Program
     {
@@ -10,9 +11,9 @@ namespace CodeChallenges
         {
             MergeIntervals s = new MergeIntervals();
 
-            //var test = new[] {new[] {1, 3}, new[] {2, 6}, new[] {8, 10}, new[] {15, 18}};
-            int[][] test = new[] {new[] {2, 3}, new[] {4, 5}, new[] {6, 7}, new[] {8, 9}, new[] {1, 10}};
-            s.Merge(test);
+            LowestCommonAncestorBST s = new LowestCommonAncestorBST();
+            TreeNode tn = TreeNode.BuildTree(6, 2, 8, 0, 4, 7, 9, null, null, 3, 5);
+            s.LowestCommonAncestor(tn, new TreeNode(2), new TreeNode(8));
             Console.Read();
         }
 
