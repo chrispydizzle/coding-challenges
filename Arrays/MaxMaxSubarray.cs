@@ -1,6 +1,6 @@
 namespace CodeChallenges.Arrays
 {
-    public class MaxMaxSubarray(o)
+    public class MaxMaxSubarray
     {
     }
 }

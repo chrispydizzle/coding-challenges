@@ -1,15 +1,11 @@
-﻿using System;
-using System.Dynamic;
-using System.Linq;
-using System.Text;
-
-namespace CodeChallenges.BinaryTrees
+﻿namespace CodeChallenges.BinaryTrees
 {
-    using System.Collections;
+    using System;
     using System.Collections.Generic;
-    using System.Diagnostics;
+    using System.Linq;
+    using System.Text;
 
-    [DebuggerDisplay("val: {val} left: {left?.val} right: {right?.val}")]
+    // [DebuggerDisplay("val: {val} left: {left} right: {right}")]
     public class TreeNode
     {
         public TreeNode left;
@@ -18,7 +14,7 @@ namespace CodeChallenges.BinaryTrees
 
         public TreeNode(int x)
         {
-            this.val = x;
+            val = x;
         }
 
         public string DrawTree()
@@ -32,16 +28,16 @@ namespace CodeChallenges.BinaryTrees
 
         private void DrawNextNode(TreeNode root, StringBuilder builder)
         {
-            var q = new Queue<TreeNode>();
+            Queue<TreeNode> q = new Queue<TreeNode>();
             builder.AppendLine(root.val.ToString());
 
             q.Enqueue(root.left);
             q.Enqueue(root.right);
 
-            var tempQ = new Queue<TreeNode>();
+            Queue<TreeNode> tempQ = new Queue<TreeNode>();
             while (q.Any())
             {
-                var nextItem = q.Dequeue();
+                TreeNode nextItem = q.Dequeue();
                 builder.Append(nextItem == null ? "[X]  " : $"{nextItem}   ");
 
                 if (nextItem != null)
@@ -50,10 +46,7 @@ namespace CodeChallenges.BinaryTrees
                     tempQ.Enqueue(nextItem.right);
                 }
 
-                if (!q.Any() && tempQ.Any())
-                {
-                    Console.WriteLine();
-                }
+                if (!q.Any() && tempQ.Any()) Console.WriteLine();
             }
         }
 
@@ -108,9 +101,69 @@ namespace CodeChallenges.BinaryTrees
             return root;
         }
 
-        public override string ToString()
+        public string ToStringFancy()
         {
-            return $"val: {this.val} left: {this.left?.val} right: {this.right?.val}";
+            Queue<TreeNode> q = new Queue<TreeNode>(new[] {this});
+            List<string> ss = new List<string>();
+            Queue<TreeNode> tempQ = new Queue<TreeNode>();
+            StringBuilder b = new StringBuilder();
+            int indent = 0;
+            while (q.Any())
+            {
+                TreeNode tn = q.Dequeue();
+                if (tn == null)
+                {
+                    b.Append("    ");
+                }
+                else
+                {
+                    if (tn.left != null)
+                    {
+                        b.Append("   ");
+                        tempQ.Enqueue(tn.left);
+                    }
+                    else
+                    {
+                        tempQ.Enqueue(null);
+                    }
+
+                    b.Append($"val: {tn.val}    ");
+
+                    if (tn.right != null)
+                    {
+                        b.Append("    ");
+                        tempQ.Enqueue(tn.right);
+                    }
+                    else
+                    {
+                        tempQ.Enqueue(null);
+                    }
+                }
+
+                if (!q.Any())
+                {
+                    ss.Add(b.ToString());
+                    if (tempQ.All(c => c == null)) break;
+                    q = new Queue<TreeNode>(tempQ);
+                    tempQ.Clear();
+                    b.Clear();
+                }
+
+                indent++;
+            }
+
+            int max = ss.Max(s => s.Length);
+            StringBuilder sb = new StringBuilder("--Tree--\n");
+            foreach (string s in ss)
+            {
+                int diff = max - s.Length;
+                string fString = s.PadLeft(diff / 2);
+                string aString = fString.PadRight(diff / 2);
+                sb.AppendLine(aString);
+            }
+
+            sb.AppendLine("--End Tree--");
+            return sb.ToString();
         }
     }
 }
