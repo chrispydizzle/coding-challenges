@@ -105,6 +105,7 @@
       <Compile Include="BinaryTrees\PostOrderTraverse.cs"/>
       <Compile Include="BinaryTrees\PreorderTraverse.cs"/>
       <Compile Include="BinaryTrees\RootLeafPath.cs"/>
+      <Compile Include="BinaryTrees\SecondMinNodeBinaryTree.cs"/>
       <Compile Include="BinaryTrees\SerializeAndDeserializeBtree.cs"/>
       <Compile Include="BinaryTrees\TreeNode.cs"/>
       <Compile Include="BinaryTrees\ValidateBinarySearchTree.cs"/>
@@ -238,6 +239,7 @@
       <Compile Include="Strings\GroupAngram.cs"/>
       <Compile Include="Strings\InString.cs"/>
       <Compile Include="Strings\IntegerToEnglish.cs"/>
+      <Compile Include="Strings\IsomorphicStrings.cs"/>
       <Compile Include="Strings\IsStringANumber.cs"/>
       <Compile Include="Strings\LongestPalindromeSubstring.cs"/>
       <Compile Include="Strings\LongestSubstring.cs"/>

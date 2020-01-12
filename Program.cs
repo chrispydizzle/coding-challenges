@@ -8,6 +8,13 @@ namespace CodeChallenges
     {
         public static void Main(string[] args)
         {
+            SecondMinNodeBinaryTree s = new SecondMinNodeBinaryTree();
+            W(s.FindSecondMinimumValue(TreeNode.BuildTree(1, 1, 3, 1, 1, 3, 4, 3, 1, 1, 1, 3, 8, 4, 8, 3, 3, 1, 6, 2, 1)));
+            Console.Read();
+        }
+
+        public static void LCAMain(string[] args)
+        {
             LowestCommonAncestorBST s = new LowestCommonAncestorBST();
             TreeNode tn = TreeNode.BuildTree(6, 2, 8, 0, 4, 7, 9, null, null, 3, 5);
             TreeNode tn5 = TreeNode.BuildTree(5, 3, 6, 2, 4, null, null, 1);
