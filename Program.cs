@@ -3,14 +3,31 @@ namespace CodeChallenges
     using System;
     using System.Collections;
     using BinaryTrees;
+    using Sorts;
 
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            SecondMinNodeBinaryTree s = new SecondMinNodeBinaryTree();
-            W(s.FindSecondMinimumValue(TreeNode.BuildTree(1, 1, 3, 1, 1, 3, 4, 3, 1, 1, 1, 3, 8, 4, 8, 3, 3, 1, 6, 2, 1)));
-            Console.Read();
+            FindFirstLastinSortedArray s = new FindFirstLastinSortedArray();
+            W(s.SearchRange(new[] {0, 0, 2, 3, 4, 4, 4, 5}, 5));
+            W(s.SearchRange(new[] {0, 0, 1, 2, 2}, 2));
+
+            W(s.SearchRange(new[] {0, 0, 1, 1, 1, 4, 5, 5}, 2));
+
+            W(s.SearchRange(new[] {0, 1, 2, 3, 4, 4, 4}, 2));
+            W(s.SearchRange(new[] {1, 2, 3}, 3));
+            W(s.SearchRange(new[] {1, 2, 3}, 3));
+            W(s.SearchRange(new[] {2, 2}, 3));
+
+            W(s.SearchRange(new[] {2, 2}, 2));
+            W(s.SearchRange(new[] {1}, 1));
+
+            W(s.SearchRange(new[] {5, 7, 7, 8, 8, 10}, 8));
+            W(s.SearchRange(new[] {5, 7, 7, 8, 8, 10}, 6));
+            W(s.SearchRange(new[] {1}, 0));
+            W(s.SearchRange(new[] {1}, 1));
+            Console.ReadLine();
         }
 
         public static void LCAMain(string[] args)
