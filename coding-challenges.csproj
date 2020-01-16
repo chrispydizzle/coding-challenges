@@ -224,6 +224,7 @@
     <Compile Include="Stack\DailyTemp.cs"/>
     <Compile Include="Stack\MinStack.cs"/>
     <Compile Include="Stack\ReversePolishNotation.cs"/>
+    <Compile Include="Stack\TimeExclusive.cs"/>
     <Compile Include="Stack\ValidParens.cs"/>
     <Compile Include="Strings\AddBinaryStrings.cs"/>
     <Compile Include="Strings\AddStringsAsNumbers.cs"/>

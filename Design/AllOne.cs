@@ -7,8 +7,6 @@ namespace CodeChallenges.Design
     {
         private readonly Dictionary<string, int> keyset;
 
-        private Dictionary<int, HashSet<string>> keysetReverse;
-
         // going to set up variables to hold the min/max keyval && key
         private string maxKey = string.Empty;
         private string minKey = string.Empty;
