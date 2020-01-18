@@ -17,7 +17,7 @@
 
             int carryOver = 0;
 
-            // go backwwards across the strings
+            // go backwards across the strings
             for (int i = longestLength - 1; i >= 0; i--)
             {
                 int top = int.Parse(a[i].ToString());

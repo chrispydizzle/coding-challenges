@@ -4,11 +4,11 @@
     using System.Collections.Generic;
     using System.Text;
 
-    internal class TextJustification
+    internal class TextJustificationOld
     {
         private void Main(string[] args)
         {
-            TextJustification a = new TextJustification();
+            TextJustificationOld a = new TextJustificationOld();
             string[] result = a.textJustification(new[]
             {
                 "This", "is", "an", "example", "of", "text", "justification."

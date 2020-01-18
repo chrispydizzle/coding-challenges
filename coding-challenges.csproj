@@ -260,6 +260,7 @@
       <Compile Include="Strings\ReverseVowelsInString.cs"/>
       <Compile Include="Strings\RomanToInteger.cs"/>
       <Compile Include="Strings\SingleRowKeyboard.cs"/>
+      <Compile Include="Strings\TestJustification.cs"/>
       <Compile Include="Strings\ValidateIPAddress.cs"/>
       <Compile Include="Strings\ValidPalindrome.cs"/>
       <Compile Include="Strings\ValidPalindrome2.cs"/>

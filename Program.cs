@@ -2,18 +2,16 @@ namespace CodeChallenges
 {
     using System;
     using System.Collections;
-    using BinaryTrees;
+    using Strings;
 
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            var s = new BinaryTreeLca();
-            TreeNode tree = TreeNode.BuildTree(3, 5, 1, 6, 2, 0, 8, null, null, 7, 4);
-            W(s.LowestCommonAncestor(tree, new TreeNode(5), new TreeNode(4)).val);
-            W(s.LowestCommonAncestor(tree, new TreeNode(5), new TreeNode(1)).val);
-            W(s.LowestCommonAncestor(tree, new TreeNode(5), new TreeNode(4)).val);
-
+            var s = new TestJustification();
+            W(s.FullJustify(new[] {"This", "is", "an", "example", "of", "text", "justification."}, 16));
+            W(s.FullJustify(new[] {"What", "must", "be", "acknowledgment", "shall", "be"}, 16));
+            W(s.FullJustify(new[] {"Science", "is", "what", "we", "understand", "well", "enough", "to", "explain", "to", "a", "computer.", "Art", "is", "everything", "else", "we", "do"}, 20));
             Console.Read();
         }
 
