@@ -95,6 +95,7 @@
       <Compile Include="BFS\PerfectSquaresLC.cs"/>
       <Compile Include="BFS\Unlocker.cs"/>
       <Compile Include="BinaryTrees\BinaryTreeMaxPathSum.cs"/>
+      <Compile Include="BinaryTrees\BinaryTreeLCA.cs"/>
       <Compile Include="BinaryTrees\BTreeLeaves.cs"/>
       <Compile Include="BinaryTrees\FlattenBSTToLinkedList.cs"/>
       <Compile Include="BinaryTrees\InorderTraverse.cs"/>

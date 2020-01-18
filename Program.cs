@@ -2,28 +2,17 @@ namespace CodeChallenges
 {
     using System;
     using System.Collections;
-    using Recursion;
+    using BinaryTrees;
 
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            var s = new FactorCombinations();
-            W(s.GetFactors(392832));
-
-            W(s.GetFactors(1787866));
-            W(s.GetFactors(7000));
-            W(s.GetFactors(32));
-
-
-            W(s.GetFactors(14));
-            W(s.GetFactors(32));
-            W(s.GetFactors(15));
-
-            W(s.GetFactors(6));
-
-            // W();
-
+            var s = new BinaryTreeLca();
+            TreeNode tree = TreeNode.BuildTree(3, 5, 1, 6, 2, 0, 8, null, null, 7, 4);
+            W(s.LowestCommonAncestor(tree, new TreeNode(5), new TreeNode(4)).val);
+            W(s.LowestCommonAncestor(tree, new TreeNode(5), new TreeNode(1)).val);
+            W(s.LowestCommonAncestor(tree, new TreeNode(5), new TreeNode(4)).val);
 
             Console.Read();
         }
