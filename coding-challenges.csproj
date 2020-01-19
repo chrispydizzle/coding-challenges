@@ -97,6 +97,7 @@
       <Compile Include="BinaryTrees\BinaryTreeMaxPathSum.cs"/>
       <Compile Include="BinaryTrees\BinaryTreeLCA.cs"/>
       <Compile Include="BinaryTrees\BTreeLeaves.cs"/>
+      <Compile Include="BinaryTrees\BTreeUpsideDown.cs"/>
       <Compile Include="BinaryTrees\FlattenBSTToLinkedList.cs"/>
       <Compile Include="BinaryTrees\InorderTraverse.cs"/>
       <Compile Include="BinaryTrees\IsSymmetricTree.cs"/>

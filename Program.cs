@@ -2,16 +2,18 @@ namespace CodeChallenges
 {
     using System;
     using System.Collections;
-    using Strings;
+    using BinaryTrees;
 
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            var s = new TestJustification();
-            W(s.FullJustify(new[] {"This", "is", "an", "example", "of", "text", "justification."}, 16));
-            W(s.FullJustify(new[] {"What", "must", "be", "acknowledgment", "shall", "be"}, 16));
-            W(s.FullJustify(new[] {"Science", "is", "what", "we", "understand", "well", "enough", "to", "explain", "to", "a", "computer.", "Art", "is", "everything", "else", "we", "do"}, 20));
+            var s = new BTreeUpsideDown();
+            Console.WriteLine(s.UpsideDownBinaryTree(TreeNode.BuildTree(1, 2, 3, 4, 5)).ToStringFancy());
+            Console.WriteLine(s.UpsideDownBinaryTree(TreeNode.BuildTree(1, 2, null, 3, null, 4, null, 5)).ToStringFancy());
+            Console.WriteLine(s.UpsideDownBinaryTree(TreeNode.BuildTree(1, 2, null, 3, null, 4)).ToStringFancy());
+            Console.WriteLine(s.UpsideDownBinaryTree(TreeNode.BuildTree(1, 2)).ToStringFancy());
+
             Console.Read();
         }
 

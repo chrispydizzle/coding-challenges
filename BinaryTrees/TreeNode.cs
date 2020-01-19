@@ -119,7 +119,6 @@
                 {
                     if (tn.left != null)
                     {
-                        b.Append("   ");
                         tempQ.Enqueue(tn.left);
                     }
                     else
@@ -127,7 +126,7 @@
                         tempQ.Enqueue(null);
                     }
 
-                    b.Append($"val: {tn.val}    ");
+                    b.Append($"val: {tn.val} ");
 
                     if (tn.right != null)
                     {
