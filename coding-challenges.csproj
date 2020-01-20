@@ -62,7 +62,6 @@
       <Compile Include="Arrays\ArrayChange.cs"/>
       <Compile Include="Arrays\ContainerWithMostWater.cs"/>
       <Compile Include="Arrays\ContainsDuplicates.cs"/>
-      <Compile Include="Arrays\EditDistance.cs"/>
       <Compile Include="Arrays\FbSpiralGen.cs"/>
       <Compile Include="Arrays\FindTargetSum.cs"/>
       <Compile Include="Arrays\FindTheCeleb.cs"/>
@@ -123,7 +122,9 @@
       <Compile Include="DFS\DFSIslands.cs"/>
       <Compile Include="DFS\Template.cs"/>
       <Compile Include="DynamicProgramming\BestTimeToBuySellStock.cs"/>
+      <Compile Include="DynamicProgramming\EditDistance.cs"/>
       <Compile Include="DynamicProgramming\CanPartitionSubsets.cs"/>
+      <Compile Include="DynamicProgramming\FibonacciNum.cs"/>
       <Compile Include="DynamicProgramming\MaximumSubArray.cs"/>
       <Compile Include="DynamicProgramming\MaxSubarrayProduct.cs"/>
       <Compile Include="DynamicProgramming\PaintHouse.cs"/>
