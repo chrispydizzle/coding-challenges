@@ -138,6 +138,7 @@
       <Compile Include="Interviews\Acorns.cs"/>
       <Compile Include="Interviews\Facebook.cs"/>
       <Compile Include="Interviews\Google.cs"/>
+      <Compile Include="Interviews\Lifion.cs"/>
       <Compile Include="Interviews\LinkedIn.cs"/>
       <Compile Include="LinkedList\AddLinkedListNumbers.cs"/>
       <Compile Include="LinkedList\BackwardsReorderList.cs"/>
