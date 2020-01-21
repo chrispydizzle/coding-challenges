@@ -4,6 +4,8 @@ namespace CodeChallenges.Strings
 
     public class LongestPalindromeSubstring
     {
+        // TODO: Do the DP version.
+        // TODO: Understand this solution
         public string LongestPalindrome(string s)
         {
             if (string.IsNullOrEmpty(s)) return string.Empty;

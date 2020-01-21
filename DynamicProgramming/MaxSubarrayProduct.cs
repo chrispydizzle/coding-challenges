@@ -6,6 +6,7 @@ namespace CodeChallenges.DynamicProgramming
 
     public class MaxSubarrayProduct
     {
+        // TODO: Find simpler solution.
         public int MaxProduct(int[] nums)
         {
             List<int> alternates = new List<int>();

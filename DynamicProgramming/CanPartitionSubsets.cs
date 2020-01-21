@@ -7,6 +7,7 @@ namespace CodeChallenges.DynamicProgramming
     public class CanPartitionSubsets
     {
         // TODO: was really close on this one. Need to revisit.
+        // TODO: has a DP solution.
         public bool CanPartitionKSubsets(int[] nums, int k)
         {
             int sum = nums.Sum();
