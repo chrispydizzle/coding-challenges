@@ -97,6 +97,7 @@
       <Compile Include="BinaryTrees\BinaryTreeLCA.cs"/>
       <Compile Include="BinaryTrees\BTreeLeaves.cs"/>
       <Compile Include="BinaryTrees\BTreeUpsideDown.cs"/>
+      <Compile Include="BinaryTrees\FindReconstructItin.cs"/>
       <Compile Include="BinaryTrees\FlattenBSTToLinkedList.cs"/>
       <Compile Include="BinaryTrees\InorderTraverse.cs"/>
       <Compile Include="BinaryTrees\IsSymmetricTree.cs"/>
@@ -140,12 +141,14 @@
       <Compile Include="Interviews\Google.cs"/>
       <Compile Include="Interviews\Lifion.cs"/>
       <Compile Include="Interviews\LinkedIn.cs"/>
+      <Compile Include="Interviews\Uber.cs"/>
       <Compile Include="LinkedList\AddLinkedListNumbers.cs"/>
       <Compile Include="LinkedList\BackwardsReorderList.cs"/>
       <Compile Include="LinkedList\CopyListRandomPointer.cs"/>
       <Compile Include="LinkedList\DeleteLinkedListNode.cs"/>
       <Compile Include="LinkedList\LinkedListPrinter.cs"/>
       <Compile Include="LinkedList\ListNode.cs"/>
+      <Compile Include="LinkedList\MergeMultipleLinkedLists.cs"/>
       <Compile Include="LinkedList\MergeTwoSortedLists.cs"/>
       <Compile Include="LinkedList\Node.cs"/>
       <Compile Include="LinkedList\RemoveNFromEnd.cs"/>
@@ -247,6 +250,7 @@
       <Compile Include="Strings\FindFirstUniqCharacter.cs"/>
       <Compile Include="Strings\FindLongestCommonPrefix.cs"/>
       <Compile Include="Strings\GroupAngram.cs"/>
+      <Compile Include="Strings\Helpers.cs"/>
       <Compile Include="Strings\InString.cs"/>
       <Compile Include="Strings\IntegerToEnglish.cs"/>
       <Compile Include="Strings\IsomorphicStrings.cs"/>

@@ -1,5 +1,7 @@
 namespace CodeChallenges.LinkedList
 {
+    using System.Text;
+
     // Definition for singly-linked list.
     public class ListNode
     {
@@ -23,6 +25,33 @@ namespace CodeChallenges.LinkedList
             }
 
             return root;
+        }
+
+        public static ListNode[] MakeRange(params int[][] args)
+        {
+            ListNode[] ln = new ListNode[args.Length];
+            for (int i = 0; i < args.Length; i++)
+            {
+                int[] ints = args[i];
+                ln[i] = ListNode.Make(ints);
+            }
+
+            return ln;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder b = new StringBuilder();
+            b.Append($"{this.val} => ");
+            ListNode next = this.next;
+            while (next != null)
+            {
+                b.Append($"{next.val} => ");
+                next = next.next;
+            }
+
+            b.Append($"# ");
+            return b.ToString();
         }
     }
 }
