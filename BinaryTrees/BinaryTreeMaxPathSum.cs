@@ -36,7 +36,6 @@
 
             if (Math.Max(leftValue, rightValue) == int.MinValue) return node.val;
 
-
             return Math.Max(node.val + Math.Max(leftValue, rightValue), node.val);
         }
     }

@@ -78,6 +78,8 @@
       <Compile Include="Arrays\ShortestStringArrayDifference.cs"/>
       <Compile Include="Arrays\SlidingWindowMaximum.cs"/>
       <Compile Include="Arrays\SubarraySumEqualsK.cs"/>
+      <Compile Include="Arrays\SubarraySumK.cs"/>
+      <Compile Include="Arrays\TaskScheduler.cs"/>
       <Compile Include="Arrays\ThreeSum.cs"/>
       <Compile Include="Arrays\TwoSumSolve.cs"/>
       <Compile Include="BFS\BFSActor.cs"/>
@@ -227,6 +229,7 @@
       <Compile Include="Solves\SumUpNumbers.cs"/>
       <Compile Include="Solves\TasksTypes.cs"/>
       <Compile Include="Solves\TextJustification.cs"/>
+      <Compile Include="Solves\UberPrep.cs"/>
       <Compile Include="Solves\ValidTime.cs"/>
       <Compile Include="Solves\VariableName.cs"/>
       <Compile Include="Sorts\FindFirstLastinSortedArray.cs"/>
@@ -253,6 +256,7 @@
       <Compile Include="Strings\Helpers.cs"/>
       <Compile Include="Strings\InString.cs"/>
       <Compile Include="Strings\IntegerToEnglish.cs"/>
+      <Compile Include="Strings\IntegerToRoman.cs"/>
       <Compile Include="Strings\IsomorphicStrings.cs"/>
       <Compile Include="Strings\IsStringANumber.cs"/>
       <Compile Include="Strings\LongestPalindromeSubstring.cs"/>

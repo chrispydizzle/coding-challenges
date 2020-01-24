@@ -54,7 +54,6 @@ namespace CodeChallenges.BinaryTrees
             }
 
             int[][] result = new int[dictonary.Count][];
-            int counter = 0;
             Array.Sort(dictonary.Values.ToArray());
             // Array.Reverse();
             // IEnumerable<List<int>> enumerable = dictonary.Values.Where(v => v == dictonary.Values.Min(l => l.Min()));
