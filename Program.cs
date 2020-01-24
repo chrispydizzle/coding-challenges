@@ -2,16 +2,14 @@ namespace CodeChallenges
 {
     using System;
     using System.Collections;
-    using Arrays;
+    using DynamicProgramming;
 
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            var s = new SubarraySumK();
-            W(s.SubarraySum(new[] {1, 1, 1}, 2));
-            W(s.SubarraySum(new[] {1, 2, 5, -10, -20, 15, 2, 2, 2, 6, -2, 1, 1}, 2));
-            W(s.SubarraySum(new[] {1, 2, 5, -10, -20, 15, 2, 2, 2, 6, -2, 1, 1}, -2));
+            var s = new PaintHous();
+            W(s.MinCost(new[] {new[] {17, 2, 17}, new[] {16, 16, 5}, new[] {14, 3, 19}}));
             Console.ReadLine();
         }
 

@@ -130,7 +130,9 @@
       <Compile Include="DynamicProgramming\FibonacciNum.cs"/>
       <Compile Include="DynamicProgramming\MaximumSubArray.cs"/>
       <Compile Include="DynamicProgramming\MaxSubarrayProduct.cs"/>
+      <Compile Include="DynamicProgramming\PaintHous.cs"/>
       <Compile Include="DynamicProgramming\PaintHouse.cs"/>
+      <Compile Include="DynamicProgramming\PaintHouseII.cs"/>
       <Compile Include="DynamicProgramming\SearchInRotatedSortedArray.cs"/>
       <Compile Include="DynamicProgramming\StairClimber.cs"/>
       <Compile Include="Graphs\BTreeRightSideView.cs"/>
