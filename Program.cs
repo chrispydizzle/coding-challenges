@@ -8,8 +8,8 @@ namespace CodeChallenges
     {
         public static void Main(string[] args)
         {
-            var s = new PaintHous();
-            W(s.MinCost(new[] {new[] {17, 2, 17}, new[] {16, 16, 5}, new[] {14, 3, 19}}));
+            var s = new ChangeCoins();
+            W(s.CoinChange(new[] {186, 419, 83, 408}, 6249));
             Console.ReadLine();
         }
 
