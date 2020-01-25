@@ -26,6 +26,7 @@ namespace CodeChallenges.DynamicProgramming
 
             while (!amountCoins.ContainsKey(0) && amountCoins.Keys.Count != keys)
             {
+                keys = amountCoins.Keys.Count;
                 for (int i = coinList.Count - 1; i >= 0; i--)
                 {
                     int currentCoin = coins[i];
@@ -68,7 +69,7 @@ namespace CodeChallenges.DynamicProgramming
                     smallest = amount;
                 }
 
-                keys = amountCoins.Keys.Count;
+
                 Console.WriteLine($"{smallest} {coinsUsed}");
             }
             /*int baseValue = 0;
