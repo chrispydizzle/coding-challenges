@@ -2,107 +2,65 @@ namespace CodeChallenges.Design
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
 
     public class MaxLinePoints
     {
-        Point[] points;
-        int n;
-        Dictionary<double, int> lines = new Dictionary<double, int>();
-        int horisontal_lines;
-
-        public int MaxPoints(int[][] points)
+        public int MaxPoints(int[][] pointsInt)
         {
-            var v = new List<Point>();
-            foreach (List<Point> list in points.Select((s, index) =>
+            Point[] points = new Point[pointsInt.Length];
+            int i = 0;
+            foreach (int[] val in pointsInt)
             {
-                foreach (int t in s)
+                points[i++] = new Point(val[0], val[1]);
+            }
+
+            if (points.Length < 2) return points.Length;
+            int max = 2;
+            foreach (Point p1 in points)
+            {
+                Dictionary<int, int> slopes = new Dictionary<int, int>(points.Length);
+                int localMax = 0;
+                foreach (Point p2 in points)
                 {
-                    int x = index;
-                    foreach (int y in s) v.Add(new Point() {X = x, Y = y});
+                    int num = p2.Y - p1.Y;
+                    int den = p2.X - p1.X;
+
+                    // pairing functions only work with non-negative integers
+                    // we store the sign in a separate variable
+                    int sign = 1;
+                    if ((num > 0 && den < 0) || (num < 0 && den > 0)) sign = -1;
+                    num = Math.Abs(num);
+                    den = Math.Abs(den);
+
+                    // pairing functions represent a pair of any two integers uniquely;
+                    // they can be used as hash functions for any sequence of integers;
+                    // therefore, a pairing function from 1/2 doesn't equal to that from 3/6
+                    // even though the slope 1/2 and 3/6 is the same.
+                    // => we need to convert each fraction to its simplest form, i.e. 3/6 => 1/2
+                    int gcd = GCD(num, den);
+                    num = gcd == 0 ? num : num / gcd;
+                    den = gcd == 0 ? den : den / gcd;
+
+                    // We can use Cantor pairing function pi(k1, k2) = 1/2(k1 + k2)(k1 + k2 + 1) + k2
+                    // and include the sign
+                    int m = sign * (num + den) * (num + den + 1) / 2 + den;
+                    if (slopes.ContainsKey(m)) slopes[m] = slopes[m] + 1;
+                    else slopes.Add(m, 1);
+                    if (m == 0) continue;
+
+                    localMax = Math.Max(slopes[m], localMax);
                 }
 
-                return v;
-            }))
+                max = Math.Max(max, localMax + slopes[0]);
+            }
 
-                this.points = v.ToArray();
-
-            // If the number of points is less than 3
-            // they are all on the same line.
-            n = points.Length;
-            if (n < 3)
-                return n;
-
-            int max_count = 1;
-            // Compute in a loop a max number of points
-            // on a line containing point i.
-            for (int i = 0; i < n - 1; i++)
-                max_count = Math.Max(max_points_on_a_line_containing_point_i(i), max_count);
-            return max_count;
+            return max;
         }
 
-        public Tuple<int, int> add_line(int i, int j, int count, int duplicates)
+        public int GCD(int a, int b)
         {
-            /*
-            Add a line passing through i and j points.
-            Update max number of points on a line containing point i.
-            Update a number of duplicates of i point.
-            */
-            // rewrite points as coordinates
-            int x1 = points[i].X;
-            int y1 = points[i].Y;
-            int x2 = points[j].X;
-            int y2 = points[j].Y;
-            // add a duplicate point
-            if ((x1 == x2) && (y1 == y2))
-                duplicates++;
-            // add a horisontal line : y = const
-            else if (y1 == y2)
-            {
-                horisontal_lines += 1;
-                count = Math.Max(horisontal_lines, count);
-            }
-            // add a line : x = slope * y + c
-            // only slope is needed for a hash-map
-            // since we always start from the same point
-            else
-            {
-                double slope = 1.0 * (x1 - x2) / (y1 - y2) + 0.0;
-                int outc = 1;
-                lines.TryGetValue(slope, out outc);
-                lines[slope] = outc + 1;
-                count = Math.Max(lines[slope], count);
-            }
-
-            return new Tuple<int, int>(count, duplicates);
-        }
-
-        public int max_points_on_a_line_containing_point_i(int i)
-        {
-            /*
-            Compute the max number of points
-            for a line containing point i.
-            */
-            // init lines passing through point i
-            lines.Clear();
-            horisontal_lines = 1;
-            // One starts with just one point on a line : point i.
-            int count = 1;
-            // There is no duplicates of a point i so far.
-            int duplicates = 0;
-
-            // Compute lines passing through point i (fixed)
-            // and point j (interation).
-            // Update in a loop the number of points on a line
-            // and the number of duplicates of point i.
-            for (int j = i + 1; j < n; j++)
-            {
-                Tuple<int, int> p = add_line(i, j, count, duplicates);
-                count = p.Item1;
-                duplicates = p.Item2;
-            }
-
-            return count + duplicates;
+            if (b == 0) return a;
+            return GCD(b, a % b);
         }
     }
 }
