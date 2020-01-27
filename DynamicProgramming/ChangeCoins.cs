@@ -16,7 +16,6 @@ namespace CodeChallenges.DynamicProgramming
             // optimal subsystem, multiple repeating subproblems,this is DP.
             Array.Sort(coins); // sort the coin amounts so we can try the largest first
             List<int> coinList = new List<int>(coins);
-            int bestZero = -1;
             HashSet<int> badMoves = new HashSet<int>(); // contains moves we shouldn't attempt again because they don't lead to zero.
             Dictionary<int, int> amountCoins = new Dictionary<int, int>(); // this is our best sum dictionary, keys are remianing amounts, values are coins used
 
