@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    internal class StringsRearrangement
+    public class StringsRearrangement
     {
         public void Main(string[] args)
         {
@@ -40,7 +40,7 @@
             return false;
         }
 
-        internal bool stringsRearrangement(string[] inputArray)
+        public bool stringsRearrangement(string[] inputArray)
         {
             foreach (string root in inputArray)
             {

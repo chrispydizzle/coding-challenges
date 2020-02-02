@@ -59,9 +59,9 @@ namespace CodeChallenges.Interviews
 
     // loop start
     // find first occurance of either word
-    // seek left until other word 
+    // seek left until other word
     // seek right until other word
-    // continue 
+    // continue
 
     internal class HelloWorld
     {
@@ -90,10 +90,84 @@ namespace CodeChallenges.Interviews
 
             return false;
         }
+        // [1,8,5,3,7,2], 3
+
+        // [5,7,8]
+
+        public int FindKLargest(int[] nums, int k)
+        {
+            Heap h = new RHeap();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int n = nums[i];
+                if (h.Count() < k)
+                {
+                    h.Insert(n);
+                    continue;
+                }
+
+
+                if (n > h.Peek())
+                {
+                    h.Pop();
+                    h.Insert(n);
+                }
+            }
+
+            return h.Peek();
+        }
+
+        // Input: [1,0,0,1,0,0,1,0,0]
+
+        // x = 3 ; return => true
+        // x = 4; return => false
+
+        /*
+
+    Write a function that, given a List returns the Nth largest element in that List
+
+    */
+
+        interface Heap
+        {
+            int Peek();
+
+            void Pop();
+
+            void Insert(int i);
+
+            int Count();
+        }
+
+        public class RHeap : Heap
+        {
+            public int Peek()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Pop()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Insert(int i)
+            {
+                throw new NotImplementedException();
+            }
+
+            public int Count()
+            {
+                throw new NotImplementedException();
+            }
+        }
+        // convert to array
+
+        // [1,5,8]
+        // Heap : [8, 7, 5,3,2,1]
+        // while heap.pop()
+        // heap.pop
+        // array sort
+        // array len - k - 1
     }
-
-    // Input: [1,0,0,1,0,0,1,0,0]
-
-    // x = 3 ; return => true
-    // x = 4; return => false
 }

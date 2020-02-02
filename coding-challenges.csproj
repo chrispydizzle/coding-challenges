@@ -39,16 +39,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>full</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
     <ItemGroup>
         <Reference Include="mscorlib"/>
         <Reference Include="System"/>
@@ -106,6 +106,7 @@
         <Compile Include="BFS\Unlocker.cs"/>
         <Compile Include="BinaryTrees\BinaryTreeMaxPathSum.cs"/>
         <Compile Include="BinaryTrees\BinaryTreeLCA.cs"/>
+        <Compile Include="BinaryTrees\BSTIterator.cs"/>
         <Compile Include="BinaryTrees\BTreeLeaves.cs"/>
         <Compile Include="BinaryTrees\BTreeUpsideDown.cs"/>
         <Compile Include="BinaryTrees\ClosestKVals.cs"/>
@@ -292,6 +293,7 @@
         <Compile Include="Strings\ReverseVowelsInString.cs"/>
         <Compile Include="Strings\RomanToInteger.cs"/>
         <Compile Include="Strings\SingleRowKeyboard.cs"/>
+        <Compile Include="Strings\StringAtoI.cs"/>
         <Compile Include="Strings\TestJustification.cs"/>
         <Compile Include="Strings\ValidateIPAddress.cs"/>
         <Compile Include="Strings\ValidPalindrome.cs"/>
@@ -308,16 +310,16 @@
             <DependentUpon>TempDb.mdf</DependentUpon>
         </Content>
     </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
+    <ItemGroup>
+        <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+            <Visible>False</Visible>
+            <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+            <Install>true</Install>
+        </BootstrapperPackage>
+        <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+            <Visible>False</Visible>
+            <ProductName>.NET Framework 3.5 SP1</ProductName>
+            <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

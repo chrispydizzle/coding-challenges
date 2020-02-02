@@ -2,13 +2,7 @@ namespace CodeChallenges
 {
     using System;
     using System.Collections;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Security.Cryptography;
     using Arrays;
-    using BinaryTrees;
-    using Design;
-    using DynamicProgramming;
 
     internal static class Program
     {
@@ -49,8 +43,6 @@ namespace CodeChallenges
                     W(v);
                 }
             }
-
-            List<int> a;
 
             Console.WriteLine($" Raw object: {o}");
         }
