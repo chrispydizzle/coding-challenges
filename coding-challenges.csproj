@@ -29,16 +29,16 @@
     <Nullable>disable</Nullable>
     <LangVersion>7.3</LangVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugType>full</DebugType>
@@ -72,6 +72,7 @@
         <Compile Include="Arrays\FindTheCeleb.cs"/>
         <Compile Include="Arrays\HouseRobber.cs"/>
         <Compile Include="Arrays\InsertInvl.cs"/>
+        <Compile Include="Arrays\IsABST.cs"/>
         <Compile Include="Arrays\IslandPerimeter.cs"/>
         <Compile Include="Arrays\KSmallestPairs.cs"/>
         <Compile Include="Arrays\MaxMaxSubarray.cs"/>
@@ -80,7 +81,9 @@
         <Compile Include="Arrays\MergeTwoSortedLists.cs"/>
         <Compile Include="Arrays\MoveZero.cs"/>
         <Compile Include="Arrays\NumberOfIslands.cs"/>
+        <Compile Include="Arrays\PermuteIt.cs"/>
         <Compile Include="Arrays\PlaceFlowers.cs"/>
+        <Compile Include="Arrays\ProdNotMe.cs"/>
         <Compile Include="Arrays\ProductOfArrayExceptSelf.cs"/>
         <Compile Include="Arrays\ReversePolish.cs"/>
         <Compile Include="Arrays\RotateArray.cs"/>
@@ -90,6 +93,8 @@
         <Compile Include="Arrays\SubarraySumK.cs"/>
         <Compile Include="Arrays\TaskScheduler.cs"/>
         <Compile Include="Arrays\ThreeSum.cs"/>
+        <Compile Include="Arrays\TwoSumII.cs"/>
+        <Compile Include="Arrays\TwoSumLTK.cs"/>
         <Compile Include="Arrays\TwoSumSolve.cs"/>
         <Compile Include="BFS\BFSActor.cs"/>
         <Compile Include="BFS\BFSActorOptimized.cs"/>
@@ -159,6 +164,7 @@
         <Compile Include="Graphs\WordLadder.cs"/>
         <Compile Include="Heaps\KthLargestArrayElement.cs"/>
         <Compile Include="Interviews\Acorns.cs"/>
+        <Compile Include="Interviews\BridgeWater.cs"/>
         <Compile Include="Interviews\Facebook.cs"/>
         <Compile Include="Interviews\Google.cs"/>
         <Compile Include="Interviews\Lifion.cs"/>
@@ -179,6 +185,8 @@
         <Compile Include="Properties\AssemblyInfo.cs"/>
         <Compile Include="Recursion\CombinationSumCheck.cs"/>
         <Compile Include="Recursion\FactorCombinations.cs"/>
+        <Compile Include="Recursion\GenParens.cs"/>
+        <Compile Include="Recursion\LetterCombinationsPhone.cs"/>
         <Compile Include="Recursion\Permutations.cs"/>
         <Compile Include="Solves\AbsoluteValueSumMinimization.cs"/>
         <Compile Include="Solves\AddBorder.cs"/>
@@ -320,14 +328,14 @@
             <Visible>False</Visible>
             <ProductName>.NET Framework 3.5 SP1</ProductName>
             <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-         Other similar extension points exist, see Microsoft.Common.targets.
-    <Target Name="BeforeBuild">
-    </Target>
-    <Target Name="AfterBuild">
-    </Target>
-    -->
+        </BootstrapperPackage>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+           Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+      -->
 </Project>
