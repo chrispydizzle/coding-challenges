@@ -2,24 +2,14 @@ namespace CodeChallenges
 {
     using System;
     using System.Collections;
-    using System.Collections.Generic;
-    using System.Linq;
     using Arrays;
-    using Recursion;
 
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            GenParens p = new GenParens();
-            HashSet<string> generateParenthesis = new HashSet<string>(p.GenerateParenthesis(4));
-            W(generateParenthesis.OrderBy(c => c));
-            W(generateParenthesis.OrderBy(d => d));
-
-            HashSet<string> intent = new HashSet<string>(new[] {"(((())))", "((()()))", "((())())", "((()))()", "(()(()))", "(()()())", "(()())()", "(())(())", "(())()()", "()((()))", "()(()())", "()(())()", "()()(())", "()()()()"});
-            intent.RemoveWhere(c => generateParenthesis.Contains(c));
-            W(intent);
-            Console.ReadLine();
+            TrappingRain t = new TrappingRain();
+            W(t.Trap(new[] {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
         }
 
         public static void SecondOldMain(string[] args)

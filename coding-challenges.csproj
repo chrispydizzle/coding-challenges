@@ -19,15 +19,15 @@
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-    <Nullable>disable</Nullable>
-    <LangVersion>7.3</LangVersion>
+      <UpdateRequired>false</UpdateRequired>
+      <MapFileExtensions>true</MapFileExtensions>
+      <ApplicationRevision>0</ApplicationRevision>
+      <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+      <IsWebBootstrapper>false</IsWebBootstrapper>
+      <UseApplicationTrust>false</UseApplicationTrust>
+      <BootstrapperEnabled>true</BootstrapperEnabled>
+      <Nullable>disable</Nullable>
+      <LangVersion>7.3</LangVersion>
   </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -79,12 +79,14 @@
         <Compile Include="Arrays\MergeIntervals.cs"/>
         <Compile Include="Arrays\MergeSortedArray.cs"/>
         <Compile Include="Arrays\MergeTwoSortedLists.cs"/>
+        <Compile Include="Arrays\MostCommonNotBanned.cs"/>
         <Compile Include="Arrays\MoveZero.cs"/>
         <Compile Include="Arrays\NumberOfIslands.cs"/>
         <Compile Include="Arrays\PermuteIt.cs"/>
         <Compile Include="Arrays\PlaceFlowers.cs"/>
         <Compile Include="Arrays\ProdNotMe.cs"/>
         <Compile Include="Arrays\ProductOfArrayExceptSelf.cs"/>
+        <Compile Include="Arrays\ReorderLogs.cs"/>
         <Compile Include="Arrays\ReversePolish.cs"/>
         <Compile Include="Arrays\RotateArray.cs"/>
         <Compile Include="Arrays\ShortestStringArrayDifference.cs"/>
@@ -93,6 +95,7 @@
         <Compile Include="Arrays\SubarraySumK.cs"/>
         <Compile Include="Arrays\TaskScheduler.cs"/>
         <Compile Include="Arrays\ThreeSum.cs"/>
+        <Compile Include="Arrays\TrappingRain.cs"/>
         <Compile Include="Arrays\TwoSumII.cs"/>
         <Compile Include="Arrays\TwoSumLTK.cs"/>
         <Compile Include="Arrays\TwoSumSolve.cs"/>
@@ -133,6 +136,7 @@
         <Compile Include="Design\INestedInteger.cs"/>
         <Compile Include="Design\InserDeleteGetRandom.cs"/>
         <Compile Include="Design\IsPerfectSq.cs"/>
+        <Compile Include="Design\LRUCache.cs"/>
         <Compile Include="Design\MaxLinePoints.cs"/>
         <Compile Include="Design\MyHashMap.cs"/>
         <Compile Include="Design\NestedInteger.cs"/>
@@ -158,6 +162,7 @@
         <Compile Include="DynamicProgramming\PaintHouseII.cs"/>
         <Compile Include="DynamicProgramming\SearchInRotatedSortedArray.cs"/>
         <Compile Include="DynamicProgramming\StairClimber.cs"/>
+        <Compile Include="DynamicProgramming\WordSearch.cs"/>
         <Compile Include="Graphs\BTreeRightSideView.cs"/>
         <Compile Include="Graphs\UndirectedCloneGraph.cs"/>
         <Compile Include="Graphs\UndirectedGraphNode.cs"/>
@@ -261,6 +266,7 @@
         <Compile Include="Solves\ValidTime.cs"/>
         <Compile Include="Solves\VariableName.cs"/>
         <Compile Include="Sorts\FindFirstLastinSortedArray.cs"/>
+        <Compile Include="Sorts\KClosestPoints.cs"/>
         <Compile Include="Sorts\MergeSort.cs"/>
         <Compile Include="Sorts\RandomPickWithWeight.cs"/>
         <Compile Include="Stack\DailyTemp.cs"/>
@@ -332,10 +338,10 @@
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-           Other similar extension points exist, see Microsoft.Common.targets.
-      <Target Name="BeforeBuild">
-      </Target>
-      <Target Name="AfterBuild">
-      </Target>
-      -->
+             Other similar extension points exist, see Microsoft.Common.targets.
+        <Target Name="BeforeBuild">
+        </Target>
+        <Target Name="AfterBuild">
+        </Target>
+        -->
 </Project>
