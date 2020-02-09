@@ -9,16 +9,16 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CodeChallenges</RootNamespace>
     <AssemblyName>CodeChallenges</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
+      <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+      <FileAlignment>512</FileAlignment>
+      <PublishUrl>publish\</PublishUrl>
+      <Install>true</Install>
+      <InstallFrom>Disk</InstallFrom>
+      <UpdateEnabled>false</UpdateEnabled>
+      <UpdateMode>Foreground</UpdateMode>
+      <UpdateInterval>7</UpdateInterval>
+      <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+      <UpdatePeriodically>false</UpdatePeriodically>
       <UpdateRequired>false</UpdateRequired>
       <MapFileExtensions>true</MapFileExtensions>
       <ApplicationRevision>0</ApplicationRevision>
@@ -66,6 +66,7 @@
         <Compile Include="Arrays\ArrayIntersection.cs"/>
         <Compile Include="Arrays\ContainerWithMostWater.cs"/>
         <Compile Include="Arrays\ContainsDuplicates.cs"/>
+        <Compile Include="Arrays\CriticalConnect.cs"/>
         <Compile Include="Arrays\DepthSumIV.cs"/>
         <Compile Include="Arrays\FbSpiralGen.cs"/>
         <Compile Include="Arrays\FindTargetSum.cs"/>
@@ -89,6 +90,7 @@
         <Compile Include="Arrays\ReorderLogs.cs"/>
         <Compile Include="Arrays\ReversePolish.cs"/>
         <Compile Include="Arrays\RotateArray.cs"/>
+        <Compile Include="Arrays\RottenOs.cs"/>
         <Compile Include="Arrays\ShortestStringArrayDifference.cs"/>
         <Compile Include="Arrays\SlidingWindowMaximum.cs"/>
         <Compile Include="Arrays\SubarraySumEqualsK.cs"/>
@@ -96,6 +98,7 @@
         <Compile Include="Arrays\TaskScheduler.cs"/>
         <Compile Include="Arrays\ThreeSum.cs"/>
         <Compile Include="Arrays\TrappingRain.cs"/>
+        <Compile Include="Arrays\TryNumIslandsa.cs"/>
         <Compile Include="Arrays\TwoSumII.cs"/>
         <Compile Include="Arrays\TwoSumLTK.cs"/>
         <Compile Include="Arrays\TwoSumSolve.cs"/>
@@ -130,6 +133,7 @@
         <Compile Include="BinaryTrees\RootLeafPath.cs"/>
         <Compile Include="BinaryTrees\SecondMinNodeBinaryTree.cs"/>
         <Compile Include="BinaryTrees\SerializeAndDeserializeBtree.cs"/>
+        <Compile Include="BinaryTrees\SubTree.cs"/>
         <Compile Include="BinaryTrees\TreeNode.cs"/>
         <Compile Include="BinaryTrees\ValidateBinarySearchTree.cs"/>
         <Compile Include="Design\AllOne.cs"/>
@@ -178,12 +182,14 @@
         <Compile Include="LinkedList\AddLinkedListNumbers.cs"/>
         <Compile Include="LinkedList\BackwardsReorderList.cs"/>
         <Compile Include="LinkedList\CopyListRandomPointer.cs"/>
+        <Compile Include="LinkedList\CpyRand.cs"/>
         <Compile Include="LinkedList\DeleteLinkedListNode.cs"/>
         <Compile Include="LinkedList\LinkedListPrinter.cs"/>
         <Compile Include="LinkedList\ListNode.cs"/>
         <Compile Include="LinkedList\MergeMultipleLinkedLists.cs"/>
         <Compile Include="LinkedList\MergeTwoSortedLists.cs"/>
         <Compile Include="LinkedList\Node.cs"/>
+        <Compile Include="LinkedList\RandomNode.cs"/>
         <Compile Include="LinkedList\RemoveNFromEnd.cs"/>
         <Compile Include="Matrix\RotateMatrix.cs"/>
         <Compile Include="Program.cs"/>
@@ -338,10 +344,10 @@
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-             Other similar extension points exist, see Microsoft.Common.targets.
-        <Target Name="BeforeBuild">
-        </Target>
-        <Target Name="AfterBuild">
-        </Target>
-        -->
+               Other similar extension points exist, see Microsoft.Common.targets.
+          <Target Name="BeforeBuild">
+          </Target>
+          <Target Name="AfterBuild">
+          </Target>
+          -->
 </Project>

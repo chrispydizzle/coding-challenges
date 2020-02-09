@@ -2,14 +2,18 @@ namespace CodeChallenges
 {
     using System;
     using System.Collections;
+    using System.Collections.Generic;
     using Arrays;
+    using BinaryTrees;
 
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            TrappingRain t = new TrappingRain();
-            W(t.Trap(new[] {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
+            SubTree st = new SubTree();
+            W(st.IsSubtree(TreeNode.BuildTree(1), TreeNode.BuildTree(1)));
+            W(st.IsSubtree(TreeNode.BuildTree(3, 4, 5, 1, 2, null, null, null, null, 0), TreeNode.BuildTree(4, 1, 2)));
+            W(st.IsSubtree(TreeNode.BuildTree(3, 4, 5, 1, 2), TreeNode.BuildTree(4, 1, 2)));
         }
 
         public static void SecondOldMain(string[] args)
@@ -118,6 +122,11 @@ Given a sequence of n integers a1, a2, ..., an, a 132 pattern is a subsequence a
         {
             if (o is IEnumerable enumerable && !(o is string s))
             {
+                if (o is IList)
+                {
+                    Console.WriteLine($" IList count: {(o as IList).Count}");
+                }
+
                 foreach (object v in enumerable)
                 {
                     W(v);
@@ -125,6 +134,21 @@ Given a sequence of n integers a1, a2, ..., an, a 132 pattern is a subsequence a
             }
 
             Console.WriteLine($" Raw object: {o}");
+        }
+    }
+
+    public static class Extensions
+    {
+        public static List<IList<int>> MakeIList(this int[][] array)
+        {
+            List<IList<int>> result = new List<IList<int>>();
+            foreach (int[] ints in array)
+            {
+                List<int> newL = new List<int>(ints);
+                result.Add(newL);
+            }
+
+            return result;
         }
     }
 }
