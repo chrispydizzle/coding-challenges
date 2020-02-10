@@ -5,14 +5,11 @@ namespace CodeChallenges.Arrays
 
     public class CriticalConnect
     {
-        private IList<IList<int>> ans;
-
-        private Dictionary<int, IList<int>> dNodes;
-
-        //TODO: Revisit for better understanding
         private int id;
         private int[] ids;
         private int[] low;
+        private Dictionary<int, IList<int>> dNodes;
+        private IList<IList<int>> ans;
 
         public IList<IList<int>> CriticalConnections(int n, IList<IList<int>> connections)
         {

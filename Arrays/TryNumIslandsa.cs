@@ -1,5 +1,6 @@
 namespace CodeChallenges.Arrays
 {
+    using System;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -37,7 +38,7 @@ namespace CodeChallenges.Arrays
                 var dQ = q.Dequeue();
                 int i = dQ.Item1;
                 int j = dQ.Item2;
-                if (visited.Contains((i, j))) continue;
+                if(visited.Contains((i,j))) continue;
 
                 visited.Add((i, j));
                 grid[i][j] = 'X';

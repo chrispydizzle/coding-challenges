@@ -12,7 +12,6 @@ namespace CodeChallenges.LinkedList.Smh
             var root = new Node(-1);
             var n = head;
             var nn = root;
-            int i = -1;
 
             // traverse once grabbing all the nexts
             while (n != null)

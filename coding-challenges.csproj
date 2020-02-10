@@ -2,13 +2,13 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EA0BE21B-EB17-42A1-825A-9170207D8375}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CodeChallenges</RootNamespace>
-    <AssemblyName>CodeChallenges</AssemblyName>
+      <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+      <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+      <ProjectGuid>{EA0BE21B-EB17-42A1-825A-9170207D8375}</ProjectGuid>
+      <OutputType>Exe</OutputType>
+      <AppDesignerFolder>Properties</AppDesignerFolder>
+      <RootNamespace>CodeChallenges</RootNamespace>
+      <AssemblyName>CodeChallenges</AssemblyName>
       <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
       <FileAlignment>512</FileAlignment>
       <PublishUrl>publish\</PublishUrl>
@@ -91,6 +91,7 @@
         <Compile Include="Arrays\ReversePolish.cs"/>
         <Compile Include="Arrays\RotateArray.cs"/>
         <Compile Include="Arrays\RottenOs.cs"/>
+        <Compile Include="Arrays\Search2DMatrix.cs"/>
         <Compile Include="Arrays\ShortestStringArrayDifference.cs"/>
         <Compile Include="Arrays\SlidingWindowMaximum.cs"/>
         <Compile Include="Arrays\SubarraySumEqualsK.cs"/>
@@ -303,6 +304,7 @@
         <Compile Include="Strings\LongestSubstring.cs"/>
         <Compile Include="Arrays\RemoveDupes.cs"/>
         <Compile Include="Strings\LongestSubstringKDistinct.cs"/>
+        <Compile Include="Strings\LongPalindromeSub.cs"/>
         <Compile Include="Strings\MinStringWindow.cs">
             <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
         </Compile>

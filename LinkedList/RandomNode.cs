@@ -6,8 +6,8 @@ namespace CodeChallenges.LinkedList
     public class RandomNode
     {
         public RandomNode next;
-        public RandomNode random;
         public int val;
+        public RandomNode random;
 
         public RandomNode(int x)
         {

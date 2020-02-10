@@ -8,6 +8,7 @@ namespace CodeChallenges.LinkedList
         public ListNode next;
         public int val;
 
+
         public ListNode(int x)
         {
             this.val = x;
