@@ -1,8 +1,5 @@
 namespace CodeChallenges.Arrays
 {
-    using System;
-    using System.Collections.Generic;
-
     public class Search2DMatrix
     {
         public bool SearchMatrix(int[,] matrix, int target)
@@ -10,7 +7,6 @@ namespace CodeChallenges.Arrays
             if (matrix == null) return false;
 
             // sorted = binary search.
-            bool foundTarget = false;
             int height = matrix.GetLength(0);
 
             int width = matrix.GetLength(1);
