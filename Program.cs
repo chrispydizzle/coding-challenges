@@ -2,16 +2,15 @@ namespace CodeChallenges
 {
     using System;
     using System.Collections;
-    using System.Collections.Generic;
     using Arrays;
-    using Interviews;
 
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            BridgeWater b = new BridgeWater();
-            b.IsPossible(1, 1, 5, 2);
+            ThreeSumCloses t = new ThreeSumCloses();
+            W(t.ThreeSumClosest(new[] {0, 2, 1, -3}, 1));
+            W(t.ThreeSumClosest(new[] {-1, 2, 1, -4}, 1));
         }
 
         public static void TMain(string[] args)
@@ -69,99 +68,6 @@ namespace CodeChallenges
             Console.Read();
         }
 
-/*
- *
- *     public bool Find132pattern(int[] nums) {
-return true;
-}
-
-Given a sequence of n integers a1, a2, ..., an, a 132 pattern is a subsequence ai, aj, ak such that i < j < k and ai < ak < aj. Design an algorithm that takes a list of n numbers as input and checks whether there is a 132 pattern in the list.
-
-   Note: n will be less than 15,000.
-
-   Example 1:
-   Input: [1, 2, 3, 4]
-
-   Output: False
-
-   Explanation: There is no 132 pattern in the sequence.
-   Example 2:
-   Input: [3, 1, 4, 2]
-
-   Output: True
-
-   Explanation: There is a 132 pattern in the sequence: [1, 4, 2].
-   Example 3:
-   Input: [-1, 3, 2, 0]
-
-   Output: True
-
-   Explanation: There are three 132 patterns in the sequence: [-1, 3, 2], [-1, 3, 0] and [-1, 2, 0].
- */
-        public static void OldMain(string[] args)
-        {
-            /*
-             *     UseCase1,UseCase4
-
-                    UseCase2,UseCase3
-             */
-
-
-            //var s = new BridgeWaterPractice.DeadlockDetector();
-
-            // case eight
-            /*
-             * UseCase1,UseCase2
-               UseCase1,UseCase6
-             */
-            /*
-            s.Consume(new List<string>(new[]
-            {
-                "UseCase1 Lock1,Lock2,Lock3,Lock4",
-                "UseCase2 Lock2,Lock1",
-                "UseCase3 Lock4,Lock5",
-                "UseCase5, Lock6,Lock7",
-                "UseCase6 Lock2,Lock4,Lock3,Lock8",
-                "UseCase7 Lock4",
-                "UseCase8 Lock8",
-                "UseCase9 Lock0, Lock8, Lock2, Lock12"
-            }));
-            Console.WriteLine(s.FindLocks());
-            s.Clear();
-
-            // case 10
-            // empty
-            s.Consume(new List<string>(new[]
-            {
-                "UseCase1 Lock7,Lock8,Lock6,Lock1",
-                "UseCase2 Lock4,Lock6,Lock5,Lock2",
-                "UseCase3 Lock3,Lock5,Lock8,Lock9",
-                "UseCase4 Lock7,Lock9,Lock4,Lock1"
-            }));
-            Console.WriteLine(s.FindLocks());
-            s.Clear();
-
-            s.Consume(new List<string>(new[]
-            {
-                "UseCase3 Lock1,Lock2",
-                "UseCase4 Lock2,Lock1"
-            }));
-            Console.WriteLine(s.FindLocks());
-            s.Clear();
-
-            s.Consume(new List<string>(new[]
-            {
-                "UseCase1 Lock0,Lock1,Lock2",
-                "UseCase2 Lock4,Lock2,Lock1",
-                "UseCase3 Lock1,Lock2",
-                "UseCase4 Lock2,Lock1"
-            }));
-            Console.WriteLine(s.FindLocks());
-            s.Clear();
-
-            Console.ReadLine();*/
-        }
-
         private static void W(object o)
         {
             if (o is IEnumerable enumerable && !(o is string s))
@@ -180,19 +86,8 @@ Given a sequence of n integers a1, a2, ..., an, a 132 pattern is a subsequence a
             Console.WriteLine($" Raw object: {o}");
         }
     }
+}
 
-    public static class Extensions
-    {
-        public static List<IList<int>> MakeIList(this int[][] array)
-        {
-            List<IList<int>> result = new List<IList<int>>();
-            foreach (int[] ints in array)
-            {
-                List<int> newL = new List<int>(ints);
-                result.Add(newL);
-            }
-
-            return result;
-        }
-    }
+namespace ExtensionMs
+{
 }

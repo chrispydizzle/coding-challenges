@@ -64,6 +64,7 @@
         <Compile Include="Arrays\AreSimilar.cs"/>
         <Compile Include="Arrays\ArrayChange.cs"/>
         <Compile Include="Arrays\ArrayIntersection.cs"/>
+        <Compile Include="Arrays\CompareVersion.cs"/>
         <Compile Include="Arrays\ContainerWithMostWater.cs"/>
         <Compile Include="Arrays\ContainsDuplicates.cs"/>
         <Compile Include="Arrays\CriticalConnect.cs"/>
@@ -98,6 +99,7 @@
         <Compile Include="Arrays\SubarraySumK.cs"/>
         <Compile Include="Arrays\TaskScheduler.cs"/>
         <Compile Include="Arrays\ThreeSum.cs"/>
+        <Compile Include="Arrays\ThreeSumCloses.cs"/>
         <Compile Include="Arrays\TrappingRain.cs"/>
         <Compile Include="Arrays\TryNumIslandsa.cs"/>
         <Compile Include="Arrays\TwoSumII.cs"/>
@@ -168,6 +170,7 @@
         <Compile Include="DynamicProgramming\SearchInRotatedSortedArray.cs"/>
         <Compile Include="DynamicProgramming\StairClimber.cs"/>
         <Compile Include="DynamicProgramming\WordSearch.cs"/>
+        <Compile Include="Extensions.cs"/>
         <Compile Include="Graphs\BTreeRightSideView.cs"/>
         <Compile Include="Graphs\UndirectedCloneGraph.cs"/>
         <Compile Include="Graphs\UndirectedGraphNode.cs"/>
