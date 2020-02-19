@@ -6,57 +6,17 @@ namespace CodeChallenges
 
     internal static class Program
     {
-        public static void MainMin(string[] args)
-        {
-            var d = new DemOranges();
-            W(d.OrangesRotting(new[] {new[] {2, 2}, new[] {1, 1}, new[] {0, 0}, new[] {2, 0}}));
-            W(d.OrangesRotting(new[] {new[] {2, 1, 1}, new[] {1, 1, 0}, new[] {0, 1, 1}}));
-            W(d.OrangesRotting(new[] {new[] {2, 1, 1}, new[] {0, 1, 1}, new[] {1, 0, 1}}));
-            W(d.OrangesRotting(new[] {new[] {0, 2}}));
-        }
-
         public static void Main(string[] args)
         {
-            MeetingRoomsII m = new MeetingRoomsII();
-            W(m.MinMeetingRooms(new[]
-            {
-                new[] {2, 15}, new[] {36, 45}, new[] {9, 29}, new[] {16, 23}, new[] {4, 9}
-            }));
-            W(m.MinMeetingRooms(new[]
-            {
-                new[] {1, 5}, new[] {8, 9}, new[] {8, 9},
-            }));
+            PrisonCellsAfterN p = new PrisonCellsAfterN();
+            int[] prisonAfterNDays;
+            prisonAfterNDays = p.PrisonAfterNDays(new[] {1, 0, 0, 1, 0, 0, 1, 0}, 1000000000);
+            W(prisonAfterNDays);
 
-            W(m.MinMeetingRooms(new[]
-            {
-                new[] {6, 10}, new[] {13, 14}, new[] {12, 14}
-            }));
+            prisonAfterNDays = p.PrisonAfterNDays(new[] {0, 1, 0, 1, 1, 0, 0, 1}, 7);
+            W(prisonAfterNDays);
 
-            W(m.MinMeetingRooms(new[]
-            {
-                new[] {9, 10}, new[] {4, 9}, new[] {4, 17}
-            }));
-
-            W(m.MinMeetingRooms(new[]
-            {
-                new[] {5, 8}, new[] {6, 8}
-            }));
-
-            W(m.MinMeetingRooms(new[]
-            {
-                new[] {0, 30}, new[] {5, 10}, new[] {15, 20},
-            }));
-
-
-            W(m.MinMeetingRooms(new[]
-            {
-                new[] {2, 7}, new[] {15, 20}
-            }));
-
-            W(m.MinMeetingRooms(new[]
-            {
-                new[] {2, 7}, new[] {7, 20}
-            }));
+            Console.Read();
         }
 
         public static void TMain(string[] args)

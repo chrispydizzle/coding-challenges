@@ -89,6 +89,7 @@
         <Compile Include="Arrays\NumberOfIslands.cs"/>
         <Compile Include="Arrays\PermuteIt.cs"/>
         <Compile Include="Arrays\PlaceFlowers.cs"/>
+        <Compile Include="Arrays\PrisonCellsAfterN.cs"/>
         <Compile Include="Arrays\ProdNotMe.cs"/>
         <Compile Include="Arrays\ProductOfArrayExceptSelf.cs"/>
         <Compile Include="Arrays\ReorderLogs.cs"/>
@@ -331,6 +332,7 @@
         <Compile Include="Strings\ValidParenthesis.cs"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="BinaryTrees\BinaryTreeDepth.cs"/>
         <Content Include="MSSQL\CombineTwoTables.sql"/>
         <Content Include="MSSQL\RankScores.sql"/>
         <Content Include="MSSQL\SecondHighestSalary.sql"/>
