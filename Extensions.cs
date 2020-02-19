@@ -1,7 +1,7 @@
-namespace ExtensionMs
+namespace CodeChallenges
 {
     using System.Collections.Generic;
-    using CodeChallenges.Arrays;
+    using Arrays;
 
     public static class Extensions
     {

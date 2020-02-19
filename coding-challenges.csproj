@@ -68,8 +68,10 @@
         <Compile Include="Arrays\ContainerWithMostWater.cs"/>
         <Compile Include="Arrays\ContainsDuplicates.cs"/>
         <Compile Include="Arrays\CriticalConnect.cs"/>
+        <Compile Include="Arrays\DemOranges.cs"/>
         <Compile Include="Arrays\DepthSumIV.cs"/>
         <Compile Include="Arrays\FbSpiralGen.cs"/>
+        <Compile Include="Arrays\FindMissingNum.cs"/>
         <Compile Include="Arrays\FindTargetSum.cs"/>
         <Compile Include="Arrays\FindTheCeleb.cs"/>
         <Compile Include="Arrays\HouseRobber.cs"/>
@@ -78,6 +80,7 @@
         <Compile Include="Arrays\IslandPerimeter.cs"/>
         <Compile Include="Arrays\KSmallestPairs.cs"/>
         <Compile Include="Arrays\MaxMaxSubarray.cs"/>
+        <Compile Include="Arrays\MeetingRoomsII.cs"/>
         <Compile Include="Arrays\MergeIntervals.cs"/>
         <Compile Include="Arrays\MergeSortedArray.cs"/>
         <Compile Include="Arrays\MergeTwoSortedLists.cs"/>
@@ -196,6 +199,7 @@
         <Compile Include="LinkedList\Node.cs"/>
         <Compile Include="LinkedList\RandomNode.cs"/>
         <Compile Include="LinkedList\RemoveNFromEnd.cs"/>
+        <Compile Include="LinkedList\ReverseKLinkList.cs"/>
         <Compile Include="Matrix\RotateMatrix.cs"/>
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
@@ -327,6 +331,8 @@
         <Compile Include="Strings\ValidParenthesis.cs"/>
     </ItemGroup>
     <ItemGroup>
+        <Content Include="MSSQL\CombineTwoTables.sql"/>
+        <Content Include="MSSQL\RankScores.sql"/>
         <Content Include="MSSQL\SecondHighestSalary.sql"/>
         <Content Include="MSSQL\TempDb.mdf">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>

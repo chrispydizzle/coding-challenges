@@ -1,6 +1,3 @@
-SELECT ISNULL(
-	(SELECT DISTINCT Salary
-		FROM Employee ORDER BY Salary DESC
-		OFFSET 1 ROWS
-		FETCH NEXT 1 ROWS ONLY), NULL)
- AS SecondHighestSalary
+SELECT MAX(e.Salary) as SecondHighestSalary
+from Employee e
+WHERE SALARY <> (SELECT MAX(SALARY) FROM Employee);
