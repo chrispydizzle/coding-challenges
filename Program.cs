@@ -2,19 +2,82 @@ namespace CodeChallenges
 {
     using System;
     using System.Collections;
+    using System.Collections.Generic;
+    using System.Linq;
     using Arrays;
+    using Interviews;
+    using Strings;
 
     internal static class Program
     {
+        public static void MainS(string[] args)
+        {
+            string test = @"photo.jpg, Warsaw, 2013-09-05 14:08:15
+john.png, London, 2015-06-20 15:13:22
+myFriends.png, Warsaw, 2013-09-05 14:07:13
+Eiffel.jpg, Paris, 2015-07-23 08:03:02
+pisatower.jpg, Paris, 2015-07-22 23:59:59
+BOB.jpg, London, 2015-08-05 00:02:03
+notredame.png, Paris, 2015-09-01 12:00:00
+me.jpg, Warsaw, 2013-09-06 15:40:22
+a.png, Warsaw, 2016-02-13 13:33:50
+b.jpg, Warsaw, 2016-01-02 15:12:22
+c.jpg, Warsaw, 2016-01-02 14:34:30
+d.jpg, Warsaw, 2016-01-02 15:15:01
+e.png, Warsaw, 2016-01-02 09:49:09
+f.png, Warsaw, 2016-01-02 10:55:32
+g.jpg, Warsaw, 2016-02-29 22:13:11";
+
+            BetterActual b = new BetterActual();
+            // W(b.solutionABC("CABBAC"));
+            // W(b.solutionABC("ACCAABBC"));
+            // W(b.solutionABC("BABABA"));
+            // W(b.solutionABC(""));
+            // W(b.solutionABC("A"));
+            SortedDictionary<string, List<string>> d = new SortedDictionary<string, List<string>>();
+            W(b.solution(test));
+            W(b.solution("photo.jpg, Warsaw, 2013-09-05 14:08:15"));
+        }
+
         public static void Main(string[] args)
         {
-            PrisonCellsAfterN p = new PrisonCellsAfterN();
-            int[] prisonAfterNDays;
-            prisonAfterNDays = p.PrisonAfterNDays(new[] {1, 0, 0, 1, 0, 0, 1, 0}, 1000000000);
-            W(prisonAfterNDays);
+            ReverseOnlyLters l = new ReverseOnlyLters();
+            W(l.ReverseOnlyLetters("Test1ng-Leet=code-Q!"));
+            W(l.ReverseOnlyLetters("a-bC-dEf-ghIj"));
 
-            prisonAfterNDays = p.PrisonAfterNDays(new[] {0, 1, 0, 1, 1, 0, 0, 1}, 7);
-            W(prisonAfterNDays);
+            /*W(d.MostCommonWord("Bob hit a ball, the hit BALL flew far after it was hit.", new[] {"hit"}));
+            W(d.MostCommonWord("Bob hit a ball, the hit BALL flew far after it was hit.", new[] {"ball"}));
+            W(d.MostCommonWord("Bob hit a ball, the hit BALL flew far after it was hit.", new[] {"ball","hit"}));*/
+        }
+
+        public static void MainLater(string[] args)
+        {
+            BetterPractice bp = new BetterPractice();
+            List<int> range1 = Enumerable.Range(-1, 6).ToList();
+            range1.Remove(3);
+            List<int> range2 = Enumerable.Range(0, 200).ToList();
+            range2.Remove(101);
+
+            List<int> range3 = Enumerable.Range(-500, 10005).ToList();
+            range3.Remove(111);
+            List<int> range4 = Enumerable.Range(-1, 500000).ToList();
+            range4.Remove(10000);
+
+            List<int> range5 = Enumerable.Range(-1000, 9005).ToList();
+            range5.Remove(5);
+
+            List<int> range6 = Enumerable.Range(1, 40004).ToList();
+            range6.Remove(40000);
+
+            W(bp.solution(range6.ToArray()));
+            W(bp.solution(range5.ToArray()));
+            W(bp.solution(new[] {1}));
+            W(bp.solution(new[] {1, 2, 3}));
+            W(bp.solution(range1.ToArray()));
+            W(bp.solution(range2.ToArray()));
+            W(bp.solution(range3.ToArray()));
+            W(bp.solution(range4.ToArray()));
+            W(bp.solution(new[] {1, 1000000}));
 
             Console.Read();
         }
